@@ -2,7 +2,7 @@ import { Stack, Typography, Box } from "@mui/material";
 
 const Headers = () => {
     return(
-        <Stack direction={'row'} height={120} justifyContent="center" alignItems="center" sx={{mt:4}}>
+        <Stack direction={'row'} height={120} justifyContent="center" alignItems="center" sx={{borderRight:3, borderLeft:3, borderTop:3, color:'#8AC1C9', bgcolor:'#B5C2D2'}}>
             <Typography color={'#306156'} align="center" variant="h5">
                <Box sx={{ textTransform: 'uppercase', fontWeight: 'bold', mt:-6}}>
                 FULL STACK ENGINEER PROGRAM
