@@ -1,13 +1,13 @@
 import {Stack, Typography} from '@mui/material';
 
-const SpringSecurityInfo = () => {
+const CircleCiInfo = () => {
     return (
         <Stack>
             <Typography>
-              SpringSecurity Info
+               CircleCi Info
             </Typography>
         </Stack>
     )
 }
 
-export default SpringSecurityInfo;
+export default CircleCiInfo;

@@ -1,13 +1,13 @@
 import {Stack, Typography} from '@mui/material';
 
-const MicrosoftServiceInfo = () => {
+const MongoDbInfo = () => {
     return (
         <Stack>
             <Typography>
-              <p>MicrosoftService Info</p>
+              MongoDb Info
             </Typography>
         </Stack>
     )
 }
 
-export default MicrosoftServiceInfo;
+export default MongoDbInfo;

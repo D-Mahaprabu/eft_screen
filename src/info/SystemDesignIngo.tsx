@@ -1,13 +1,13 @@
 import {Stack, Typography} from '@mui/material';
 
-const MangoDbInfo = () => {
+const SystemDesignInfo = () => {
     return (
         <Stack>
             <Typography>
-              <p>MangoDb Info</p>
+              SystemDesign Info
             </Typography>
         </Stack>
     )
 }
 
-export default MangoDbInfo;
+export default SystemDesignInfo;

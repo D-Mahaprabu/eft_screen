@@ -4,7 +4,7 @@ const SwaggerInfo = () => {
     return (
         <Stack>
             <Typography>
-              <p>Swagger Info</p>
+              Swagger Info
             </Typography>
         </Stack>
     )

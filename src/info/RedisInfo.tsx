@@ -4,7 +4,7 @@ const RedisInfo = () => {
     return (
         <Stack>
             <Typography>
-              <p>Redis Info</p>
+              Redis Info
             </Typography>
         </Stack>
     )

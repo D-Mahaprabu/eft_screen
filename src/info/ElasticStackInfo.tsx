@@ -4,7 +4,7 @@ const ElasticStackInfo = () => {
     return (
         <Stack>
             <Typography>
-              <p>ElasticStack Info</p>
+              ElasticStack Info
             </Typography>
         </Stack>
     )

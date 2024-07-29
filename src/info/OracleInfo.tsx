@@ -4,7 +4,7 @@ const OracleInfo = () => {
     return (
         <Stack>
             <Typography>
-              <p>Oracle Info</p>
+              Oracle Info
             </Typography>
         </Stack>
     )

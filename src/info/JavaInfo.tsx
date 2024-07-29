@@ -4,7 +4,7 @@ const JavaInfo = () => {
     return (
         <Stack>
             <Typography>
-              <p>Java Info</p>
+              Java Info
             </Typography>
         </Stack>
     )

@@ -1,13 +1,13 @@
 import {Stack, Typography} from '@mui/material';
 
-const SpringSecurityInfo = () => {
+const PrometheusInfo = () => {
     return (
         <Stack>
             <Typography>
-              SpringSecurity Info
+            PrometheusInfo
             </Typography>
         </Stack>
     )
 }
 
-export default SpringSecurityInfo;
+export default PrometheusInfo;

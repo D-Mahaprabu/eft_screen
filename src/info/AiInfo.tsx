@@ -4,7 +4,7 @@ const AiInfo = () => {
     return (
         <Stack>
             <Typography>
-              <p>Ai Info</p>
+              Ai Info
             </Typography>
         </Stack>
     )

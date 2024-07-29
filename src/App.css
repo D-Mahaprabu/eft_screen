@@ -1,5 +1,12 @@
 .App {
-  text-align: center;
+  /* Set background image */
+  background-image: url('./images/background.jpg');
+  /* Adjust background properties */
+  background-size: cover;
+  background-position: center;
+  /* Set minimum height to cover entire screen */
+  min-height: 100vh;
+  /* Optional: Add more styling as needed */
 }
 
 .App-logo {

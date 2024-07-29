@@ -4,7 +4,7 @@ const MachineLearningInfo = () => {
     return (
         <Stack>
             <Typography>
-              <p>MachineLearning Info</p>
+              MachineLearning Info
             </Typography>
         </Stack>
     )

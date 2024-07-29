@@ -8,9 +8,9 @@ import SpringBootInfo from './info/SpringBootInfo';
 import MavenInfo from './info/MavenInfo';
 import SpringSecurityInfo from './info/SpringSecurityInfo';
 import HibernateInfo from './info/HibernateInfo';
-import MicrosoftServiceInfo from './info/MicrosoftServiceInfo';
+import MicroserviceDesignInfo from './info/MicroserviceDesignInfo';
 import OracleInfo from './info/OracleInfo';
-import MangoDbInfo from './info/MangoDbInfo';
+import MongoDbInfo from './info/MongoDbInfo';
 import RedisInfo from './info/RedisInfo';
 import EhCacheInfo from './info/EhCacheInfo';
 import AiInfo from './info/AiInfo';
@@ -32,15 +32,24 @@ import AzureInfo from './info/AzureInfo';
 import GoogleCloudInfo from './info/GoogleCloudInfo';
 import DockerInfo from './info/DockerInfo';
 import kupernetsInfo from './info/KubernetesInfo';
-
+import Footer from './component/footer';
+import CircleCiInfo from './info/CircleCiInfo';
+import GitHubActionsInfo from './info/GitHubActionsInfo';
+import PrometheusInfo from './info/PrometheusInfo';
+import SystemDesignInfo from './info/SystemDesignIngo'
+import DebuggingSkillsInfo from './info/DebuggingSkillsInfo'
+import EnterpriseArchitectureInfo from './info/EnterpriseArchitectureInfo'
+import CapacityPlanningInfo from './info/CapacityPlanningInfo'
 
 function App() {
+
   return (
   <Router>
     <Box className="App">
       <Route exact path="/">
       <Headers></Headers>
       <Body></Body>
+      <Footer></Footer>
       </Route>
       <Switch>
       <Route path="/html-info" component={HtmlInfo} />
@@ -62,9 +71,9 @@ function App() {
       <Route path="/maven-info" component={MavenInfo} />
       <Route path="/springsecurity-info" component={SpringSecurityInfo} />
       <Route path="/hibernate-info" component={HibernateInfo} />
-      <Route path="/microsoftservice-info" component={MicrosoftServiceInfo} />
+      <Route path="/microsservicedesign-info" component={MicroserviceDesignInfo} />
       <Route path="/oracle-info" component={OracleInfo} />
-      <Route path="/mangodb-info" component={MangoDbInfo} />
+      <Route path="/mongodb-info" component={MongoDbInfo} />
       <Route path="/redis-info" component={RedisInfo} />
       <Route path="/ehcache-info" component={EhCacheInfo} />
       <Route path="/ai-info" component={AiInfo} />
@@ -72,6 +81,13 @@ function App() {
       <Route path="/swagger-info" component={SwaggerInfo} />
       <Route path="/kafka-info" component={KafkaInfo} />
       <Route path="/elasticstack-info" component={ElasticStackInfo} />
+      <Route path="/circleci-info" component={CircleCiInfo} />
+      <Route path="/githubactions-info" component={GitHubActionsInfo} />
+      <Route path="/prometheus-info" component={PrometheusInfo} />
+      <Route path="/systemdesign-info" component={SystemDesignInfo} />
+      <Route path="/debuggingskills-info" component={DebuggingSkillsInfo} />
+      <Route path="/enterprisearchitecture-info" component={EnterpriseArchitectureInfo} />
+      <Route path="/capacityplanning-info" component={CapacityPlanningInfo} />
       </Switch>
     </Box>
   </Router>

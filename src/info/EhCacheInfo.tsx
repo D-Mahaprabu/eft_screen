@@ -4,7 +4,7 @@ const EhCacheInfo = () => {
     return (
         <Stack>
             <Typography>
-              <p>EhCache Info</p>
+              EhCache Info
             </Typography>
         </Stack>
     )

@@ -4,7 +4,7 @@ const KafkaInfo = () => {
     return (
         <Stack>
             <Typography>
-              <p>Kafka Info</p>
+              Kafka Info
             </Typography>
         </Stack>
     )

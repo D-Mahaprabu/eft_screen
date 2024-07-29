@@ -4,7 +4,7 @@ const MavenInfo = () => {
     return (
         <Stack>
             <Typography>
-              <p>Maven Info</p>
+              Maven Info
             </Typography>
         </Stack>
     )

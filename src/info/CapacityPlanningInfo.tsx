@@ -1,13 +1,13 @@
 import {Stack, Typography} from '@mui/material';
 
-const SpringSecurityInfo = () => {
+const CapacityPlanningInfo = () => {
     return (
         <Stack>
             <Typography>
-              SpringSecurity Info
+              CapacityPlanning Info
             </Typography>
         </Stack>
     )
 }
 
-export default SpringSecurityInfo;
+export default CapacityPlanningInfo;

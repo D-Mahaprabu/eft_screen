@@ -1,13 +1,13 @@
 import {Stack, Typography} from '@mui/material';
 
-const SpringSecurityInfo = () => {
+const GitHubActionsInfo = () => {
     return (
         <Stack>
             <Typography>
-              SpringSecurity Info
+            GitHubActionsInfo
             </Typography>
         </Stack>
     )
 }
 
-export default SpringSecurityInfo;
+export default GitHubActionsInfo;

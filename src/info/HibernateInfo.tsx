@@ -4,7 +4,7 @@ const HibernateInfo = () => {
     return (
         <Stack>
             <Typography>
-              <p>Hibernate Info</p>
+              Hibernate Info
             </Typography>
         </Stack>
     )

@@ -4,7 +4,7 @@ const SpringBootInfo = () => {
     return (
         <Stack>
             <Typography>
-              <p>SpringBoot Info</p>
+              SpringBoot Info
             </Typography>
         </Stack>
     )
