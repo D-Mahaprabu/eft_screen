@@ -1,12 +1,17 @@
 .App {
-  /* Set background image */
   background-image: url('./images/background.jpg');
-  /* Adjust background properties */
   background-size: cover;
   background-position: center;
-  /* Set minimum height to cover entire screen */
   min-height: 100vh;
-  /* Optional: Add more styling as needed */
+  width: 219vh;
+}
+
+.home {
+  background-image: url('./images/robot1.jpg');
+  background-size: 1610px 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
 }
 
 .App-logo {

@@ -1,8 +1,6 @@
 import './App.css';
-import Body from './component/body';
-import Headers from './component/Header';
 import { Box } from '@mui/material';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import JavaInfo from './info/JavaInfo';
 import SpringBootInfo from './info/SpringBootInfo';
 import MavenInfo from './info/MavenInfo';
@@ -32,7 +30,6 @@ import AzureInfo from './info/AzureInfo';
 import GoogleCloudInfo from './info/GoogleCloudInfo';
 import DockerInfo from './info/DockerInfo';
 import kupernetsInfo from './info/KubernetesInfo';
-import Footer from './component/footer';
 import CircleCiInfo from './info/CircleCiInfo';
 import GitHubActionsInfo from './info/GitHubActionsInfo';
 import PrometheusInfo from './info/PrometheusInfo';
@@ -40,18 +37,17 @@ import SystemDesignInfo from './info/SystemDesignIngo'
 import DebuggingSkillsInfo from './info/DebuggingSkillsInfo'
 import EnterpriseArchitectureInfo from './info/EnterpriseArchitectureInfo'
 import CapacityPlanningInfo from './info/CapacityPlanningInfo'
+import FullstackEngineerScreen from './component/FullStackEngineerScreen';
+import Home from './component/home';
 
 function App() {
 
   return (
   <Router>
     <Box className="App">
-      <Route exact path="/">
-      <Headers></Headers>
-      <Body></Body>
-      <Footer></Footer>
-      </Route>
       <Switch>
+      <Route path="/" exact component={Home} />
+      <Route path="/fullstack-engineer" component={FullstackEngineerScreen} />
       <Route path="/html-info" component={HtmlInfo} />
       <Route path="/css-info" component={CssInfo} />
       <Route path="/bootstrap-info" component={BootStrapInfo} />
