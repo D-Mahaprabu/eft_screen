@@ -148,7 +148,7 @@ const Body = () => {
 
 
     return(
-        <Stack height={'300'} width={1473} direction={'row'} sx={{color:'#8AC1C9'}}>
+        <Stack height={388} width={1473} direction={'row'} sx={{color:'#8AC1C9'}}>
             <Box  width={900} height={390}>
                 <Typography fontStyle={'Dancing Script'} textAlign={'center'} sx={{mr:17}} variant="h6" color={'#599585'}>
                     Front End

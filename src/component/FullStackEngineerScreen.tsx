@@ -6,11 +6,11 @@ import Footer from './footer';
 const FullstackEngineerScreen = () => {
 
     return(
-        <Box>
-        <Headers></Headers>
-      <Body></Body>
-      <Footer></Footer>
-      </Box>
+        <Box className="Fullstack">
+          <Headers></Headers>
+          <Body></Body>
+          <Footer></Footer>
+        </Box>
     )
 }
 

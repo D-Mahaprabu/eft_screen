@@ -2,7 +2,7 @@ import { Stack, Box, Typography } from "@mui/material";
 import CircleCiLogo from '../images/circleCiLogo.png'
 import GitHubActionsLogo from '../images/gitHubActionsLogo.png'
 import machineLearningLogo from '../images/machineLearning.jpeg'
-import aiLogo from '../images/aiLogo.jpeg'
+import aiLogo from '../images/aiLogos.jpeg'
 import SystemDesignLogo from '../images/systemDesignLogo.png'
 import DebuggingSkillsLogo from '../images/debuggingSkillsLogo.png'
 import EnterpriseArchitectureLogo from '../images/enterpriseArchitectureLogo.png'
@@ -47,7 +47,7 @@ const Footer = () => {
     };
     
     return(
-        <Stack height={'100'} width={1473} direction={'row'} sx={{color:'#8AC1C9'}}>
+        <Stack width={1473} direction={'row'} sx={{color:'#8AC1C9'}}>
             <Box  width={800} height={232}>
               <Stack direction={"row"} spacing={3} sx={{mt:1, ml:3}}>
                 <Box sx={{ borderRadius: '50%',  display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center'}} bgcolor={'#7A8B93'} width={100} height={100}>

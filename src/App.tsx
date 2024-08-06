@@ -39,6 +39,7 @@ import EnterpriseArchitectureInfo from './info/EnterpriseArchitectureInfo'
 import CapacityPlanningInfo from './info/CapacityPlanningInfo'
 import FullstackEngineerScreen from './component/FullStackEngineerScreen';
 import Home from './component/home';
+import Courses from './component/courses';
 
 function App() {
 
@@ -48,6 +49,7 @@ function App() {
       <Switch>
       <Route path="/" exact component={Home} />
       <Route path="/fullstack-engineer" component={FullstackEngineerScreen} />
+      <Route path="/courses" component={Courses} />
       <Route path="/html-info" component={HtmlInfo} />
       <Route path="/css-info" component={CssInfo} />
       <Route path="/bootstrap-info" component={BootStrapInfo} />
