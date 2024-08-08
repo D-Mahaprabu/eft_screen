@@ -48,8 +48,8 @@ function App() {
     <Box className="App">
       <Switch>
       <Route path="/" exact component={Home} />
-      <Route path="/fullstack-engineer" component={FullstackEngineerScreen} />
-      <Route path="/courses" component={Courses} />
+      <Route path="/courses" exact component={Home} />
+      <Route path="/courses/fullstack-engineer" component={FullstackEngineerScreen} />
       <Route path="/html-info" component={HtmlInfo} />
       <Route path="/css-info" component={CssInfo} />
       <Route path="/bootstrap-info" component={BootStrapInfo} />

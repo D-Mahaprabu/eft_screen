@@ -12,7 +12,7 @@ const Courses = () => {
     const courses = [
         { 
             title: "Full Stack", 
-            path: "/fullstack-engineer", 
+            path: "/courses/fullstack-engineer", 
             image: FullStackBgImage,
             info: "Become proficient in front-end and back-end technologies."
         },

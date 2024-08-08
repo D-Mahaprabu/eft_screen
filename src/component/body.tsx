@@ -148,9 +148,9 @@ const Body = () => {
 
 
     return(
-        <Stack height={388} width={1473} direction={'row'} sx={{color:'#8AC1C9'}}>
-            <Box  width={900} height={390}>
-                <Typography fontStyle={'Dancing Script'} textAlign={'center'} sx={{mr:17}} variant="h6" color={'#599585'}>
+        <Stack height={'auto'} width={'100'} direction={'row'} sx={{color:'#8AC1C9'}}>
+            <Box  width={'30%'} height={'auto'}>
+                <Typography fontStyle={'Dancing Script'} textAlign={'center'} justifyContent={'center'} variant="h6" color={'#599585'}>
                     Front End
                 </Typography>
                 <Stack direction={"row"} spacing={3} sx={{mt:1, ml:3}}>
@@ -176,26 +176,26 @@ const Body = () => {
                 </Box>
                 </Stack>
                 <Stack>
-                <Typography variant="caption" color="white" textAlign="center" sx={{ml:15.5, mt:-4}}>
+                <Typography variant="caption" color="white" textAlign="center" sx={{ml: 32, mt:-3.7}}>
                    TypeScript
                 </Typography>
-                <Typography variant="caption" color="white" textAlign="center" sx={{mr:15.5, mt:-2.4}}>
+                <Typography variant="caption" color="white" textAlign="center" sx={{ml:1.5, mt:-2.4}}>
                    JavaScript
                 </Typography>
-                <Typography variant="caption" color="white" textAlign="center" sx={{mr:46.5, mt:-2.4}}>
+                <Typography variant="caption" color="white" textAlign="center" sx={{mr:29.5, mt:-2.4}}>
                    React
                 </Typography>
-                <Typography variant="caption" color="white" textAlign="center" sx={{ml:15.5, mt:-16}}>
+                <Typography variant="caption" color="white" textAlign="center" sx={{ml:33, mt:-16}}>
                    Bootstrap
                 </Typography>
-                <Typography variant="caption" color="white" textAlign="center" sx={{mr:15.8, mt:-2.4}}>
+                <Typography variant="caption" color="white" textAlign="center" sx={{mr:-2, mt:-2.4}}>
                    CSS3
                 </Typography>
-                <Typography variant="caption" color="white" textAlign="center" sx={{mr:46.5, mt:-2.4}}>
+                <Typography variant="caption" color="white" textAlign="center" sx={{ml:-29, mt:-2.4}}>
                    HTML5
                 </Typography>
                 </Stack>
-                <Typography fontStyle={'Dancing Script'} textAlign={'center'} sx={{mr:17}} variant="h6" color={'#599585'} bgcolor={'balck'}>
+                <Typography fontStyle={'Dancing Script'} textAlign={'center'} justifyContent={'center'} variant="h6" color={'#599585'} bgcolor={'balck'}>
                     CI/CD Options
                 </Typography>
                 <Stack direction={"row"} spacing={3} sx={{mt:1, ml:3}}>
@@ -210,22 +210,22 @@ const Body = () => {
                     </Box>
                 </Stack>
                 <Stack>
-                <Typography variant="caption" color="white" textAlign="center" sx={{ml:15.3, mt:-4}}>
+                <Typography variant="caption" color="white" textAlign="center" sx={{ml: 32, mt:-3.7}}>
                    Gitlab
                 </Typography>
-                <Typography variant="caption" color="white" textAlign="center" sx={{mr:15.7, mt:-2.4}}>
+                <Typography variant="caption" color="white" textAlign="center" sx={{ml:1.5, mt:-2.4}}>
                    Devops
                 </Typography>
-                <Typography variant="caption" color="white" textAlign="center" sx={{mr:46.5, mt:-2.4}}>
+                <Typography variant="caption" color="white" textAlign="center" sx={{mr:29.5, mt:-2.4}}>
                    Jenkins
                 </Typography>
                 </Stack>
             </Box>
-            <Box width={500} height={390}>
-            <Typography fontStyle={'Dancing Script'} textAlign={'center'} sx={{}} variant="h6" color={'#599585'} >
+            <Box width={'30%'} height={'auto'}>
+            <Typography fontStyle={'Dancing Script'} textAlign={'center'} justifyContent={'center'} variant="h6" color={'#599585'} >
                     Cloud
                 </Typography>
-                <Stack direction={"row"} spacing={3} sx={{mt:1}}>
+                <Stack direction={"row"} spacing={3} sx={{mt:1, ml:2.3}}>
                 <Box sx={{ borderRadius: '50%',  display: 'flex', justifyContent: 'center', alignItems: 'center'}} bgcolor={'#7A8B93'} width={100} height={100}>
                     <img alt='Aws Logo' src={awsLogo} width={55} height={35} style={{ cursor: 'pointer', marginBottom:18 }} onClick={handleClickAws}></img>
                 </Box>
@@ -236,10 +236,10 @@ const Body = () => {
                     <img alt='GoogleCloud Logo' src={glcloudLogo} width={40} height={38} style={{ cursor: 'pointer', marginBottom:25 }} onClick={handleClickGooglecloud}></img>
                 </Box>
                 </Stack>
-                <Typography fontStyle={'Dancing Script'} textAlign={'center'} variant="h6" color={'#599585'}>
+                <Typography fontStyle={'Dancing Script'} textAlign={'center'} justifyContent={'center'} variant="h6" color={'#599585'}>
                     Deployment Options
                 </Typography>
-                <Stack direction={"row"} spacing={5} sx={{mt:1.4, ml:7}}>
+                <Stack direction={"row"} spacing={5} sx={{mt:1.4, ml:9.1}}>
                 <Box sx={{ borderRadius: '50%',  display: 'flex', justifyContent: 'center', alignItems: 'center'}} bgcolor={'#7A8B93'} width={100} height={100}>
                     <img alt='Docker Logo' src={dockerLogo} width={53} height={60} style={{ cursor: 'pointer', marginBottom:25 }} onClick={handleClickDocker}></img>
                 </Box>
@@ -247,10 +247,10 @@ const Body = () => {
                     <img alt='Kubernetes Logo' src={kubernetesLogo} width={60} height={50} style={{ cursor: 'pointer', marginBottom:30 }} onClick={handleClickKubernetes}></img>
                 </Box>
                 </Stack>
-                <Typography fontStyle={'Dancing Script'} textAlign={'center'} variant="h6" color={'#599585'} sx={{mt:0.8}}>
+                <Typography fontStyle={'Dancing Script'} textAlign={'center'} justifyContent={'center'} variant="h6" color={'#599585'} sx={{mt:0.8}}>
                     Databases
                 </Typography>
-                <Stack direction={"row"} spacing={5} sx={{mt:0.5, ml:7}}>
+                <Stack direction={"row"} spacing={5} sx={{mt:0.5, ml:9.1}}>
                    <Box sx={{ borderRadius: '50%',  display: 'flex', justifyContent: 'center', alignItems: 'center'}} bgcolor={'#7A8B93'} width={100} height={100}>
                     <img alt='Oracle Logo' src={oracleLogo} width={90} height={60} style={{ cursor: 'pointer', marginBottom:8 }} onClick={handleClickOracle}></img>
                    </Box>
@@ -285,11 +285,11 @@ const Body = () => {
                 </Typography>
                 </Stack>
             </Box>
-            <Box width={700} height={390}>
-                <Typography fontStyle={'Dancing Script'} textAlign={'center'} sx={{ml:12}} variant="h6" color={'#599585'}>
+            <Box width={'40%'} height={'auto'}>
+                <Typography fontStyle={'Dancing Script'} textAlign={'center'} justifyContent={'center'} sx={{ml:12}} variant="h6" color={'#599585'}>
                     Backend
                 </Typography>
-                <Stack direction={"row"} spacing={3} sx={{mt:1, ml:14.6, mr:2}}> 
+                <Stack direction={"row"} spacing={3} sx={{mt:1, ml:1.6, mr:2}}> 
                 <Box sx={{ borderRadius: '50%',  display: 'flex', justifyContent: 'center', alignItems: 'center'}} bgcolor={'#7A8B93'} width={100} height={100}>
                     <img alt='Java Logo' src={javaLogo} width={55} height={42} style={{ cursor: 'pointer', marginBottom:20 }} onClick={handleClickJava}></img>
                 </Box>
@@ -303,7 +303,7 @@ const Body = () => {
                     <img alt='SpringSecurity Logo' src={springSecurityLogo} width={50} height={50} style={{ cursor: 'pointer', marginBottom:30 }} onClick={handleClickSpringSecurity}></img>
                 </Box>
                 </Stack>
-                <Stack direction={"row"} spacing={3} sx={{mt:1, ml:14.6, mr:2}}>
+                <Stack direction={"row"} spacing={3} sx={{mt:1, ml:1.6, mr:2}}>
                 <Box sx={{ borderRadius: '50%',  display: 'flex', justifyContent: 'center', alignItems: 'center'}} bgcolor={'#7A8B93'} width={100} height={100}>
                     <img alt='MicroserviceDesign Logo' src={microserviceDesignLogo} width={60} height={42} style={{ cursor: 'pointer', marginBottom:25 }} onClick={handleClickMicroserviceDesign}></img>
                 </Box>
@@ -317,7 +317,7 @@ const Body = () => {
                     <img alt='EhCache Logo' src={ehCacheLogo} width={60} height={57} style={{ cursor: 'pointer', marginBottom:20 }} onClick={handleClickEhCache}></img>
                 </Box>
                 </Stack>
-                <Stack direction={"row"} spacing={3} sx={{mt:1, ml:14.6, mr:2}}>
+                <Stack direction={"row"} spacing={3} sx={{mt:1, ml:1.6, mr:2}}>
                 <Box sx={{ borderRadius: '50%',  display: 'flex', justifyContent: 'center', alignItems: 'center'}} bgcolor={'#7A8B93'} width={100} height={100}>
                     <img alt='Kafka Logo' src={kafkaLogo} width={55} height={48} style={{ cursor: 'pointer', marginBottom:20 }} onClick={handleClickKafka}></img>
                 </Box>
@@ -331,51 +331,52 @@ const Body = () => {
                     <img alt='Prometheus Logo' src={PrometheusLogo} width={55} height={55} style={{ cursor: 'pointer', marginBottom:25 }} onClick={handleClickPrometheus}></img>
                 </Box>
                 </Stack>
+                
                 <Stack>
-                <Typography variant="caption" color="white" textAlign="center" sx={{ml:59, mt:-31.5}}>
+                <Typography variant="caption" color="white" textAlign="center" sx={{ml:44.5, mt:-31.5}}>
                    Spring
                 </Typography>
-                <Typography variant="caption" color="white" textAlign="center" sx={{ml:59, mt:-0.5}}>
+                <Typography variant="caption" color="white" textAlign="center" sx={{ml:44.5, mt:-0.5}}>
                    Security 
                 </Typography>
-                <Typography variant="caption" color="white" textAlign="center" sx={{ml:28, mt:-4}}>
+                <Typography variant="caption" color="white" textAlign="center" sx={{ml:14, mt:-4}}>
                    Maven
                 </Typography>
-                <Typography variant="caption" color="white" textAlign="center" sx={{mr:3, mt:-2.5}}>
+                <Typography variant="caption" color="white" textAlign="center" sx={{mr:17, mt:-2.5}}>
                    Spring Boot
                 </Typography>
-                 <Typography variant="caption" color="white" textAlign="center" sx={{mr:34, mt:-2.5}}>
+                 <Typography variant="caption" color="white" textAlign="center" sx={{mr:48, mt:-2.5}}>
                    Java
                 </Typography>
-                <Typography variant="caption" color="white" textAlign="center" sx={{ml:59.4, mt:11}}>
+                <Typography variant="caption" color="white" textAlign="center" sx={{ml:45.2, mt:11}}>
                    EhCache 
                 </Typography>
-                <Typography variant="caption" color="white" textAlign="center" sx={{ml:28, mt:-2.5}}>
+                <Typography variant="caption" color="white" textAlign="center" sx={{ml:14, mt:-2.5}}>
                    Elastic Stack
                 </Typography>
-                <Typography variant="caption" color="white" textAlign="center" sx={{mr:3, mt:-2.5}}>
+                <Typography variant="caption" color="white" textAlign="center" sx={{mr:17, mt:-2.5}}>
                    Swagger
                 </Typography>
-                 <Typography variant="caption" color="white" textAlign="center" sx={{mr:34, mt:-3.2}}>
+                 <Typography variant="caption" color="white" textAlign="center" sx={{mr:48, mt:-2.5}}>
                    Microservice
                 </Typography>
-                <Typography variant="caption" color="white" textAlign="center" sx={{mr:34, mt:-0.5}}>
+                <Typography variant="caption" color="white" textAlign="center" sx={{mr:48, mt:-0.7}}>
                    Design
                 </Typography>
-                <Typography variant="caption" color="white" textAlign="center" sx={{ml:59.3, mt:10}}>
+                <Typography variant="caption" color="white" textAlign="center" sx={{ml:45.2, mt:9.5}}>
                    Prometheus 
                 </Typography>
-                <Typography variant="caption" color="white" textAlign="center" sx={{ml:28, mt:-2.5}}>
+                <Typography variant="caption" color="white" textAlign="center"  sx={{ml:14, mt:-2.3}}>
                    Hibernate
                 </Typography>
-                <Typography variant="caption" color="white" textAlign="center" sx={{mr:3, mt:-2.5}}>
+                <Typography variant="caption" color="white" textAlign="center" sx={{mr:17, mt:-2.5}}>
                    Redis
                 </Typography>
-                <Typography variant="caption" color="white" textAlign="center" sx={{mr:34, mt:-2.5}}>
+                <Typography variant="caption" color="white" textAlign="center" sx={{mr:48, mt:-2.5}}>
                    Kafka
                 </Typography>
-                </Stack> 
-            </Box>
+                </Stack>
+            </Box> 
         </Stack>
     )
 }

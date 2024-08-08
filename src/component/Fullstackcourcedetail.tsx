@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import {Stack, Typography, Box, Paper, Tab, Tabs, Card, CardContent} from '@mui/material';
-import AppBarComponent from '../component/Appbarcomponent';
-import laptopimg from '../images/laptop.jpg'
+import { Stack, Box, Typography, Paper, Tabs, Tab, Button } from "@mui/material";
 import MenuBookIcon from '@mui/icons-material/MenuBook';
-import QuickLinks from '../component/Quicklinks';
-import Tslogo from '../images/typescriptLogo.svg';
+import QuickLinks from './Quicklinks';
+import Discover from './Discover';
 
-const TsInfo = () => {
+const FullStackCource = () => {
     const [activeTab, setActiveTab] = useState(0);
 
     const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
@@ -18,15 +16,12 @@ const TsInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        #### Module 1: Introduction to TypeScript
-                        - **What is TypeScript?**
-                        - Overview of TypeScript
-                        - Benefits of using TypeScript
-                        - TypeScript vs. JavaScript
-                        - **Setting Up the Environment**
-                        - Installing TypeScript
-                        - Setting up a TypeScript project
-                        - Compiling TypeScript to JavaScript
+                        Full-stack development refers to the practice of developing both the front-end and back-end aspects of a web application
+                        Full-stack development refers to the practice of developing both the front-end and back-end aspects of a web application
+                        Full-stack development refers to the practice of developing both the front-end and back-end aspects of a web application
+                        Full-stack development refers to the practice of developing both the front-end and back-end aspects of a web application
+                        Full-stack development refers to the practice of developing both the front-end and back-end aspects of a web application
+                        Full-stack development refers to the practice of developing both the front-end and back-end aspects of a web application
                     </Typography>
                 );
             case 1:
@@ -45,18 +40,12 @@ const TsInfo = () => {
                 return null;
         }
     };
-   
+
     return (
-        <Stack>
-            <AppBarComponent></AppBarComponent>
-            <Stack>
-                <img src={laptopimg} alt=""  height={'450px'}/>
-            </Stack>
-            <Stack direction={'row'} justifyContent={'space-between'}>
-            <Box height={'auto'} width={'60%'} sx={{ ml: 2 }} >
-                <Stack direction={'row'} sx={{mt:3}}>
-                    <Box height={'50px'} width={'50px'}><img src={Tslogo} alt="" style={{ width: '100%', height: '100%', objectFit: 'contain' }}/></Box>
-                    <Typography variant="h4" sx={{mt:1, ml:1, textTransform:'uppercase'}}>TypeScript</Typography>
+        <Stack direction={'row'} width={'100%'} height={700} justifyContent={'space-between'} bgcolor={'white'} sx={{mt:10}}>
+            <Box height={'auto'} width={'60%'} sx={{ ml: 2 }}>
+                <Stack>
+                    <Typography variant="h4">FULLSTACK ENGINEERING</Typography>
                 </Stack>
                 <Stack width={'auto'} direction={'row'}>
                     <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
@@ -105,24 +94,32 @@ const TsInfo = () => {
                     </Box>
                 </Box>
             </Box>
-            <Box width={'35%'} height={'auto'} >
-            <Card sx={{ width: 380, height: 90, mx: 'auto', mt:2, ml:2, mr: 122, borderRadius: 2, bgcolor: '#F5F4F0' }}>
-                      <CardContent>
-                        <Box sx={{ width: 40, height: 40, borderRadius: '3px', bgcolor: 'red', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', mt: 0.5, fontSize: 30 }}>
-                            ★
-                        </Box>
-                            <Typography variant="body2" sx={{mt: -5, ml: 6}}>
-                                This course will help you gain the skills needed to excel in your field.
-                            </Typography>
-                      </CardContent>
-                    </Card>
-           <Box sx={{ mt: 2 }}>
-                    <QuickLinks></QuickLinks>
+            <Box height={'auto'} width={'38%'} sx={{ fontWeight: 'bold' }}>
+                <Stack height={130} width={'auto'} direction={'row'}>
+                    <Box height={130} width={'50%'} >
+                        <Typography variant='h4' sx={{ ml: 1 }}>FullStack Engineering</Typography>
+                        <Button variant='contained' sx={{ borderRadius: 10, ml: 1 }}>20% offer</Button>
+                    </Box>
+                    <Box width={'50%'}>
+                        <Stack direction={'row'} alignItems={'center'} display={'flex'} justifyContent={'center'}>
+                            <Typography sx={{ textDecoration: 'line-through', mt: 6 }}>$32k</Typography>
+                            <Typography variant='h4' color={'red'} sx={{ mt: 6 }}>24k</Typography>
+                        </Stack>
+                    </Box>
+                </Stack>
+                <Stack direction={'row'} >
+                    <Button variant='contained' sx={{ backgroundColor: '#FDA800', color: 'black', width: '200px' }}>Add to cart</Button>
+                    <Button variant='contained' sx={{ backgroundColor: '#0C5FF3', color: 'white', width: '200px', ml:2 }}>
+                        Buy Now
+                    </Button>
+                </Stack>
+                <Box sx={{ mt: 2 }}>
+                    <QuickLinks />
+                    <Discover />
                 </Box>
             </Box>
-            </Stack>
         </Stack>
-    )
-}
+    );
+};
 
-export default TsInfo;
+export default FullStackCource;
