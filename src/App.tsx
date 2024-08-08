@@ -33,7 +33,7 @@ import kupernetsInfo from './info/KubernetesInfo';
 import CircleCiInfo from './info/CircleCiInfo';
 import GitHubActionsInfo from './info/GitHubActionsInfo';
 import PrometheusInfo from './info/PrometheusInfo';
-import SystemDesignInfo from './info/SystemDesignIngo'
+import SystemDesignInfo from './info/SystemDesignInfo'
 import DebuggingSkillsInfo from './info/DebuggingSkillsInfo'
 import EnterpriseArchitectureInfo from './info/EnterpriseArchitectureInfo'
 import CapacityPlanningInfo from './info/CapacityPlanningInfo'
@@ -69,7 +69,7 @@ function App() {
       <Route path="/maven-info" component={MavenInfo} />
       <Route path="/springsecurity-info" component={SpringSecurityInfo} />
       <Route path="/hibernate-info" component={HibernateInfo} />
-      <Route path="/microsservicedesign-info" component={MicroserviceDesignInfo} />
+      <Route path="/microservicedesign-info" component={MicroserviceDesignInfo} />
       <Route path="/oracle-info" component={OracleInfo} />
       <Route path="/mongodb-info" component={MongoDbInfo} />
       <Route path="/redis-info" component={RedisInfo} />

@@ -3,16 +3,15 @@ import { Box, List, ListItem, ListItemText, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 const quickLinks = [
-    { name: 'Front End', path: '/html-info'},
-    { name: 'Jenkins', path: 'jenkins-info' },
-    { name: 'Devops', path: '/devops-info'},
-    { name: 'CircleCI', path: '/circleci-info'},
-    { name: 'Github Actions', path: 'githubactions-info'},
-    { name: 'GitLab', path: '/gitlab-info'},
-    { name: 'Cloud', path: 'aws-info'},
+    { name: 'Backend', path: 'java-info' },
+    { name: 'System Design', path: 'systemdesign-info'},
+    { name: 'Debugging Skills', path: '/debuggingskills-info'},
+    { name: 'Enterprise Architecture', path: 'enterprisearchitecture-info' },
+    { name: 'Capacity Planning', path: '/capacityplanning-info'},
+    { name: 'Exclusive Courses', path: 'ai-info'},
 ];
 
-const CiCdQuickLinks: React.FC = () => {
+const ArchitectEssentialsQuickLinks: React.FC = () => {
     return (
         <Box sx={{ bgcolor: 'white', p: 2, borderRadius: 1, boxShadow: 1, mb: 2 }}>
             <Typography variant="h6" sx={{ mb: 2, fontWeight: 'bold' }}>
@@ -29,4 +28,4 @@ const CiCdQuickLinks: React.FC = () => {
     );
 };
 
-export default CiCdQuickLinks;
+export default ArchitectEssentialsQuickLinks;

@@ -1,7 +1,7 @@
 import { AppBar, Toolbar, Button, Stack, Box, Typography} from "@mui/material";
 import { useState, useRef, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import Stairs7SolutionsLogo from '../images/Stairs7SolutionsIcon.png'
+import Stairs7SolutionsLogo from '../images/Stairs7SolutionsIcon.png';
 
 const AppBarComponent = () => {
 
@@ -13,7 +13,7 @@ const AppBarComponent = () => {
     useEffect(() => {
         if (scrollToCourses && coursesRef.current) {
             coursesRef.current.scrollIntoView({ behavior: 'smooth' });
-            setScrollToCourses(false); // Reset the flag after scrolling
+            setScrollToCourses(false);
         }
     }, [scrollToCourses]);
 
@@ -26,7 +26,7 @@ const AppBarComponent = () => {
 
     const handleCoursesClick = () => {
         setShowCourses(true);
-        setScrollToCourses(true); // Set flag to trigger scrolling
+        setScrollToCourses(true);
     };
 
     return (
@@ -38,16 +38,16 @@ const AppBarComponent = () => {
                                 <img alt='Stairs7Solutions Logo' src={Stairs7SolutionsLogo} height={70}></img>
                                 Stairs7 Solutions
                             </Button>
-                            <Button color="inherit" sx={{ml:2}} component={Link} to="/" onClick={handleHomeClick}>
+                            <Button color="inherit" sx={{ml:20}} component={Link} to="/" onClick={handleHomeClick}>
                                 <Typography variant="body1">home</Typography>
                             </Button>
-                            <Button color="inherit" sx={{ml:2}}>
+                            <Button color="inherit" sx={{ml: 3}}>
                                 <Typography variant="body1">about us</Typography>
                             </Button>
-                            <Button color="inherit" onClick={handleCoursesClick} sx={{ml:2}}>
+                            <Button color="inherit" onClick={handleCoursesClick} sx={{ml: 3}}>
                                 <Typography variant="body1">courses</Typography>
                             </Button>
-                            <Button color="inherit" sx={{ml:2}}>
+                            <Button color="inherit" sx={{ml: 3}}>
                                 <Typography variant="body1">contact us</Typography>
                             </Button>
                         </Box>

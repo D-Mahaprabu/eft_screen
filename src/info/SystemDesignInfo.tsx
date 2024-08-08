@@ -3,10 +3,10 @@ import {Stack, Typography, Box, Paper, Tab, Tabs, Card, CardContent} from '@mui/
 import AppBarComponent from '../component/Appbarcomponent';
 import laptopimg from '../images/laptop.jpg'
 import MenuBookIcon from '@mui/icons-material/MenuBook';
-import SpringSecurityLogo from '../images/springSecurityLogo.png';
-import BackendQuickLinks from '../component/BackendQuickLinks';
+import SystemDesignLogo from '../images/systemDesignLogo.png';
+import ArchitectEssentialsQuickLinks from '../component/ArchitectEssentialsQuickLinks';
 
-const SpringSecurityInfo = () => {
+const SystemDesignInfo = () => {
     const [activeTab, setActiveTab] = useState(0);
 
     const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
@@ -18,8 +18,7 @@ const SpringSecurityInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                       Spring Security is one of the projects by the Spring team that is built using the Spring framework in Java. This project aims to make it easy for developers to secure web applications against common exploits such as Cross-Site Request Forgery (CSRF) attacks. It contains code that can be customized or used as-is, depending on the use case.
-                       Its major function is to manage authentication and authorization at both the Web request and method invocation levels. 
+                       System Design is the process of designing the architecture, components, and interfaces for a system so that it meets the end-user requirements. 
                     </Typography>
                 );
             case 1:
@@ -48,8 +47,8 @@ const SpringSecurityInfo = () => {
             <Stack direction={'row'} justifyContent={'space-between'}>
             <Box height={'auto'} width={'60%'} sx={{ ml: 2 }} >
                 <Stack direction={'row'} sx={{mt:3}}>
-                    <Box height={'50px'} width={'50px'}><img src={SpringSecurityLogo} alt="" style={{ width: '100%', height: '100%', objectFit: 'contain' }}/></Box>
-                    <Typography variant="h4" sx={{mt:1, ml:1, textTransform:'uppercase'}}>SpringSecurity</Typography>
+                    <Box height={'50px'} width={'50px'}><img src={SystemDesignLogo} alt="" style={{ width: '100%', height: '100%', objectFit: 'contain' }}/></Box>
+                    <Typography variant="h4" sx={{mt:1, ml:1, textTransform:'uppercase'}}>System Design</Typography>
                 </Stack>
                 <Stack width={'auto'} direction={'row'}>
                     <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
@@ -110,7 +109,7 @@ const SpringSecurityInfo = () => {
                       </CardContent>
                     </Card>
                 <Box sx={{ mt: 2 }}>
-                    <BackendQuickLinks />
+                    <ArchitectEssentialsQuickLinks />
                 </Box>
             </Box>
             </Stack>
@@ -118,4 +117,4 @@ const SpringSecurityInfo = () => {
     )
 }
 
-export default SpringSecurityInfo;
+export default SystemDesignInfo;
