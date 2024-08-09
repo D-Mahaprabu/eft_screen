@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import { Box, Button, TextField, Typography } from '@mui/material';
+import { Box, Button, TextField, Typography, MenuItem, Select, FormControl, InputLabel } from '@mui/material';
 
 const EnquiryForm: React.FC = () => {
     const [fullname, setFullname] = useState('');
+    const [qualification, setQualification] = useState('');
+    const [mobileNumber, setMobileNumber] = useState('');
     const [email, setEmail] = useState('');
-    const [phone, setPhone] = useState('');
-    const [course, setCourse] = useState('');
     const [city, setCity] = useState('');
-    const [address, setAddress] = useState('');
-    const [description, setDescription] = useState('');
+    const [learningProgram, setLearningProgram] = useState('');
+    const [comments, setComments] = useState('');
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        const formData = { fullname, email, phone, course, city, address, description };
+        const formData = { fullname, qualification, mobileNumber, email, city, learningProgram, comments };
         console.log('Form data submitted:', formData);
         // Add your form submission logic here
     };
@@ -37,8 +37,29 @@ const EnquiryForm: React.FC = () => {
         '& .MuiInputLabel-root.Mui-focused': {
             color: 'white'
         },
-        '& .MuiInputLabel-root.MuiFormLabel-filled': {
+    };
+
+    const selectStyles = {
+        '& .MuiSelect-icon': {
             color: 'white'
+        },
+        '& .MuiOutlinedInput-notchedOutline': {
+            borderColor: 'white'
+        },
+        '&:hover .MuiOutlinedInput-notchedOutline': {
+            borderColor: 'white'
+        },
+        '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+            borderColor: 'white'
+        },
+        '& .MuiSelect-select': {
+            color: 'white'
+        },
+        '& .MuiInputLabel-root': {
+            color: 'white',
+            '&.Mui-focused': {
+                color: 'white'
+            }
         }
     };
 
@@ -62,33 +83,33 @@ const EnquiryForm: React.FC = () => {
                 InputProps={{ style: { color: 'white' } }}
             />
             <TextField
-                label="Email"
-                name="email"
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                label="Qualification"
+                name="qualification"
+                type="text"
+                value={qualification}
+                onChange={(e) => setQualification(e.target.value)}
                 margin="normal"
                 sx={{ ml: 8.7, width: 240, ...textFieldStyles }}
                 InputLabelProps={{ style: { color: 'white' } }}
                 InputProps={{ style: { color: 'white' } }}
             />
             <TextField
-                label="Phone Number"
-                name="phone"
+                label="Mobile Number"
+                name="mobileNumber"
                 type="tel"
-                value={phone}
-                onChange={(e) => setPhone(e.target.value)}
+                value={mobileNumber}
+                onChange={(e) => setMobileNumber(e.target.value)}
                 margin="normal"
                 sx={{ width: 240, ...textFieldStyles }}
                 InputLabelProps={{ style: { color: 'white' } }}
                 InputProps={{ style: { color: 'white' } }}
             />
             <TextField
-                label="Course"
-                name="course"
-                type="text"
-                value={course}
-                onChange={(e) => setCourse(e.target.value)}
+                label="Email"
+                name="email"
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 margin="normal"
                 sx={{ ml: 8.7, width: 240, ...textFieldStyles }}
                 InputLabelProps={{ style: { color: 'white' } }}
@@ -105,23 +126,34 @@ const EnquiryForm: React.FC = () => {
                 InputLabelProps={{ style: { color: 'white' } }}
                 InputProps={{ style: { color: 'white' } }}
             />
+            <FormControl sx={{ ml: 8.7, width: 240 }} margin="normal">
+                <InputLabel sx={{ color: 'white' }}>Learning Program</InputLabel>
+                <Select
+                    label="Learning Program"
+                    value={learningProgram}
+                    onChange={(e) => setLearningProgram(e.target.value)}
+                    sx={{ ...selectStyles, ...textFieldStyles }}
+                    inputProps={{
+                        style: { color: 'white' }
+                    }}
+                >
+                    <MenuItem value="">
+                        <em>None</em>
+                    </MenuItem>
+                    <MenuItem value="Full Stack">Full Stack</MenuItem>
+                    <MenuItem value="Cloud Computing">Cloud Computing</MenuItem>
+                    <MenuItem value="DevOps">DevOps</MenuItem>
+                    <MenuItem value="AI & ML">AI & ML</MenuItem>
+                    <MenuItem value="Data Engineering">Data Engineering</MenuItem>
+                    <MenuItem value="Web Development">Web Development</MenuItem>
+                </Select>
+            </FormControl>
             <TextField
-                label="Address"
-                name="address"
+                label="Comments"
+                name="comments"
                 type="text"
-                value={address}
-                onChange={(e) => setAddress(e.target.value)}
-                margin="normal"
-                sx={{ ml: 8.7, width: 240, ...textFieldStyles }}
-                InputLabelProps={{ style: { color: 'white' } }}
-                InputProps={{ style: { color: 'white' } }}
-            />
-            <TextField
-                label="Description"
-                name="description"
-                type="text"
-                value={description}
-                onChange={(e) => setDescription(e.target.value)}
+                value={comments}
+                onChange={(e) => setComments(e.target.value)}
                 margin="normal"
                 fullWidth
                 size='medium'
