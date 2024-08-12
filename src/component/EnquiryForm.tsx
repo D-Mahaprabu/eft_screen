@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Box, Button, TextField, Typography, MenuItem, Select, FormControl, InputLabel } from '@mui/material';
+import Swal from 'sweetalert2';
 
 const EnquiryForm: React.FC = () => {
+
     const [fullname, setFullname] = useState('');
     const [qualification, setQualification] = useState('');
     const [mobileNumber, setMobileNumber] = useState('');
@@ -10,11 +12,74 @@ const EnquiryForm: React.FC = () => {
     const [learningProgram, setLearningProgram] = useState('');
     const [comments, setComments] = useState('');
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        const formData = { fullname, qualification, mobileNumber, email, city, learningProgram, comments };
-        console.log('Form data submitted:', formData);
-        // Add your form submission logic here
+        const formData: {
+            fullname: string;
+            qualification: string;
+            mobileNumber: string;
+            email: string;
+            city: string;
+            learningProgram: string;
+            comments: string;
+            access_key: string; 
+        } = 
+        { 
+            fullname, 
+            qualification, 
+            mobileNumber, 
+            email, 
+            city, 
+            learningProgram, 
+            comments,
+            access_key: "c81b29a5-104d-4bb8-9ba3-e3df75207448" 
+        };
+    
+        //console.log('Form data submitted:', formData);
+        const json = JSON.stringify(formData);
+    
+        try {
+            const res = await fetch("https://api.web3forms.com/submit", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+              },
+              body: json
+            }).then((res) => res.json());
+    
+            if (res.success) {
+                Swal.fire({
+                    title: "Success!",
+                    text: "Your Enquiry Sent Successfully, we will get in touch with you shortly!",
+                    icon: "success",
+                    background: "red",
+                    confirmButtonColor: "red", 
+                    color: "white"
+                });
+
+                setFullname('');
+                setQualification('');
+                setMobileNumber('');
+                setEmail('');
+                setCity('');
+                setLearningProgram('');
+                setComments('');
+
+            } else {
+                Swal.fire({
+                    title: "Error!",
+                    text: res.message || "There was an error sending your enquiry.",
+                    icon: "error"
+                });
+            }
+        } catch (error) {
+            Swal.fire({
+                title: "Error!",
+                text: "There was an error sending your enquiry.",
+                icon: "error"
+            });
+        }
     };
 
     const textFieldStyles = {
