@@ -1,33 +1,209 @@
 import React, { useState } from 'react';
-import {Stack, Typography, Box, Paper, Tab, Tabs, Card, CardContent} from '@mui/material';
+import  {Stack, Typography, Box, Paper, Tab, Tabs, Card, CardContent, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
 import AppBarComponent from '../component/Appbarcomponent';
 import laptopimg from '../images/laptop.jpg'
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import RedisLogo from '../images/redisLogo.png';
 import BackendQuickLinks from '../component/BackendQuickLinks';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const RedisInfo = () => {
     const [activeTab, setActiveTab] = useState(0);
+    const [expanded, setExpanded] = useState<string | false>(false);
 
     const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
         setActiveTab(newValue);
     };
+
+    const handleAccordionChange = (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
+        setExpanded(isExpanded ? panel : false);
+    };
+
+    const renderCurriculum = () => (
+        <div>
+            <Accordion expanded={expanded === 'panel1'} onChange={handleAccordionChange('panel1')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>1: Introduction to Redis</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Overview and Features:</strong><br/>
+                        What is Redis?<br/>
+                        Key features: In-memory data store, persistence, high performance<br/>
+                        Use cases and common applications<br/><br/>
+
+                        <strong>Installation and Setup:</strong><br/>
+                        Installing Redis<br/>
+                        Basic configuration<br/>
+                        Starting and stopping Redis
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel2'} onChange={handleAccordionChange('panel2')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>2: Core Data Types</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Strings:</strong><br/>
+                        Basic operations: `SET`, `GET`, `DEL`<br/>
+                        String manipulation: `APPEND`, `INCR`, `DECR`<br/><br/>
+
+                        <strong>Lists:</strong><br/>
+                        Basic operations: `LPUSH`, `RPUSH`, `LPOP`, `RPOP`<br/>
+                        List manipulation: `LRANGE`, `LINSERT`<br/><br/>
+
+                        <strong>Sets:</strong><br/>
+                        Basic operations: `SADD`, `SREM`, `SMEMBERS`<br/>
+                        Set operations: `SUNION`, `SINTER`, `SDIFF`<br/><br/>
+
+                        <strong>Sorted Sets:</strong><br/>
+                        Basic operations: `ZADD`, `ZREM`, `ZRANGE`<br/>
+                        Sorted set operations: `ZINTERSTORE`, `ZUNIONSTORE`<br/><br/>
+
+                        <strong>Hashes:</strong><br/>
+                        Basic operations: `HSET`, `HGET`, `HDEL`<br/>
+                        Hash manipulation: `HGETALL`, `HINCRBY`<br/><br/>
+
+                        <strong>Streams:</strong><br/>
+                        Basic operations: `XADD`, `XREAD`, `XDEL`<br/>
+                        Stream management: `XTRIM`, `XRANGE`
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel3'} onChange={handleAccordionChange('panel3')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>3: Redis Persistence</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Persistence Mechanisms:</strong><br/>
+                        RDB (Redis Database Backup)<br/>
+                        AOF (Append-Only File)<br/><br/>
+
+                        <strong>Configuring Persistence:</strong><br/>
+                        Setting up RDB and AOF<br/>
+                        Understanding and managing persistence options
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel4'} onChange={handleAccordionChange('panel4')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>4: Pub/Sub Messaging</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Pub/Sub Basics:</strong><br/>
+                        Publishing messages: `PUBLISH`<br/>
+                        Subscribing to channels: `SUBSCRIBE`, `PSUBSCRIBE`<br/><br/>
+
+                        <strong>Handling Messages:</strong><br/>
+                        Message patterns: `UNSUBSCRIBE`, `PUNSUBSCRIBE`
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel5'} onChange={handleAccordionChange('panel5')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>5: Transactions</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Redis Transactions:</strong><br/>
+                        Understanding MULTI, EXEC, DISCARD<br/>
+                        Using WATCH for optimistic locking
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel6'} onChange={handleAccordionChange('panel6')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>6: Redis Security</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Authentication:</strong><br/>
+                        Configuring Redis password authentication<br/>
+                        Using ACLs for access control<br/><br/>
+
+                        <strong>Security Best Practices:</strong><br/>
+                        Securing Redis instance from unauthorized access<br/>
+                        Configuration best practices for security
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel7'} onChange={handleAccordionChange('panel7')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>7: Performance Tuning</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Optimizing Redis Performance:</strong><br/>
+                        Understanding Redis memory management<br/>
+                        Configuring max memory policies<br/><br/>
+
+                        <strong>Monitoring and Diagnostics:</strong><br/>
+                        Using Redis commands for monitoring: `INFO`, `MONITOR`<br/>
+                        Analyzing and interpreting Redis logs
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel8'} onChange={handleAccordionChange('panel8')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>8: Advanced Features</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Redis Modules:</strong><br/>
+                        Introduction to Redis modules<br/>
+                        Using popular modules (e.g., RedisGraph, RedisSearch)<br/><br/>
+
+                        <strong>Redis Cluster:</strong><br/>
+                        Configuring and managing Redis clusters<br/>
+                        Understanding data sharding and replication
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel9'} onChange={handleAccordionChange('panel9')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>9: Integration and Best Practices</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Integrating Redis with Applications:</strong><br/>
+                        Common client libraries for Redis<br/>
+                        Best practices for using Redis in application design<br/><br/>
+
+                        <strong>Backup and Recovery:</strong><br/>
+                        Creating backups of Redis data<br/>
+                        Restoring Redis data from backups<br/><br/>
+                        This curriculum provides a focused guide to the essential Redis topics a backend developer
+                        needs to know, equipping them with the skills to effectively use Redis in various applications.
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+        </div>
+    );
 
     const renderContent = () => {
         switch (activeTab) {
             case 0:
                 return (
                     <Typography variant="body1">
-                       Redis is an in-memory data structure that is used for faster access to data. It is used to store data that needs to be accessed frequently and fast. It is not used for storing large amounts of data. 
+                       Redis is an in-memory data structure that is used for faster access to data.<br/>
+                       It is used to store data that needs to be accessed frequently and fast.<br/>
+                       It is not used for storing large amounts of data.<br/>
                        Redis provides a variety of data structures such as sets, strings, hashes, and lists.
                     </Typography>
                 );
             case 1:
-                return (
-                    <Typography variant="body1">
-                        Curriculum content 
-                    </Typography>
-                );
+                return renderCurriculum();
             case 2:
                 return (
                     <Typography variant="body1">
@@ -56,11 +232,11 @@ const RedisInfo = () => {
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>15 Modules</Typography>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 1, position: 'relative', overflow: 'hidden' }}>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
-                    <Typography sx={{ mt: 2.5, ml:1 }}>6 Months</Typography>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 1, position: 'relative', overflow: 'hidden' }}>
+                    <Typography sx={{ mt: 2.5, ml:1 }}>72 Hours</Typography>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>Beginner</Typography>

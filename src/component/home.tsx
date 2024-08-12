@@ -11,10 +11,14 @@ import Whychooseus from './Whychooseus';
 import Carousel from './Carousel';
 
 const Home = () => {
-    const [showCourses, setShowCourses] = useState(false);
-    const [scrollToCourses, setScrollToCourses] = useState(false);
     const location = useLocation();
     const coursesRef = useRef<HTMLDivElement>(null);
+
+    // Check if URL has the /courses path to set `showCourses` initially
+    const shouldShowCourses = location.pathname === '/courses';
+
+    const [showCourses, setShowCourses] = useState(shouldShowCourses);
+    const [scrollToCourses, setScrollToCourses] = useState(shouldShowCourses);
 
     useEffect(() => {
         if (scrollToCourses && coursesRef.current) {
@@ -51,7 +55,7 @@ const Home = () => {
                             <Button color="inherit" sx={{ ml: 3 }}>
                                 <Typography variant="body1">about us</Typography>
                             </Button>
-                            <Button color="inherit" onClick={handleCoursesClick} sx={{ ml: 3 }}>
+                            <Button color="inherit" component={Link} to="/courses" sx={{ ml: 3 }} onClick={handleCoursesClick}>
                                 <Typography variant="body1">courses</Typography>
                             </Button>
                             <Button color="inherit" sx={{ ml: 3 }}>
@@ -76,8 +80,8 @@ const Home = () => {
                 <div ref={coursesRef}>
                     {showCourses && <Courses />}
                 </div>
-                 <Enrollment />
-                 <Whychooseus />
+                <Enrollment />
+                <Whychooseus />
             </Stack>
         </Box>
     );

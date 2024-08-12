@@ -3,13 +3,13 @@ import { Box, List, ListItem, ListItemText, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 const quickLinks = [
-    { name: 'HTML', path: '/html-info' },
-    { name: 'CSS', path: '/css-info' },
-    { name: 'Bootstrap', path: '/bootstrap-info' },
-    { name: 'React', path: 'react-info' },
-    { name: 'JavaScript', path: 'js-info' },
-    { name: 'TypeScript', path: 'ts-info' },
-    { name: 'CI/CD Options', path: 'jenkins-info' },
+    { name: 'HTML', path: '/courses/fullstack/html-info' },
+    { name: 'CSS', path: '/courses/fullstack/css-info' },
+    { name: 'Bootstrap', path: '/courses/fullstack/bootstrap-info' },
+    { name: 'React', path: '/courses/fullstack/react-info' },
+    { name: 'JavaScript', path: '/courses/fullstack/js-info' },
+    { name: 'TypeScript', path: '/courses/fullstack/ts-info' },
+    { name: 'CI/CD Options', path: '/courses/fullstack/jenkins-info' }, 
 ];
 
 const QuickLinks: React.FC = () => {

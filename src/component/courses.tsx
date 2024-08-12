@@ -12,7 +12,7 @@ const Courses = () => {
     const courses = [
         { 
             title: "Full Stack", 
-            path: "/courses/fullstack-engineer", 
+            path: "/courses/fullstack", 
             image: FullStackBgImage,
             info: "Become proficient in front-end and back-end technologies."
         },
@@ -30,13 +30,13 @@ const Courses = () => {
         },
         { 
             title: "AI & ML", 
-            path: "/ai-ml", 
+            path: "/ai&ml", 
             image: AiMlBgImage,
             info: "Dive into artificial intelligence and machine learning and data science."
         },
         { 
             title: "Data Engineering", 
-            path: "/data-engineer", 
+            path: "/data-engineering", 
             image: DataEngineerBgImage,
             info: "Become a data expert and Work with big data technologies and data pipelines."
         },

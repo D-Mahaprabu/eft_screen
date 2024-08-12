@@ -137,9 +137,7 @@ const EnquiryForm: React.FC = () => {
                         style: { color: 'white' }
                     }}
                 >
-                    <MenuItem value="">
-                        <em>None</em>
-                    </MenuItem>
+                    <MenuItem value=""><em>None</em></MenuItem>
                     <MenuItem value="Full Stack">Full Stack</MenuItem>
                     <MenuItem value="Cloud Computing">Cloud Computing</MenuItem>
                     <MenuItem value="DevOps">DevOps</MenuItem>

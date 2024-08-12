@@ -35,115 +35,115 @@ const Body = () => {
     const history = useHistory();
 
     const handleClickHtml = () => {
-        history.push('/html-info');
+        history.push('/courses/fullstack/html-info');
     };
 
     const handleClickCss = () => {
-        history.push('/css-info');
+        history.push('/courses/fullstack/css-info');
     };
 
     const handleClickBootstrap = () => {
-        history.push('/bootstrap-info');
+        history.push('/courses/fullstack/bootstrap-info');
     };
     
     const handleClickReact = () => {
-        history.push('/react-info');
+        history.push('/courses/fullstack/react-info');
     };
 
     const handleClickJs = () => {
-        history.push('/js-info');
+        history.push('/courses/fullstack/js-info');
     };
 
     const handleClickTs = () => {
-        history.push('/ts-info');
+        history.push('/courses/fullstack/ts-info');
     };
 
     const handleClickJenkins = () => {
-        history.push('/jenkins-info');
+        history.push('/courses/fullstack/jenkins-info');
     };
 
     const handleClickDevops = () => {
-        history.push('/devops-info');
+        history.push('/courses/fullstack/devops-info');
     };
 
     const handleClickGitlab = () => {
-        history.push('/gitlab-info');
+        history.push('/courses/fullstack/gitlab-info');
     };
 
     const handleClickAws = () => {
-        history.push('/aws-info');
+        history.push('/courses/fullstack/aws-info');
     };
 
     const handleClickAzure = () => {
-        history.push('/azure-info');
+        history.push('/courses/fullstack/azure-info');
     };
 
     const handleClickGooglecloud = () => {
-        history.push('/googlecloud-info');
+        history.push('/courses/fullstack/googlecloud-info');
     };
 
     const handleClickDocker = () => {
-        history.push('/docker-info');
+        history.push('/courses/fullstack/docker-info');
     };
 
     const handleClickKubernetes = () => {
-        history.push('/kubernetes-info');
+        history.push('/courses/fullstack/kubernetes-info');
     };
 
     const handleClickJava = () => {
-        history.push('/java-info');
+        history.push('/courses/fullstack/java-info');
     };
 
     const handleClickSpringBoot = () => {
-        history.push('/springboot-info');
+        history.push('/courses/fullstack/springboot-info');
     };
 
     const handleClickMaven = () => {
-        history.push('/maven-info');
+        history.push('/courses/fullstack/maven-info');
     };
 
     const handleClickSpringSecurity = () => {
-        history.push('/springsecurity-info');
+        history.push('/courses/fullstack/springsecurity-info');
     };
 
     const handleClickMicroserviceDesign = () => {
-        history.push('/microsservicedesign-info');
+        history.push('/courses/fullstack/microsservicedesign-info');
     };
 
     const handleClickOracle = () => {
-        history.push('/oracle-info');
+        history.push('/courses/fullstack/oracle-info');
     };
 
     const handleClickMongoDb = () => {
-        history.push('/mongodb-info');
+        history.push('/courses/fullstack/mongodb-info');
     };
 
     const handleClickEhCache = () => {
-        history.push('/ehcache-info');
+        history.push('/courses/fullstack/ehcache-info');
     };
 
     const handleClickSwagger = () => {
-        history.push('/swagger-info');
+        history.push('/courses/fullstack/swagger-info');
     };
 
     const handleClickElasticChange = () => {
-        history.push('/elasticstack-info');
+        history.push('/courses/fullstack/elasticstack-info');
     };
 
     const handleClickPrometheus = () => {
-        history.push('/prometheus-info');
+        history.push('/courses/fullstack/prometheus-info');
     };
 
     const handleClickHibernate = () => {
-        history.push('/hibernate-info');
+        history.push('/courses/fullstack/hibernate-info');
     };
 
     const handleClickRedis = () => {
-        history.push('/redis-info');
+        history.push('/courses/fullstack/redis-info');
     };
 
     const handleClickKafka = () => {
-        history.push('/kafka-info');
+        history.push('/courses/fullstack/kafka-info');
     };
 
 

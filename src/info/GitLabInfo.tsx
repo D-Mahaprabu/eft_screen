@@ -6,7 +6,7 @@ import MenuBookIcon from '@mui/icons-material/MenuBook';
 import Gitlablogo from '../images/gitLabLogo.svg';
 import CiCdQuickLinks from '../component/CicdQuickLinks';
 
-const CssInfo = () => {
+const GitLabInfo = () => {
     const [activeTab, setActiveTab] = useState(0);
 
     const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
@@ -18,7 +18,7 @@ const CssInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        GitLab is a github like service that organizations can use to provide internal management of git repositories.
+                        GitLab is a github like service that organizations can use to provide internal management of git repositories.<br />
                         It is a self hosted Git-repository management system that keeps the user code private and can easily deploy the changes of the code.
                     </Typography>
                 );
@@ -117,4 +117,4 @@ const CssInfo = () => {
     )
 }
 
-export default CssInfo;
+export default GitLabInfo;

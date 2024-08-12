@@ -1,7 +1,14 @@
 import React from 'react';
 import { Box, List, ListItem, ListItemText, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 
-const discoverLinks = ['AI & ML', 'DevOps', 'Cloud', 'Data Engineering', 'Web Development'];
+const discoverLinks = [
+    { name: 'AI & ML', path: '/ai&ml'},
+    { name: 'DevOps', path: '/devops'}, 
+    { name: 'Cloud', path: '/cloud'}, 
+    { name: 'Data Engineering', path: '/data-engineering'}, 
+    { name: 'Web Development', path: '/web-development'}
+    ];
 
 const Discover: React.FC = () => {
     return (
@@ -11,8 +18,8 @@ const Discover: React.FC = () => {
             </Typography>
             <List>
                 {discoverLinks.map((link, index) => (
-                    <ListItem button key={index}>
-                        <ListItemText primary={link} />
+                    <ListItem button key={index} component={Link} to={link.path}>
+                        <ListItemText primary={link.name} />
                     </ListItem>
                 ))}
             </List>

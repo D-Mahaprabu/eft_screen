@@ -3,12 +3,12 @@ import { Box, List, ListItem, ListItemText, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 const quickLinks = [
-    { name: 'Backend', path: 'java-info' },
-    { name: 'System Design', path: 'systemdesign-info'},
-    { name: 'Debugging Skills', path: '/debuggingskills-info'},
-    { name: 'Enterprise Architecture', path: 'enterprisearchitecture-info' },
-    { name: 'Capacity Planning', path: '/capacityplanning-info'},
-    { name: 'Exclusive Courses', path: 'ai-info'},
+    { name: 'Back-End', path: '/courses/fullstack/java-info' },
+    { name: 'System Design', path: '/courses/fullstack/systemdesign-info'},
+    { name: 'Debugging Skills', path: '/courses/fullstack/debuggingskills-info'},
+    { name: 'Enterprise Architecture', path: '/courses/fullstack/enterprisearchitecture-info' },
+    { name: 'Capacity Planning', path: '/courses/fullstack/capacityplanning-info'},
+    { name: 'Exclusive Courses', path: '/courses/fullstack/ai-info'},
 ];
 
 const ArchitectEssentialsQuickLinks: React.FC = () => {

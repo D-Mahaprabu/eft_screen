@@ -15,31 +15,31 @@ const Footer = () => {
   const history = useHistory();
 
     const handleClickCircleCi = () => {
-        history.push('/circleci-info');
+        history.push('/courses/fullstack/circleci-info');
     };
 
     const handleClickGitHubActions = () => {
-        history.push('/githubactions-info');
+        history.push('/courses/fullstack/githubactions-info');
     };
 
     const handleClickSystemDesign = () => {
-        history.push('/systemdesign-info');
+        history.push('/courses/fullstack/systemdesign-info');
     };
 
     const handleClickDebuggingSkills = () => {
-        history.push('/debuggingskills-info');
+        history.push('/courses/fullstack/debuggingskills-info');
     };
 
     const handleClickEnterpriseArchitecture = () => {
-        history.push('/enterprisearchitecture-info');
+        history.push('/courses/fullstack/enterprisearchitecture-info');
     };
 
     const handleClickCapacityPlanning = () => {
-        history.push('/capacityplanning-info');
+        history.push('/courses/fullstack/capacityplanning-info');
     };
 
     const handleClickAi = () => {
-        history.push('/ai-info');
+        history.push('/courses/fullstack/ai-info');
     };
 
     const handleClickMachineLearning = () => {

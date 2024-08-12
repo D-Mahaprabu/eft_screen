@@ -6,7 +6,7 @@ import MenuBookIcon from '@mui/icons-material/MenuBook';
 import DevOpsLogo from '../images/devopsLogo.jpeg';
 import CiCdQuickLinks from '../component/CicdQuickLinks';
 
-const CssInfo = () => {
+const DevOpsInfo = () => {
     const [activeTab, setActiveTab] = useState(0);
 
     const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
@@ -18,13 +18,10 @@ const CssInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        - History and evolution of Docker
-                        - Benefits and features of containerization
-                        - Key Docker concepts: images, containers, registries, and orchestration
-                        - **Getting Started with Docker**
-                        - Installing Docker on various platforms
-                        - Overview of the Docker architecture (Docker Engine, Docker CLI, Docker Desktop)
-                        - Navigating Docker documentation and community resources
+                        DevOps is a software development approach emphasizing collaboration, automation, and continuous delivery to provide high-quality products to customers quickly and efficiently.<br /> 
+                        DevOps breaks down silos between development and operations teams to enable seamless communication, faster time-to-market, and improved customer satisfaction.<br /> 
+                        It allows a team to handle the complete application lifecycle, from development to testing, operations, and deployment.<br /> 
+                        It shows cooperation between Development and Operations groups to deploy code to production quickly in an automated and repeatable manner.
                     </Typography>
                 );
             case 1:
@@ -60,11 +57,11 @@ const CssInfo = () => {
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>15 Modules</Typography>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 1, position: 'relative', overflow: 'hidden' }}>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
-                    <Typography sx={{ mt: 2.5, ml:1 }}>6 Months</Typography>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 1, position: 'relative', overflow: 'hidden' }}>
+                    <Typography sx={{ mt: 2.5, ml:1 }}>72 Hours</Typography>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>Beginner</Typography>
@@ -122,4 +119,4 @@ const CssInfo = () => {
     )
 }
 
-export default CssInfo;
+export default DevOpsInfo;

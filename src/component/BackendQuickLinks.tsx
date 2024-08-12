@@ -3,20 +3,20 @@ import { Box, List, ListItem, ListItemText, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 const quickLinks = [
-    { name: 'Databases', path: 'oracle-info' },
-    { name: 'Java', path: 'java-info' },
-    { name: 'Spring Boot', path: '/springboot-info'},
-    { name: 'Maven', path: '/maven-info'},
-    { name: 'Spring Security', path: 'springsecurity-info'},
-    { name: 'Microservice Design', path: '/microservicedesign-info'},
-    { name: 'Swagger', path: 'swagger-info' },
-    { name: 'Elastic Stack', path: 'elasticstack-info'},
-    { name: 'EhCache', path: 'ehcache-info' },
-    { name: 'Kafka', path: 'kafka-info' },
-    { name: 'Redis', path: '/redis-info'},
-    { name: 'Hibernate', path: 'hibernate-info'},
-    { name: 'Prometheus', path: '/prometheus-info'},
-    { name: 'Architect Essentials', path: 'systemdesign-info'},
+    { name: 'Databases', path: '/courses/fullstack/oracle-info' },
+    { name: 'Java', path: '/courses/fullstack/java-info' },
+    { name: 'Spring Boot', path: '/courses/fullstack/springboot-info'},
+    { name: 'Maven', path: '/courses/fullstack/maven-info'},
+    { name: 'Spring Security', path: '/courses/fullstack/springsecurity-info'},
+    { name: 'Microservice Design', path: '/courses/fullstack/microservicedesign-info'},
+    { name: 'Swagger', path: '/courses/fullstack/swagger-info' },
+    { name: 'Elastic Stack', path: '/courses/fullstack/elasticstack-info'},
+    { name: 'EhCache', path: '/courses/fullstack/ehcache-info' },
+    { name: 'Kafka', path: '/courses/fullstack/kafka-info' },
+    { name: 'Redis', path: '/courses/fullstack/redis-info'},
+    { name: 'Hibernate', path: '/courses/fullstack/hibernate-info'},
+    { name: 'Prometheus', path: '/courses/fullstack/prometheus-info'},
+    { name: 'Architect Essentials', path: '/courses/fullstack/systemdesign-info'},
 ];
 
 const BackendQuickLinks: React.FC = () => {

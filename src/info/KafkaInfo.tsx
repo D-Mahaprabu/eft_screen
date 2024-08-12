@@ -1,37 +1,170 @@
 import React, { useState } from 'react';
-import {Stack, Typography, Box, Paper, Tab, Tabs, Card, CardContent} from '@mui/material';
+import { Stack, Typography, Box, Paper, Tab, Tabs, Card, CardContent, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
 import AppBarComponent from '../component/Appbarcomponent';
-import laptopimg from '../images/laptop.jpg'
+import laptopimg from '../images/laptop.jpg';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import KafkaLogo from '../images/kafkaLogo.png';
 import BackendQuickLinks from '../component/BackendQuickLinks';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const KafkaInfo = () => {
     const [activeTab, setActiveTab] = useState(0);
+    const [expanded, setExpanded] = useState<string | false>(false);
 
     const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
         setActiveTab(newValue);
     };
+
+    const handleAccordionChange = (panel: string) => (
+        event: React.SyntheticEvent,
+        isExpanded: boolean
+    ) => {
+        setExpanded(isExpanded ? panel : false);
+    };
+
+    const renderCurriculum = () => (
+        <div>
+            <Accordion expanded={expanded === 'panel1'} onChange={handleAccordionChange('panel1')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>1. Introduction to Kafka</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Overview and Features:</strong><br />
+                        What is Kafka?<br />
+                        Key features: scalability, durability, fault-tolerance<br />
+                        Use cases: real-time data streaming, log aggregation, messaging
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel2'} onChange={handleAccordionChange('panel2')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>2. Kafka Architecture</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Core Concepts:</strong><br />
+                        Topics, partitions, and replicas<br />
+                        Producers and consumers<br />
+                        Brokers and clusters<br />
+                        ZooKeeper and its role in Kafka
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel3'} onChange={handleAccordionChange('panel3')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>3. Getting Started with Kafka</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Installation and Setup:</strong><br />
+                        Installing Kafka and ZooKeeper<br />
+                        Starting Kafka and ZooKeeper
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel4'} onChange={handleAccordionChange('panel4')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>4. Producing and Consuming Messages</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Producers:</strong><br />
+                        Writing a basic producer<br />
+                        Configuring producers: acks, retries, and batching<br /><br />
+
+                        <strong>Consumers:</strong><br />
+                        Writing a basic consumer<br />
+                        Configuring consumers: group IDs, offsets, and polling
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel5'} onChange={handleAccordionChange('panel5')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>5. Advanced Kafka Features</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Kafka Streams:</strong><br />
+                        Introduction to Kafka Streams API<br />
+                        Building stream processing applications<br /><br />
+
+                        <strong>Kafka Connect:</strong><br />
+                        Introduction to Kafka Connect<br />
+                        Setting up connectors for data integration
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel6'} onChange={handleAccordionChange('panel6')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>6. Managing Kafka</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Monitoring and Management:</strong><br />
+                        Monitoring Kafka with built-in tools and third-party solutions<br />
+                        Managing Kafka clusters<br /><br />
+
+                        <strong>Security:</strong><br />
+                        Configuring SSL encryption<br />
+                        Setting up authentication and authorization (SASL, ACLs)
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel7'} onChange={handleAccordionChange('panel7')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>7. Performance Tuning</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Optimizing Kafka:</strong><br />
+                        Best practices for performance tuning<br />
+                        Configuring Kafka for high throughput and low latency
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel8'} onChange={handleAccordionChange('panel8')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>8. Practical Exercises</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Hands-on Labs:</strong><br />
+                        Setting up a Kafka cluster<br />
+                        Writing and configuring producers and consumers<br /><br />
+                        This concise curriculum covers the essential Kafka topics that a backend developer needs to
+                        understand, providing a solid foundation for working with Kafka in real-world applications.
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+        </div>
+    );
 
     const renderContent = () => {
         switch (activeTab) {
             case 0:
                 return (
                     <Typography variant="body1">
-                       Apache Kafka is a publish-subscribe messaging system. A messaging system let you send messages between processes, applications, and servers. Broadly Speaking, Apache Kafka is a software where topics (A topic might be a category) can be defined and further processed.
-                       Applications may connect to this system and transfer a message onto the topic. A message can include any kind of information ,from any event on your Personal blog or can be a very simple text message that would trigger any other event.
+                       Apache Kafka is a publish-subscribe messaging system.<br/>
+                       Applications may connect to this system and transfer a message onto the topic.<br/>
+                       A messaging system lets you send messages between processes, applications, and servers.<br/>
+                       Broadly speaking, Apache Kafka is a software where topics (a topic might be a category) can be defined and further processed.<br/>
+                       A message can include any kind of information, from any event on your personal blog or a very simple text message that triggers another event.
                     </Typography>
                 );
             case 1:
-                return (
-                    <Typography variant="body1">
-                        Curriculum content 
-                    </Typography>
-                );
+                return renderCurriculum();
             case 2:
                 return (
                     <Typography variant="body1">
-                        Reviews content 
+                        Reviews content
                     </Typography>
                 );
             default:
@@ -56,11 +189,11 @@ const KafkaInfo = () => {
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>15 Modules</Typography>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 1, position: 'relative', overflow: 'hidden' }}>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
-                    <Typography sx={{ mt: 2.5, ml:1 }}>6 Months</Typography>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 1, position: 'relative', overflow: 'hidden' }}>
+                    <Typography sx={{ mt: 2.5, ml:1 }}>72 Hours</Typography>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>Beginner</Typography>

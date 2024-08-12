@@ -1,34 +1,220 @@
 import React, { useState } from 'react';
-import {Stack, Typography, Box, Paper, Tab, Tabs, Card, CardContent} from '@mui/material';
+import { Stack, Typography, Box, Paper, Tab, Tabs, Card, CardContent, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import AppBarComponent from '../component/Appbarcomponent';
-import laptopimg from '../images/laptop.jpg'
+import laptopimg from '../images/laptop.jpg';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import CircleCiLogo from '../images/circleCiLogo.png';
 import CiCdQuickLinks from '../component/CicdQuickLinks';
 
 const CircleCiInfo = () => {
     const [activeTab, setActiveTab] = useState(0);
+    const [expanded, setExpanded] = useState<string | false>(false);
 
     const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
         setActiveTab(newValue);
     };
+
+    const handleAccordionChange = (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
+        setExpanded(isExpanded ? panel : false);
+    };
+
+    const renderCurriculum = () => (
+        <div>
+            <Accordion expanded={expanded === 'panel1'} onChange={handleAccordionChange('panel1')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>1. Introduction to CircleCI</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Overview of CircleCI:</strong><br />
+                        What is CircleCI?<br />
+                        History and evolution of CircleCI<br />
+                        Key features and benefits
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel2'} onChange={handleAccordionChange('panel2')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>2. Setting Up CircleCI</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Creating a CircleCI Account:</strong><br />
+                        Signing up and setting up your CircleCI account<br />
+                        Connecting CircleCI to your version control system (GitHub, Bitbucket)<br /><br />
+
+                        <strong>Initial Configuration:</strong><br />
+                        Adding your first project to CircleCI<br />
+                        Understanding the CircleCI dashboard
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel3'} onChange={handleAccordionChange('panel3')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>3. CircleCI Configuration Basics</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Understanding `.circleci/config.yml`:</strong><br />
+                        Structure and syntax of the configuration file<br />
+                        Key concepts: jobs, workflows, steps, and commands<br /><br />
+
+                        <strong>Defining Jobs and Workflows:</strong><br />
+                        Creating basic jobs<br />
+                        Setting up workflows to manage job sequences
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel4'} onChange={handleAccordionChange('panel4')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>4. Advanced CircleCI Configuration</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Using Executors:</strong><br />
+                        Different types of executors (Docker, machine, macOS)<br />
+                        Configuring executors for specific environments<br /><br />
+
+                        <strong>Optimizing Builds:</strong><br />
+                        Caching dependencies<br />
+                        Using workspaces to share data between jobs
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel5'} onChange={handleAccordionChange('panel5')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>5. Environment Variables and Secrets Management</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Setting Environment Variables:</strong><br />
+                        Defining and using environment variables in your configuration<br />
+                        Securing sensitive information with contexts and encrypted environment variables
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel6'} onChange={handleAccordionChange('panel6')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>6. Testing and Deployment with CircleCI</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Running Tests:</strong><br />
+                        Configuring jobs to run tests<br />
+                        Collecting and viewing test results<br /><br />
+
+                        <strong>Continuous Deployment:</strong><br />
+                        Setting up deployment jobs<br />
+                        Integrating with cloud providers (AWS, Google Cloud, Azure)
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel7'} onChange={handleAccordionChange('panel7')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>7. Advanced Workflows</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Parallelism and Resource Classes:</strong><br />
+                        Using parallelism to speed up builds<br />
+                        Selecting appropriate resource classes for jobs<br /><br />
+
+                        <strong>Conditional Steps and Branch Filters:</strong><br />
+                        Configuring conditional steps<br />
+                        Running jobs and workflows based on branch filters
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel8'} onChange={handleAccordionChange('panel8')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>8. Integrations and Notifications</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Integrating with Other Tools:</strong><br />
+                        Integrating CircleCI with other DevOps tools (Slack, Jira)<br />
+                        Using third-party orbs to extend functionality<br /><br />
+
+                        <strong>Setting Up Notifications:</strong><br />
+                        Configuring notifications for build and deployment statuses
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel9'} onChange={handleAccordionChange('panel9')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>9. Security and Compliance</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Security Best Practices:</strong><br />
+                        Securing your CircleCI configuration<br />
+                        Managing user permissions and access control<br /><br />
+
+                        <strong>Compliance and Audit Logs:</strong><br />
+                        Enabling and viewing audit logs<br />
+                        Ensuring compliance with industry standards
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel10'} onChange={handleAccordionChange('panel10')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>10. Monitoring and Troubleshooting</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Monitoring Builds:</strong><br />
+                        Using CircleCI insights for monitoring builds and workflows<br />
+                        Identifying and resolving common build issues<br /><br />
+
+                        <strong>Debugging Builds:</strong><br />
+                        Techniques for debugging failed builds<br />
+                        Using SSH to access build environments for troubleshooting
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel11'} onChange={handleAccordionChange('panel11')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>11. Scaling and Performance Optimization</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Scaling CircleCI:</strong><br />
+                        Managing and scaling resources for large projects<br />
+                        Optimizing build performance for faster CI/CD pipelines<br /><br />
+
+                        <strong>Advanced Performance Techniques:</strong><br />
+                        Implementing advanced caching strategies<br />
+                        Utilizing matrix builds for comprehensive testing<br /><br />
+                        This curriculum covers the essential aspects of using CircleCI for continuous integration and
+                        deployment, providing a comprehensive guide for both beginners and advanced users.
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+        </div>
+    );
 
     const renderContent = () => {
         switch (activeTab) {
             case 0:
                 return (
                     <Typography variant="body1">
-                        - What is CircleCI?
-                        - History and evolution of CircleCI
-                        - Key features and benefits
+                        CircleCI is the continuous integration & delivery platform that helps the development teams to automate the build, test, and deployment of their codes.<br /> 
+                        CircleCI can be configured to run very complex pipelines efficiently with caching, docker layer caching, resource classes, and many more.
                     </Typography>
                 );
             case 1:
-                return (
-                    <Typography variant="body1">
-                        Curriculum content 
-                    </Typography>
-                );
+                return renderCurriculum();
             case 2:
                 return (
                     <Typography variant="body1">
@@ -56,11 +242,11 @@ const CircleCiInfo = () => {
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>15 Modules</Typography>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 1, position: 'relative', overflow: 'hidden' }}>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
-                    <Typography sx={{ mt: 2.5, ml:1 }}>6 Months</Typography>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 1, position: 'relative', overflow: 'hidden' }}>
+                    <Typography sx={{ mt: 2.5, ml:1 }}>72 Hours</Typography>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>Beginner</Typography>

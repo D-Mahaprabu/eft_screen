@@ -3,11 +3,11 @@ import { Box, List, ListItem, ListItemText, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 const quickLinks = [
-    { name: 'CI/CD Options', path: 'jenkins-info' },
-    { name: 'Aws', path: '/aws-info' },
-    { name: 'Azure', path: '/azure-info' },
-    { name: 'Google Cloud Platform', path: 'googlecloud-info' },
-    { name: 'Deployment Options', path: 'docker-info' },
+    { name: 'CI/CD Options', path: '/courses/fullstack/jenkins-info' },
+    { name: 'Aws', path: '/courses/fullstack/aws-info' },
+    { name: 'Azure', path: '/courses/fullstack/azure-info' },
+    { name: 'Google Cloud Platform', path: '/courses/fullstack/googlecloud-info' },
+    { name: 'Deployment Options', path: '/courses/fullstack/docker-info' },
 ];
 
 const CloudQuickLinks: React.FC = () => {

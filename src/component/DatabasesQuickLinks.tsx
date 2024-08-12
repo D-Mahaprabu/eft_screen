@@ -3,10 +3,10 @@ import { Box, List, ListItem, ListItemText, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 const quickLinks = [
-    { name: 'Deployment Options', path: 'docker-info' },
-    { name: 'Oracle', path: '/oracle-info' },
-    { name: 'MangoDb', path: 'mongodb-info' },
-    { name: 'Backend', path: 'java-info' },
+    { name: 'Deployment Options', path: '/courses/fullstack/docker-info' },
+    { name: 'Oracle', path: '/courses/fullstack/oracle-info' },
+    { name: 'MangoDb', path: '/courses/fullstack/mongodb-info' },
+    { name: 'Back-End', path: '/courses/fullstack/java-info' },
 ];
 
 const DatabasesQuickLinks: React.FC = () => {

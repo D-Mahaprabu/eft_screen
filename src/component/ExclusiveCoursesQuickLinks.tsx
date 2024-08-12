@@ -3,9 +3,9 @@ import { Box, List, ListItem, ListItemText, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 const quickLinks = [
-    { name: 'Architect Essentials', path: 'systemdesign-info'},
-    { name: 'AI', path: 'ai-info'},
-    { name: 'Machine Learning', path: '/machinelearning-info'},
+    { name: 'Architect Essentials', path: '/courses/fullstack/systemdesign-info'},
+    { name: 'AI', path: '/courses/fullstack/ai-info'},
+    { name: 'Machine Learning', path: '/courses/fullstack/machinelearning-info'},
 ];
 
 const ExclusiveCoursesQuickLinks: React.FC = () => {
