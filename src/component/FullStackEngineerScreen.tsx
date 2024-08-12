@@ -12,7 +12,7 @@ const FullstackEngineerScreen = () => {
           <AppBarComponent></AppBarComponent>
           <Headers></Headers>
           <Body></Body>
-          <Footer></Footer>
+          {/* <Footer></Footer> */}
           <FullStackCource></FullStackCource>
         </Box>
     )

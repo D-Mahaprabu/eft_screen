@@ -66,20 +66,6 @@ const Footer = () => {
             </Box>
             
             
-           <Box width={'35%'} height={'auto'}>
-            <Stack spacing={1} sx={{mt:13}}>
-            <Typography fontStyle={'Dancing Script'} textAlign={'center'} sx={{mr:34, fontWeight: 'bold'}} variant="h4" color={'black'}>
-               Contact us:
-            </Typography>
-            <Typography fontStyle={'Dancing Script'} textAlign={'center'} sx={{mr:34, fontWeight: 'bold'}} variant="h5" color={'black'}>
-               Phone: +91 9944864398
-            </Typography>
-            <Typography fontStyle={'Dancing Script'} textAlign={'center'} sx={{mr:34, fontWeight: 'bold'}} variant="h5" color={'black'}>
-               Email: stairs7solutions@gmail.com
-            </Typography>
-            </Stack>
-            </Box>
-
             <Box width={'40%'} height={'auto'}>
             <Typography variant="h6" color="#599585" textAlign="center" justifyContent={'center'}>
                Architect Essentials
