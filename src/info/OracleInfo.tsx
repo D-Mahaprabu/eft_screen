@@ -3,7 +3,7 @@ import { Stack, Typography, Box, Paper, Tab, Tabs, Card, CardContent, Accordion,
 import AppBarComponent from '../component/Appbarcomponent';
 import laptopimg from '../images/laptop.jpg';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
-import OracleLogo from '../images/oracleLogo.svg';
+import OracleLogo from '../images/oracleLogo.png';
 import DatabasesQuickLinks from '../component/DatabasesQuickLinks';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 

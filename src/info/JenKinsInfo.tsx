@@ -4,7 +4,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import AppBarComponent from '../component/Appbarcomponent';
 import laptopimg from '../images/laptop.jpg';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
-import Jenkinslogo from '../images/jenkinsLogo.svg';
+import Jenkinslogo from '../images/jenkinsLogo.png';
 import CiCdQuickLinks from '../component/CicdQuickLinks';
 
 const JenkinsInfo = () => {

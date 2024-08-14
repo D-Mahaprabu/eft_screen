@@ -4,7 +4,7 @@ import AppBarComponent from '../component/Appbarcomponent';
 import laptopimg from '../images/laptop.jpg';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import QuickLinks from '../component/Quicklinks';
-import Jslogo from '../images/js.png';
+import Jslogo from '../images/jsLogo.png';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const JsInfo = () => {

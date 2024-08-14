@@ -14,30 +14,65 @@ const EnquiryForm: React.FC = () => {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        const formData: {
-            fullname: string;
-            qualification: string;
-            mobileNumber: string;
-            email: string;
-            city: string;
-            learningProgram: string;
-            comments: string;
-            access_key: string; 
-        } = 
-        { 
-            fullname, 
-            qualification, 
-            mobileNumber, 
-            email, 
-            city, 
-            learningProgram, 
+
+        if (!fullname) {
+            Swal.fire({
+                title: "Error!",
+                text: "Full Name should not be empty.",
+                icon: "error"
+            });
+            return;
+        }
+
+        if (!qualification) {
+            Swal.fire({
+                title: "Error!",
+                text: "Qualification should not be empty.",
+                icon: "error"
+            });
+            return;
+        }
+
+        if (!mobileNumber || mobileNumber.length !== 10) {
+            Swal.fire({
+                title: "Error!",
+                text: "Mobile Number should be exactly 10 digits long.",
+                icon: "error"
+            });
+            return;
+        }
+
+        if (!email || !email.endsWith('@gmail.com')) {
+            Swal.fire({
+                title: "Error!",
+                text: "Email should end with @gmail.com.",
+                icon: "error"
+            });
+            return;
+        }
+
+        if (!learningProgram) {
+            Swal.fire({
+                title: "Error!",
+                text: "Learning Program should not be empty.",
+                icon: "error"
+            });
+            return;
+        }
+
+        const formData = {
+            fullname,
+            qualification,
+            mobileNumber,
+            email,
+            city,
+            learningProgram,
             comments,
-            access_key: "c81b29a5-104d-4bb8-9ba3-e3df75207448" 
+            access_key: "c81b29a5-104d-4bb8-9ba3-e3df75207448"
         };
-    
-        //console.log('Form data submitted:', formData);
+
         const json = JSON.stringify(formData);
-    
+
         try {
             const res = await fetch("https://api.web3forms.com/submit", {
               method: "POST",
@@ -47,7 +82,7 @@ const EnquiryForm: React.FC = () => {
               },
               body: json
             }).then((res) => res.json());
-    
+
             if (res.success) {
                 Swal.fire({
                     title: "Success!",

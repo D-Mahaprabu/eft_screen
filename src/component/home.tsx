@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import '../App.css';
 import Stairs7SolutionsLogo from '../images/Stairs7SolutionsIcon.png';
 import EnquiryForm from './EnquiryForm';
-import Courses from './courses';
+import Courses from './Courses';
 import Howitworks from './HowItWorks';
 import Enrollment from './Enrollment';
 import Whychooseus from './Whychooseus';
@@ -45,7 +45,7 @@ const Home = () => {
                 <AppBar sx={{ backgroundColor: 'red' }} position="static" elevation={0}>
                     <Toolbar>
                         <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-start', flexGrow: 1 }}>
-                            <Button sx={{mr: 78}} color="inherit">
+                            <Button color="inherit">
                                 <img alt='Stairs7Solutions Logo' src={Stairs7SolutionsLogo} height={70}></img>
                                 Stairs7 Solutions
                             </Button>

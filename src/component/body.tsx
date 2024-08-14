@@ -1,25 +1,25 @@
-import { Stack, Box, Typography, Card } from "@mui/material";
+import { Stack, Box, Typography, Divider, Button } from "@mui/material";
 import htmlLogo from '../images/htmlLogo.svg'
 import cssLogo from '../images/css.png'
 import bootStrapLogo from '../images/bootstrapLogo.svg'
 import reactLogo from '../images/reactLogo.svg'
-import javaScriptLogo from '../images/js.png'
+import javaScriptLogo from '../images/jsLogo.png'
 import typeScriptLogo from '../images/typescriptLogo.svg'
-import jenkinsLogo from '../images/jenkinsLogo.svg'
+import jenkinsLogo from '../images/jenkinsLogo.png'
 import gitlabLogo from '../images/gitLabLogo.svg'
-import devopsLogo from '../images/devopsLogo.jpeg'
+import devopsLogo from '../images/devopsLogo.png'
 import awsLogo from '../images/awsLogo.png'
 import azureLogo from '../images/azureLogo.png'
 import glcloudLogo from '../images/googleCloudLogo.png'
-import dockerLogo from '../images/dockerLogo.svg'
+import dockerLogo from '../images/dockerLogo.png'
 import kubernetesLogo from '../images/kubernetsLogo.svg'
 import springSecurityLogo from '../images/springSecurityLogo.png'
 import mavenLogo from '../images/mavenLogo.png'
-import springBootLogo from '../images/springBootLogo.svg'
-import javaLogo from '../images/javaLogo.jpg'
+import springBootLogo from '../images/springBootLogo.png'
+import javaLogo from '../images/javaLogo.png'
 import ehCacheLogo from '../images/ehCacheLogo.png'
 import mongoDbLogo from '../images/mongoDbLogo.png'
-import oracleLogo from '../images/oracleLogo.svg'
+import oracleLogo from '../images/oracleLogo.png'
 import microserviceDesignLogo from '../images/microserviceDesignLogo.png'
 import elasticStackLogo from '../images/elasticStackLogo.png'
 import swaggerLogo from '../images/swaggerLogo.png'
@@ -28,7 +28,14 @@ import hibernateLogo from '../images/hibernateLogo.svg'
 import redisLogo from '../images/redisLogo.png'
 import kafkaLogo from '../images/kafkaLogo.png'
 import { useHistory } from 'react-router-dom';
-import { Height } from "@mui/icons-material";
+import SystemDesignLogo from '../images/systemDesignLogo.png'
+import DebuggingSkillsLogo from '../images/debuggingSkillsLogo.png'
+import EnterpriseArchitectureLogo from '../images/enterpriceArchitectureLogo.png'
+import CapacityPlanningLogo from '../images/capacityPlanningLogo.png'
+import CircleCiLogo from '../images/circleCiLogo.png'
+import GitHubActionsLogo from '../images/gitHubActionsLogo.png'
+import machineLearningLogo from '../images/machineLearning.png'
+import aiLogo from '../images/aiLogos.png'
   
 
 const Body = () => {
@@ -108,7 +115,7 @@ const Body = () => {
     };
 
     const handleClickMicroserviceDesign = () => {
-        history.push('/courses/fullstack/microsservicedesign-info');
+        history.push('/courses/fullstack/microservicedesign-info');
     };
 
     const handleClickOracle = () => {
@@ -147,231 +154,396 @@ const Body = () => {
         history.push('/courses/fullstack/kafka-info');
     };
 
+    const handleClickSystemDesign = () => {
+        history.push('/courses/fullstack/systemdesign-info');
+    };
+
+    const handleClickDebuggingSkills = () => {
+        history.push('/courses/fullstack/debuggingskills-info');
+    };
+
+    const handleClickEnterpriseArchitecture = () => {
+        history.push('/courses/fullstack/enterprisearchitecture-info');
+    };
+
+    const handleClickCapacityPlanning = () => {
+        history.push('/courses/fullstack/capacityplanning-info');
+    };
+
+    const handleClickCircleCi = () => {
+        history.push('/courses/fullstack/circleci-info');
+    };
+
+    const handleClickGitHubActions = () => {
+        history.push('/courses/fullstack/githubactions-info');
+    };
+
+    const handleClickAi = () => {
+        history.push('/courses/fullstack/ai-info');
+    };
+
+    const handleClickMachineLearning = () => {
+        history.push('/courses/fullstack/machinelearning-info');
+    };
+
 
     return(
-        <Stack height={'auto'} width={'100'} direction={'row'} >
-            <Box  width={'30%'} height={'auto'}>
-                <Card sx={{height:'381px'}}>
-                <Typography fontStyle={'Dancing Script'} textAlign={'left'} justifyContent={'center'} variant="h6" sx={{fontWeight:'bold', ml:1}}>
-                    Front End
+        <Stack  width={'100'} height={480} direction={'row'} display={'flex'}>
+
+            {/* first box */}
+            <Box width={'26%'} height={'auto'} sx={{border:'1px solid gray', borderRadius:'2%'}} margin={'1%'}>
+                <Typography fontStyle={'Poppins'} fontWeight={'700'} fontSize={'16px'} lineHeight={'24px'} textAlign={'left'} justifyContent={'center'} sx={{ml:3}}>
+                    FRONT END
                 </Typography>
 
                 <Stack direction={"row"} spacing={3} sx={{mt:1, ml:3}}>
 
                     <Stack >
-                <Box sx={{ borderRadius:'5%', display: 'flex', justifyContent: 'center', alignItems: 'center' , border:'1px solid red'}} width={80} height={80}>
-                    <img alt='Html Logo' src={htmlLogo} width={47} height={50} style={{ cursor: 'pointer', marginBottom:22 }} onClick={handleClickHtml}></img>
+                <Box sx={{ borderRadius:'5%', display: 'flex', justifyContent: 'center', alignItems: 'center' , border:'1px solid #D81B0E'}} width={70} height={70}>
+                    <img alt='Html Logo' src={htmlLogo} width={40} height={40} style={{ cursor: 'pointer', marginBottom:22 }} onClick={handleClickHtml}></img>
                     
                 </Box>
-                <Typography sx={{mt:-2}} justifyContent={'center'} display={'flex'} alignItems={'center'} variant="caption">HTML5</Typography>
+                <Typography sx={{mt:-2.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>HTML 5</Typography>
                 </Stack>
 
                 <Stack>
-                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid red'}}  width={80} height={80}>
-                    <img alt='Css Logo' src={cssLogo} width={50} height={51} style={{ cursor: 'pointer', marginBottom:22 }} onClick={handleClickCss}></img>
+                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E'}}  width={70} height={70}>
+                    <img alt='Css Logo' src={cssLogo} width={40} height={40} style={{ cursor: 'pointer', marginBottom:22 }} onClick={handleClickCss}></img>
                 </Box>
-                <Typography sx={{mt:-2}} justifyContent={'center'} display={'flex'} alignItems={'center'} variant="caption">CSS</Typography>
+                <Typography sx={{mt:-2.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>CSS 3</Typography>
                 </Stack>
 
                 <Stack>
-                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid red'}} width={80} height={80}>
-                    <img alt='BootStrap Logo' src={bootStrapLogo} width={60} height={50} style={{ cursor: 'pointer', marginBottom:22 }} onClick={handleClickBootstrap}></img>
+                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E'}} width={70} height={70}>
+                    <img alt='BootStrap Logo' src={bootStrapLogo} width={35} height={35} style={{ cursor: 'pointer', marginBottom:22 }} onClick={handleClickBootstrap}></img>
                 </Box>
-                <Typography sx={{mt:-2}} justifyContent={'center'} display={'flex'} alignItems={'center'} variant="caption">BootsTrap</Typography>
+                <Typography sx={{mt:-2.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Bootstrap</Typography>
                 </Stack>
 
                 </Stack>
 
 
                 <Stack direction={"row"} spacing={3} sx={{mt:1, ml:3}}>
+
                     <Stack>
-                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center' , border:'1px solid red'}} width={80} height={80}>
-                    <img alt='React Logo' src={reactLogo} width={110} height={60} style={{ cursor: 'pointer', marginBottom:25 }} onClick={handleClickReact}></img>
+                     <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center' , border:'1px solid #D81B0E', mt:1}} width={70} height={70}>
+                    <img alt='React Logo' src={reactLogo} width={40} height={40} style={{ cursor: 'pointer', marginBottom:25 }} onClick={handleClickReact}></img>
                 </Box>
-                <Typography sx={{mt:-2}} justifyContent={'center'} display={'flex'} alignItems={'center'} variant="caption">React</Typography>
+                <Typography sx={{mt:-2.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>React</Typography>
                 </Stack>
 
                 <Stack>
-                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid red'}}  width={80} height={80}>
-                    <img alt='JavaScript Logo' src={javaScriptLogo} width={55} height={45} style={{ cursor: 'pointer', marginBottom:25 }} onClick={handleClickJs}></img>
+                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E', mt:1}}  width={70} height={70}>
+                    <img alt='JavaScript Logo' src={javaScriptLogo} width={40} height={40} style={{ cursor: 'pointer', marginBottom:20 }} onClick={handleClickJs}></img>
                 </Box>
-                <Typography sx={{mt:-2}} justifyContent={'center'} display={'flex'} alignItems={'center'} variant="caption">JavaScript</Typography>
+                <Typography sx={{mt:-2.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>JavaScript</Typography>
                 </Stack>
 
                 <Stack>
-                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid red'}}  width={80} height={80}>
-                    <img alt='TypeScript Logo' src={typeScriptLogo} width={80} height={48} style={{ cursor: 'pointer', marginBottom:25 }} onClick={handleClickTs}></img>
+                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E', mt:1}}  width={70} height={70}>
+                    <img alt='TypeScript Logo' src={typeScriptLogo} width={35} height={35} style={{ cursor: 'pointer', marginBottom:25 }} onClick={handleClickTs}></img>
                 </Box>
-                <Typography sx={{mt:-2}} justifyContent={'center'} display={'flex'} alignItems={'center'} variant="caption">TypeScript</Typography>
+                <Typography sx={{mt:-2.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>TypeScript</Typography>
                 </Stack>
-
                 </Stack>
+                <Divider sx={{ width: '80%', mx: 'auto', mt:4 }}></Divider>
+                <Typography fontStyle={'Poppins'} fontWeight={'700'} fontSize={'16px'} lineHeight={'24px'} textAlign={'left'} justifyContent={'center'} sx={{ml:3,mt:3}}>
+                    CI/CD OPTIONS
+                </Typography>
                 
                 <Stack direction={"row"} spacing={3} sx={{mt:1, ml:3}}>
 
                     <Stack>
-                    <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid red'}}   width={80} height={80}>
-                    <img alt='Jenkins Logo' src={jenkinsLogo} width={55} height={55} style={{ cursor: 'pointer', marginBottom:30 }} onClick={handleClickJenkins}></img>
+                    <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E'}}   width={70} height={70}>
+                    <img alt='Jenkins Logo' src={jenkinsLogo} width={35} height={40} style={{ cursor: 'pointer', marginBottom:12 }} onClick={handleClickJenkins}></img>
                     </Box>
+                    <Typography sx={{mt:-2.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Jenkins</Typography>
                     </Stack>
 
                     <Stack>
-                    <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid red'}}  width={80} height={80}>
-                    <img alt='Devops Logo' src={devopsLogo} width={63} height={37} style={{ cursor: 'pointer', marginBottom:15 }} onClick={handleClickDevops}></img>
+                    <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E'}}  width={70} height={70}>
+                    <img alt='Devops Logo' src={devopsLogo} width={50} height={40} style={{ cursor: 'pointer', marginBottom:15 }} onClick={handleClickDevops}></img>
                     </Box>
-                    <Typography sx={{mt:-2}} justifyContent={'center'} display={'flex'} alignItems={'center'} variant="caption">DevOps</Typography>
+                    <Typography sx={{mt:-2.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>DevOps</Typography>
                     </Stack>
 
                     <Stack>
-                    <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid red'}}  width={80} height={80}>
-                    <img alt='Gitlab Logo' src={gitlabLogo} width={60} height={45} style={{ cursor: 'pointer', marginBottom:25 }} onClick={handleClickGitlab}></img>
+                    <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E'}}  width={70} height={70}>
+                    <img alt='Gitlab Logo' src={gitlabLogo} width={40} height={40} style={{ cursor: 'pointer', marginBottom:25 }} onClick={handleClickGitlab}></img>
                     </Box>
-                    <Typography sx={{mt:-2}} justifyContent={'center'} display={'flex'} alignItems={'center'} variant="caption">GitLab</Typography>
+                    <Typography sx={{mt:-2.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>GitLab</Typography>
+                    </Stack>
+                    </Stack>
+
+                    <Stack direction={'row'} spacing={3} sx={{mt:1, ml:3}}>
+                    <Stack>
+                    <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E', mt:1}}  width={70} height={70}>
+                    <img alt='CircleCi Logo' src={CircleCiLogo} width={35} height={35} style={{ cursor: 'pointer', marginBottom:15 }} onClick={handleClickCircleCi}></img>
+                    </Box>
+                    <Typography sx={{mt:-2.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Circle CI</Typography>
+                    </Stack>
+
+                    <Stack>
+                    <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E', mt:1}}  width={70} height={70}>
+                    <img alt='GitHubActions Logo' src={GitHubActionsLogo} width={50} height={40} style={{ cursor: 'pointer', marginBottom:25 }} onClick={handleClickGitHubActions}></img>
+                    </Box>
+                    <Typography sx={{mt:-3.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>GitHub</Typography>
+                    <Typography fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Actions</Typography>
                     </Stack>
 
                 </Stack>
-                </Card>
                 </Box>
 
                 {/* {second box} */}
 
-            <Box width={'30%'} height={'auto'} >
-                <Card>
-                 <Typography fontStyle={'Dancing Script'} textAlign={'left'} justifyContent={'center'} variant="h6" sx={{fontWeight:'bold', ml:1}} color={'black'}>
-                    Cloud
+            <Box width={'26%'} height={'auto'} sx={{border:'1px solid gray', borderRadius:'2%'}} margin={'1%'}>
+                
+                 <Typography fontStyle={'Poppins'} fontWeight={'700'} fontSize={'16px'} lineHeight={'24px'} textAlign={'left'} justifyContent={'center'} sx={{ml:2.4}}>
+                    CLOUD
                 </Typography>
                 <Stack direction={"row"} spacing={3} sx={{mt:1, ml:2.3}} >
                     <Stack>
-                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid red'}}  width={80} height={80}>
+                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E'}}  width={70} height={70}>
                     <img alt='Aws Logo' src={awsLogo} width={55} height={35} style={{ cursor: 'pointer', marginBottom:18 }} onClick={handleClickAws}></img>
                 </Box>
-                <Typography sx={{mt:-2}} justifyContent={'center'} display={'flex'} alignItems={'center'} variant="caption">AWS</Typography>
+                <Typography sx={{mt:-2.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>AWS</Typography>
                 </Stack>
 
                 <Stack>
-                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid red'}}  width={80} height={80}>
-                    <img alt='Azure Logo' src={azureLogo} width={65} height={30} style={{ cursor: 'pointer', marginBottom:18 }} onClick={handleClickAzure}></img>
+                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E'}}  width={70} height={70}>
+                    <img alt='Azure Logo' src={azureLogo} width={40} height={40} style={{ cursor: 'pointer', marginBottom:18 }} onClick={handleClickAzure}></img>
                 </Box>
-                <Typography sx={{mt:-2}} justifyContent={'center'} display={'flex'} alignItems={'center'} variant="caption">Azure</Typography>
+                <Typography sx={{mt:-2.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Azure</Typography>
                 </Stack>
 
                 <Stack>
-                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid red'}}  width={80} height={80}>
+                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E'}}  width={70} height={70}>
                     <img alt='GoogleCloud Logo' src={glcloudLogo} width={40} height={38} style={{ cursor: 'pointer', marginBottom:25 }} onClick={handleClickGooglecloud}></img>
                 </Box>
-                <Typography sx={{mt:-2}} justifyContent={'center'} display={'flex'} alignItems={'center'} variant="caption">Google Cloud</Typography>
+                <Typography sx={{mt:-3.8}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Google</Typography>
+                <Typography fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Cloud</Typography>
                 </Stack>
                 </Stack>
-
-                <Typography fontStyle={'Dancing Script'} textAlign={'left'} justifyContent={'center'} variant="h6" sx={{fontWeight:'bold', ml:1}} color={'black'}>
-                    Deployment Options
+                <Divider sx={{ width: '80%', mx: 'auto',mt:3 }}></Divider>
+                <Typography fontStyle={'Poppins'} fontWeight={'700'} fontSize={'16px'} lineHeight={'24px'} textAlign={'left'} justifyContent={'center'} sx={{ml:2.4,mt:3}}>
+                    DEPLOYMENT OPTIONS
                 </Typography>
 
-                <Stack direction={"row"} spacing={5} sx={{mt:1.4, ml:9.1}}>
-                    <Stack>
-                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid red'}}  width={80} height={80}>
-                    <img alt='Docker Logo' src={dockerLogo} width={53} height={60} style={{ cursor: 'pointer', marginBottom:25 }} onClick={handleClickDocker}></img>
+                <Stack direction={"row"} spacing={3} sx={{mt:1.4, ml:2.3}} display={'flex'} justifyContent={'left'} alignSelf={'left'}>
+                    <Stack >
+                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'left', border:'1px solid #D81B0E'}}  width={70} height={70}>
+                    <img alt='Docker Logo' src={dockerLogo} width={120} height={120} style={{ cursor: 'pointer', marginTop:-33 }} onClick={handleClickDocker}></img>
                 </Box>
-                <Typography sx={{mt:-2}} justifyContent={'center'} display={'flex'} alignItems={'center'} variant="caption">Docker</Typography>
+                <Typography sx={{mt:-2.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Docker</Typography>
                 </Stack>
 
                 <Stack>
-                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid red'}}  width={80} height={80}>
-                    <img alt='Kubernetes Logo' src={kubernetesLogo} width={60} height={50} style={{ cursor: 'pointer', marginBottom:30 }} onClick={handleClickKubernetes}></img>
+                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'left', border:'1px solid #D81B0E'}}  width={70} height={70}>
+                    <img alt='Kubernetes Logo' src={kubernetesLogo} width={40} height={40} style={{ cursor: 'pointer', marginTop:5 }} onClick={handleClickKubernetes}></img>
                 </Box>
-                <Typography sx={{mt:-2}} justifyContent={'center'} display={'flex'} alignItems={'center'} variant="caption">Kubernetes</Typography>
+                <Typography sx={{mt:-2.4}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Kubernetes</Typography>
                 </Stack>
                 </Stack>
-
-
-                <Typography fontStyle={'Dancing Script'} textAlign={'left'} justifyContent={'center'} variant="h6" sx={{fontWeight:'bold', ml:1,mt:0.8}}>
-                    Databases
+                <Divider sx={{ width: '80%', mx: 'auto', mt:3 }}></Divider>
+                <Typography fontStyle={'Poppins'} fontWeight={'700'} fontSize={'16px'} lineHeight={'24px'} textAlign={'left'} justifyContent={'center'} sx={{ml:2.4,mt:2}}>
+                    DATABASES
                 </Typography>
                 
-                <Stack direction={"row"} spacing={5} sx={{mt:0.5, ml:9.1}}>
+                <Stack direction={"row"} spacing={3} sx={{mt:1.4, ml:2.3}}>
                 <Stack>
-                   <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid red'}} width={90} height={80}>
-                    <img alt='Oracle Logo' src={oracleLogo} width={90} height={60} style={{ cursor: 'pointer', marginBottom:8 }} onClick={handleClickOracle}></img>
+                   <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E'}} width={70} height={70}>
+                    <img alt='Oracle Logo' src={oracleLogo} width={50} height={50} style={{ cursor: 'pointer', marginBottom:15 }} onClick={handleClickOracle}></img>
                    </Box>
-                   <Typography sx={{mt:-2}} justifyContent={'center'} display={'flex'} alignItems={'center'} variant="caption">Oracle</Typography>
+                   <Typography sx={{mt:-2.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Oracle</Typography>
                    </Stack>
                    <Stack>
-                   <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid red'}} width={80} height={80}>
-                    <img alt='MongoDb Logo' src={mongoDbLogo} width={70} height={70} style={{ cursor: 'pointer', marginBottom:12 }} onClick={handleClickMongoDb}></img>
+                   <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E'}} width={70} height={70}>
+                    <img alt='MongoDb Logo' src={mongoDbLogo} width={75} height={45} style={{ cursor: 'pointer', marginBottom:12 }} onClick={handleClickMongoDb}></img>
                    </Box>
-                   <Typography sx={{mt:-2}} justifyContent={'center'} display={'flex'} alignItems={'center'} variant="caption">MongoDb</Typography>
+                   <Typography sx={{mt:-2.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>MongoDb</Typography>
                    </Stack>
                 </Stack>
-                </Card>
+                
             </Box>
 
             {/* {3rd box} */}
 
 
-            <Box width={'40%'} height={'auto'} >
-                <Card>
-                <Typography fontStyle={'Dancing Script'} textAlign={'left'} justifyContent={'center'} sx={{fontWeight:'bold', ml:1}} color={'black'} variant="h6" >
-                    Backend
+            <Box width={'43%'} height={'auto'} sx={{border:'1px solid gray', borderRadius:'2%'}} margin={'1%'}>
+                
+                <Typography fontStyle={'Poppins'} fontWeight={'700'} fontSize={'16px'} lineHeight={'24px'} textAlign={'left'} justifyContent={'center'} sx={{ml:1.5}}>
+                    BACKEND
                 </Typography>
-                <Stack direction={"row"} spacing={3} sx={{mt:1, ml:1.6, mr:2}}> 
+
+                <Stack direction={"row"} spacing={2} sx={{mt:1, ml:1.6, mr:2}}> 
                     <Stack>
-                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid red'}}  width={80} height={80}>
-                    <img alt='Java Logo' src={javaLogo} width={55} height={42} style={{ cursor: 'pointer', marginBottom:20 }} onClick={handleClickJava}></img>
+                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E'}}  width={70} height={70}>
+                    <img alt='Java Logo' src={javaLogo} width={35} height={35} style={{ cursor: 'pointer', marginBottom:20 }} onClick={handleClickJava}></img>
                 </Box>
-                <Typography sx={{mt:-2}} justifyContent={'center'} display={'flex'} alignItems={'center'} variant="caption">Java</Typography>
+                <Typography sx={{mt:-2.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Java</Typography>
                 </Stack>
 
                 <Stack>
-                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid red'}}  width={80} height={80}>
-                    <img alt='SpringBoot Logo' src={springBootLogo} width={55} height={55} style={{ cursor: 'pointer', marginBottom:30 }} onClick={handleClickSpringBoot}></img>
+                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E'}}  width={70} height={70}>
+                    <img alt='SpringBoot Logo' src={springBootLogo} width={50} height={40} style={{ cursor: 'pointer', marginBottom:20 }} onClick={handleClickSpringBoot}></img>
                 </Box>
-                <Typography sx={{mt:-2}} justifyContent={'center'} display={'flex'} alignItems={'center'} variant="caption">SpringBoot</Typography>
+                <Typography sx={{mt:-2.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>SpringBoot</Typography>
                 </Stack>
 
                 <Stack>
-                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid red'}} width={80} height={80}>
-                    <img alt='Maven Logo' src={mavenLogo} width={60} height={30} style={{ cursor: 'pointer', marginBottom:12 }} onClick={handleClickMaven}></img>
+                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E'}} width={70} height={70}>
+                    <img alt='Maven Logo' src={mavenLogo} width={40} height={25} style={{ cursor: 'pointer', marginBottom:12 }} onClick={handleClickMaven}></img>
                 </Box>
-                <Typography sx={{mt:-2}} justifyContent={'center'} display={'flex'} alignItems={'center'} variant="caption">Maeven</Typography>
+                <Typography sx={{mt:-2.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Maven</Typography>
                 </Stack>
 
                 <Stack>
-                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid red'}} width={80} height={80}>
-                    <img alt='SpringSecurity Logo' src={springSecurityLogo} width={50} height={50} style={{ cursor: 'pointer', marginBottom:30 }} onClick={handleClickSpringSecurity}></img>
+                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E'}} width={70} height={70}>
+                    <img alt='SpringSecurity Logo' src={springSecurityLogo} width={55} height={25} style={{ cursor: 'pointer', marginBottom:30 }} onClick={handleClickSpringSecurity}></img>
                 </Box>
-                <Typography sx={{mt:-2}} justifyContent={'center'} display={'flex'} alignItems={'center'} variant="caption" color={'black'}>Spring</Typography>
+                <Typography sx={{mt:-3.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Spring </Typography>
+                <Typography fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Security </Typography>
+                </Stack>
+
+                <Stack>
+                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E'}}  width={70} height={70}>
+                    <img alt='MicroserviceDesign Logo' src={microserviceDesignLogo} width={60} height={42} style={{ cursor: 'pointer', marginBottom:15 }} onClick={handleClickMicroserviceDesign}></img>
+                </Box>
+                    <Typography sx={{mt:-3.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Micro</Typography>
+                    <Typography fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>services</Typography>
+                   </Stack>
+
+                <Stack>
+                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E'}}  width={70} height={70}>
+                    <img alt='Swagger Logo' src={swaggerLogo} width={40} height={30} style={{ cursor: 'pointer', marginBottom:15 }} onClick={handleClickSwagger}></img>
+                </Box>
+                    <Typography sx={{mt:-2.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Swagger</Typography>
+                </Stack>
+                </Stack>
+
+                <Stack direction={"row"} spacing={2} sx={{mt:1, ml:1.6, mr:2}}>
+                    
+
+                <Stack>
+                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E'}}  width={70} height={70}>
+                    <img alt='ElasticStack Logo' src={elasticStackLogo} width={40} height={40} style={{ cursor: 'pointer', marginBottom:25 }} onClick={handleClickElasticChange}></img>
+                </Box>
+                <Typography sx={{mt:-3.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Elastic</Typography>
+                <Typography fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>stack</Typography>
+                </Stack>
+                <Stack>
+                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E'}}  width={70} height={70}>
+                    <img alt='EhCache Logo' src={ehCacheLogo} width={40} height={40} style={{ cursor: 'pointer', marginBottom:20 }} onClick={handleClickEhCache}></img>
+                </Box>
+                <Typography sx={{mt:-2.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Ehcache</Typography>
+                </Stack>
+                <Stack>
+                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E'}}  width={70} height={70}>
+                    <img alt='Kafka Logo' src={kafkaLogo} width={40} height={35} style={{ cursor: 'pointer', marginBottom:20 }} onClick={handleClickKafka}></img>
+                </Box>
+                <Typography sx={{mt:-2.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Kafka</Typography>
+                </Stack>
+                <Stack>
+                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E'}}  width={70} height={70}>
+                    <img alt='Redis Logo' src={redisLogo} width={40} height={40} style={{ cursor: 'pointer', marginBottom:25 }} onClick={handleClickRedis}></img>
+                </Box>
+                <Typography sx={{mt:-2.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Redis</Typography>
+                </Stack>
+
+                <Stack>
+                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E'}}  width={70} height={70}>
+                    <img alt='Hibernate Logo' src={hibernateLogo} width={35} height={35} style={{ cursor: 'pointer', marginBottom:25 }} onClick={handleClickHibernate}></img>
+                </Box>
+                <Typography sx={{mt:-2.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Hibernate</Typography>
+                </Stack>
+                <Stack>
+                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E'}}  width={70} height={70}>
+                    <img alt='Prometheus Logo' src={PrometheusLogo} width={35} height={35} style={{ cursor: 'pointer', marginBottom:25 }} onClick={handleClickPrometheus}></img>
+                </Box>
+                <Typography sx={{mt:-2.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Prometheus</Typography>
                 </Stack>
 
                 </Stack>
-                <Stack direction={"row"} spacing={3} sx={{mt:1, ml:1.6, mr:2}}>
-                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid red'}}  width={80} height={80}>
-                    <img alt='MicroserviceDesign Logo' src={microserviceDesignLogo} width={60} height={42} style={{ cursor: 'pointer', marginBottom:25 }} onClick={handleClickMicroserviceDesign}></img>
+                <Divider sx={{ width: '90%', mx: 'auto' , mt:2}}></Divider>
+                <Stack spacing={3} sx={{mt:1, ml:1.6, mr:2}}>
+                
+                <Typography fontStyle={'Poppins'} fontWeight={'700'} fontSize={'16px'} lineHeight={'24px'} textAlign={'left'} justifyContent={'center'} sx={{ml:1.5,mt:2}}>
+                    ARCHITECT ESSENTIALS
+                </Typography>
+
+                <Stack direction={'row'} spacing={2} >
+               <Stack>
+               <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E', mt:-2}} width={70} height={70}>
+                    <img alt='SystemDesign Logo' src={SystemDesignLogo} width={35} height={35} style={{ cursor: 'pointer', marginBottom:25}} onClick={handleClickSystemDesign}></img>
                 </Box>
-                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid red'}}  width={80} height={80}>
-                    <img alt='Swagger Logo' src={swaggerLogo} width={70} height={55} style={{ cursor: 'pointer', marginBottom:25 }} onClick={handleClickSwagger}></img>
+                <Typography sx={{mt:-3.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>System</Typography>
+                <Typography fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Design</Typography>
+               </Stack>
+
+               <Stack >
+               <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E', mt:-2}} width={70} height={70}>
+                    <img alt='DebuggingSkills Logo' src={DebuggingSkillsLogo} width={35} height={35} style={{ cursor: 'pointer', marginBottom:25 }} onClick={handleClickDebuggingSkills}></img>
                 </Box>
-                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid red'}}  width={80} height={80}>
-                    <img alt='ElasticStack Logo' src={elasticStackLogo} width={52} height={52} style={{ cursor: 'pointer', marginBottom:25 }} onClick={handleClickElasticChange}></img>
+                <Typography sx={{mt:-3.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Debugging</Typography>
+                <Typography fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Skills</Typography>
+               </Stack>
+
+               <Stack>
+               <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E', mt:-2}} width={70} height={70}>
+                    <img alt='EnterpriseArchitecture Logo' src={EnterpriseArchitectureLogo} width={75} height={40} style={{ cursor: 'pointer', marginBottom:25 }} onClick={handleClickEnterpriseArchitecture}></img>
                 </Box>
-                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid red'}}  width={80} height={80}>
-                    <img alt='EhCache Logo' src={ehCacheLogo} width={60} height={57} style={{ cursor: 'pointer', marginBottom:20 }} onClick={handleClickEhCache}></img>
+                <Typography sx={{mt:-3.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Enterprice</Typography>
+                <Typography fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Architecture</Typography>
+               </Stack>
+
+               <Stack>
+               <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E', mt:-2}} width={70} height={70}>
+                    <img alt='CapacityPlanning Logo' src={CapacityPlanningLogo} width={35} height={35} style={{ cursor: 'pointer', marginBottom:25 }} onClick={handleClickCapacityPlanning}></img>
                 </Box>
+                <Typography sx={{mt:-3.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Capacity</Typography>
+                <Typography fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Planning</Typography>
+               </Stack>
+                
                 </Stack>
-                <Stack direction={"row"} spacing={3} sx={{mt:1, ml:1.6, mr:2}}>
-                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid red'}}  width={80} height={80}>
-                    <img alt='Kafka Logo' src={kafkaLogo} width={55} height={48} style={{ cursor: 'pointer', marginBottom:20 }} onClick={handleClickKafka}></img>
-                </Box>
-                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid red'}}  width={80} height={80}>
-                    <img alt='Redis Logo' src={redisLogo} width={50} height={50} style={{ cursor: 'pointer', marginBottom:25 }} onClick={handleClickRedis}></img>
-                </Box>
-                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid red'}}  width={80} height={80}>
-                    <img alt='Hibernate Logo' src={hibernateLogo} width={60} height={55} style={{ cursor: 'pointer', marginBottom:25 }} onClick={handleClickHibernate}></img>
-                </Box>
-                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid red'}}  width={80} height={80}>
-                    <img alt='Prometheus Logo' src={PrometheusLogo} width={55} height={55} style={{ cursor: 'pointer', marginBottom:25 }} onClick={handleClickPrometheus}></img>
-                </Box>
                 </Stack>
-                </Card>
+                <Divider sx={{ width: '90%', mx: 'auto' , mt:2}}></Divider>
+                <Stack sx={{mt:1, ml:1.6, mr:2}}>
+                
+                <Typography fontStyle={'Poppins'} fontWeight={'700'} fontSize={'16px'} lineHeight={'24px'} textAlign={'left'} justifyContent={'center'}>
+                    EXCLUSIVE COURSES
+                </Typography>
+
+                <Stack direction={'row'} spacing={2}>
+
+                <Stack>
+               <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E', mt:0.5}} width={70} height={70}>
+                    <img alt='Ai Logo' src={aiLogo} width={35} height={35} style={{ cursor: 'pointer', marginBottom:20 }} onClick={handleClickAi}></img>
+                </Box>
+                <Typography sx={{mt:-2.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Ai</Typography>
+               </Stack>
+
+               <Stack>
+               <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E', mt:0.5}} width={70} height={70}>
+                    <img alt='machineLearningLogo Logo' src={machineLearningLogo} width={35} height={35} style={{ cursor: 'pointer', marginBottom:25 }} onClick={handleClickMachineLearning}></img>
+                </Box>
+                <Typography sx={{mt:-3.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Machine</Typography>
+                <Typography fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Learning</Typography>
+               </Stack>
+
+               <Stack>
+                <Button size="large" sx={{ width: "130%", height: 95, mt: -2.4, ml: 2, bgcolor: '#D81B0E', color: 'white', '&:hover': {bgcolor: 'darkred',},}}>
+                    <Stack>
+                    <Typography fontWeight={'bold'} display={'flex'} variant="h5" justifyContent={'center'}>
+                        FULL STACK
+                    </Typography>
+                    <Typography fontWeight={'bold'} display={'flex'} variant="h5" justifyContent={'center'}>
+                        ENGINEERING
+                    </Typography>
+                    </Stack>
+                </Button>
+                </Stack>
+                </Stack>
+                </Stack>
             </Box>   
         </Stack>
     )

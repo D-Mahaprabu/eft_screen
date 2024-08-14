@@ -3,7 +3,7 @@ import { Stack, Typography, Box, Paper, Tab, Tabs, Card, CardContent, Accordion,
 import AppBarComponent from '../component/Appbarcomponent';
 import laptopimg from '../images/laptop.jpg';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
-import DockerLogo from '../images/dockerLogo.svg';
+import DockerLogo from '../images/dockerLogo.png';
 import DeploymentQuickLinks from '../component/DeploymentQuickLinks';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
@@ -274,8 +274,8 @@ const DockerInfo = () => {
             <Stack direction={'row'} justifyContent={'space-between'}>
                 <Box height={'auto'} width={'60%'} sx={{ ml: 2 }}>
                     <Stack direction={'row'} sx={{ mt: 3 }}>
-                        <Box height={'50px'} width={'50px'}>
-                            <img src={DockerLogo} alt="" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                        <Box>
+                            <img src={DockerLogo} alt="" width={75} height={60}  />
                         </Box>
                         <Typography variant="h4" sx={{ mt: 1, ml: 1, textTransform: 'uppercase' }}>Docker</Typography>
                     </Stack>

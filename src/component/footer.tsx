@@ -3,10 +3,7 @@ import CircleCiLogo from '../images/circleCiLogo.png'
 import GitHubActionsLogo from '../images/gitHubActionsLogo.png'
 import machineLearningLogo from '../images/machineLearning.jpeg'
 import aiLogo from '../images/aiLogos.jpeg'
-import SystemDesignLogo from '../images/systemDesignLogo.png'
-import DebuggingSkillsLogo from '../images/debuggingSkillsLogo.png'
-import EnterpriseArchitectureLogo from '../images/enterpriseArchitectureLogo.png'
-import CapacityPlanningLogo from '../images/capacityPlanningLogo.png'
+
 import { useHistory } from 'react-router-dom';
 
 
@@ -22,21 +19,7 @@ const Footer = () => {
         history.push('/courses/fullstack/githubactions-info');
     };
 
-    const handleClickSystemDesign = () => {
-        history.push('/courses/fullstack/systemdesign-info');
-    };
-
-    const handleClickDebuggingSkills = () => {
-        history.push('/courses/fullstack/debuggingskills-info');
-    };
-
-    const handleClickEnterpriseArchitecture = () => {
-        history.push('/courses/fullstack/enterprisearchitecture-info');
-    };
-
-    const handleClickCapacityPlanning = () => {
-        history.push('/courses/fullstack/capacityplanning-info');
-    };
+   
 
     const handleClickAi = () => {
         history.push('/courses/fullstack/ai-info');
@@ -71,18 +54,10 @@ const Footer = () => {
                Architect Essentials
             </Typography>
             <Stack direction={"row"} spacing={3} sx={{mt:0.2, ml:1}}>
-                <Box sx={{ borderRadius: '50%',  display: 'flex', justifyContent: 'center', alignItems: 'center'}} bgcolor={'#7A8B93'} width={100} height={100}>
-                    <img alt='SystemDesign Logo' src={SystemDesignLogo} width={50} height={50} style={{ cursor: 'pointer', marginBottom:30 }} onClick={handleClickSystemDesign}></img>
-                </Box>
-                <Box sx={{ borderRadius: '50%',  display: 'flex', justifyContent: 'center', alignItems: 'center'}} bgcolor={'#7A8B93'} width={100} height={100}>
-                    <img alt='DebuggingSkills Logo' src={DebuggingSkillsLogo} width={55} height={55} style={{ cursor: 'pointer', marginBottom:30 }} onClick={handleClickDebuggingSkills}></img>
-                </Box>
-                <Box sx={{ borderRadius: '50%',  display: 'flex', justifyContent: 'center', alignItems: 'center'}} bgcolor={'#7A8B93'} width={100} height={100}>
-                    <img alt='EnterpriseArchitecture Logo' src={EnterpriseArchitectureLogo} width={100} height={65} style={{ cursor: 'pointer', marginBottom:35 }} onClick={handleClickEnterpriseArchitecture}></img>
-                </Box>
-                <Box sx={{ borderRadius: '50%',  display: 'flex', justifyContent: 'center', alignItems: 'center'}} bgcolor={'#7A8B93'} width={100} height={100}>
-                    <img alt='CapacityPlanning Logo' src={CapacityPlanningLogo} width={50} height={50} style={{ cursor: 'pointer', marginBottom:30 }} onClick={handleClickCapacityPlanning}></img>
-                </Box>
+                
+                
+                
+                
             </Stack>
             <Typography variant="h6" color="#599585" textAlign="center" >
                Exclusive Courses

@@ -13,11 +13,6 @@ const Headers = () => {
                 EFT (Education For Tomorrow)
                 </Box>
             </Typography>
-            <Typography color={'#306156'} align="center">
-                <Box sx={{ textTransform: 'uppercase', fontWeight: 'bold', ml:-50, mt:7}}>
-                 Stairs7 solutions private limited
-                </Box>
-            </Typography>
         </Stack>
      )
 }

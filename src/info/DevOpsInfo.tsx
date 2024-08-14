@@ -3,7 +3,7 @@ import {Stack, Typography, Box, Paper, Tab, Tabs, Card, CardContent} from '@mui/
 import AppBarComponent from '../component/Appbarcomponent';
 import laptopimg from '../images/laptop.jpg'
 import MenuBookIcon from '@mui/icons-material/MenuBook';
-import DevOpsLogo from '../images/devopsLogo.jpeg';
+import DevOpsLogo from '../images/devopsLogo.png';
 import CiCdQuickLinks from '../component/CicdQuickLinks';
 
 const DevOpsInfo = () => {

@@ -24,20 +24,6 @@ const FullStackCource = () => {
                         Full-stack development refers to the practice of developing both the front-end and back-end aspects of a web application
                     </Typography>
                 );
-            case 1:
-                return (
-                    <Typography variant="body1">
-                        Curriculum content 
-                    </Typography>
-                );
-            case 2:
-                return (
-                    <Typography variant="body1">
-                        Reviews content 
-                    </Typography>
-                );
-            default:
-                return null;
         }
     };
 
@@ -75,18 +61,6 @@ const FullStackCource = () => {
                                     color: activeTab === 0 ? 'red' : 'rgba(0, 0, 0, 0.54)' 
                                 }} 
                             />
-                            <Tab 
-                                label="Curriculum" 
-                                sx={{ 
-                                    color: activeTab === 1 ? 'red' : 'rgba(0, 0, 0, 0.54)' 
-                                }} 
-                            />
-                            <Tab 
-                                label="Reviews" 
-                                sx={{ 
-                                    color: activeTab === 2 ? 'red' : 'rgba(0, 0, 0, 0.54)' 
-                                }} 
-                            />
                         </Tabs>
                     </Paper>
                     <Box sx={{ p: 3 }}>
@@ -96,7 +70,7 @@ const FullStackCource = () => {
             </Box>
             <Box height={'auto'} width={'38%'} sx={{ fontWeight: 'bold' }}>
                 <Stack height={130} width={'auto'} direction={'row'}>
-                    <Box height={130} width={'50%'} >
+                    {/* <Box height={130} width={'50%'} >
                         <Typography variant='h4' sx={{ ml: 1 }}>FullStack Engineering</Typography>
                         <Button variant='contained' sx={{ borderRadius: 10, ml: 1 }}>20% offer</Button>
                     </Box>
@@ -111,7 +85,7 @@ const FullStackCource = () => {
                     <Button variant='contained' sx={{ backgroundColor: '#FDA800', color: 'black', width: '200px' }}>Add to cart</Button>
                     <Button variant='contained' sx={{ backgroundColor: '#0C5FF3', color: 'white', width: '200px', ml:2 }}>
                         Buy Now
-                    </Button>
+                    </Button> */}
                 </Stack>
                 <Box sx={{ mt: 2 }}>
                     <QuickLinks />

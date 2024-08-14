@@ -3,7 +3,7 @@ import { Stack, Typography, Box, Paper, Tab, Tabs, Card, CardContent, Accordion,
 import AppBarComponent from '../component/Appbarcomponent';
 import laptopimg from '../images/laptop.jpg';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
-import EnterpriseArchitectureLogo from '../images/enterpriseArchitectureLogo.png';
+import EnterpriseArchitectureLogo from '../images/enterpriceArchitectureLogo.png';
 import ArchitectEssentialsQuickLinks from '../component/ArchitectEssentialsQuickLinks';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 

@@ -39,7 +39,7 @@ import EnterpriseArchitectureInfo from './info/EnterpriseArchitectureInfo'
 import CapacityPlanningInfo from './info/CapacityPlanningInfo'
 import FullstackEngineerScreen from './component/FullStackEngineerScreen';
 import Home from './component/home';
-import Courses from './component/courses';
+import Courses from './component/Courses';
 
 function App() {
 

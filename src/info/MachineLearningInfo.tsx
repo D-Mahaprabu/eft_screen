@@ -3,7 +3,7 @@ import { Stack, Typography, Box, Paper, Tab, Tabs, Card, CardContent, Accordion,
 import AppBarComponent from '../component/Appbarcomponent';
 import laptopimg from '../images/laptop.jpg';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
-import MachineLearningLogo from '../images/machineLearning.jpeg';
+import MachineLearningLogo from '../images/machineLearning.png';
 import ExclusiveCoursesQuickLinks from '../component/ExclusiveCoursesQuickLinks';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 

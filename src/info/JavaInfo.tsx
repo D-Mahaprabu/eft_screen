@@ -4,7 +4,7 @@ import AppBarComponent from '../component/Appbarcomponent';
 import laptopimg from '../images/laptop.jpg';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import JavaLogo from '../images/javaLogo.jpg';
+import JavaLogo from '../images/javaLogo.png';
 import BackendQuickLinks from '../component/BackendQuickLinks';
 
 const JavaInfo = () => {

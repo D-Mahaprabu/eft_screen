@@ -3,7 +3,7 @@ import { Stack, Typography, Box, Paper, Tab, Tabs, Card, CardContent, Accordion,
 import AppBarComponent from '../component/Appbarcomponent';
 import laptopimg from '../images/laptop.jpg';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
-import SpringBootLogo from '../images/springBootLogo.svg';
+import SpringBootLogo from '../images/springBootLogo.png';
 import BackendQuickLinks from '../component/BackendQuickLinks';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
