@@ -1,17 +1,181 @@
 import React, { useState } from 'react';
-import {Stack, Typography, Box, Paper, Tab, Tabs, Card, CardContent} from '@mui/material';
+import { Stack, Typography, Box, Paper, Tab, Tabs, Accordion, AccordionSummary, AccordionDetails, Card, CardContent } from '@mui/material';
 import AppBarComponent from '../component/Appbarcomponent';
-import laptopimg from '../images/laptop.jpg'
+import laptopimg from '../images/laptop.jpg';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import Gitlablogo from '../images/gitLabLogo.svg';
 import CiCdQuickLinks from '../component/CicdQuickLinks';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const GitLabInfo = () => {
     const [activeTab, setActiveTab] = useState(0);
+    const [expanded, setExpanded] = useState<string | false>(false);
 
     const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
         setActiveTab(newValue);
     };
+
+    const handleAccordionChange = (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
+        setExpanded(isExpanded ? panel : false);
+    };
+
+    const renderCurriculum = () => (
+        <div>
+            <Accordion expanded={expanded === 'panel1'} onChange={handleAccordionChange('panel1')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>1. Introduction to GitLab</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Comprehensive Overview:</strong><br />
+                        Deep dive into GitLab’s history, evolution, and significance in DevOps<br />
+                        Exploring GitLab's architecture and ecosystem, including its self-hosted and cloud-hosted options<br /><br />
+                        
+                        <strong>Installation and Setup:</strong><br />
+                        Advanced installation methods (Omnibus, Docker, Kubernetes, source installation)<br />
+                        Detailed initial configuration, security best practices, and hardening GitLab for production use
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel2'} onChange={handleAccordionChange('panel2')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>2. Mastering GitLab UI and Version Control</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Expert Navigation of GitLab UI:</strong><br />
+                        Advanced usage of GitLab's interface, including Projects, Groups, and advanced settings<br />
+                        Customizing the GitLab environment for team-specific needs<br /><br />
+                        
+                        <strong>Advanced Version Control:</strong><br />
+                        Mastering Git workflows (Git Flow, GitHub Flow, GitLab Flow)<br />
+                        Advanced Git commands and conflict resolution techniques<br />
+                        Automating repository management with GitLab's API
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel3'} onChange={handleAccordionChange('panel3')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>3. Advanced Project Management</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Expert Project Creation and Configuration:</strong><br />
+                        Setting up complex projects with advanced settings, CI/CD configurations, and integrations<br />
+                        Managing large-scale projects, subgroups, and multi-repository projects<br /><br />
+                        
+                        <strong>Advanced Issue and Merge Request Management:</strong><br />
+                        Implementing custom issue templates, workflows, and automation<br />
+                        Configuring and enforcing code review processes, approvals, and merge strategies
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel4'} onChange={handleAccordionChange('panel4')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>4. GitLab CI/CD Mastery</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>In-Depth CI/CD Pipeline Configuration:</strong><br />
+                        Designing and optimizing CI/CD pipelines for large-scale, complex projects<br />
+                        Advanced use of `.gitlab-ci.yml`, including variables, matrix builds, and dependency management<br />
+                        Securing CI/CD pipelines with secrets management, dynamic environments, and protected branches<br /><br />
+                        
+                        <strong>Optimizing CI/CD for Performance:</strong><br />
+                        Advanced caching strategies, artifact management, and pipeline efficiency<br />
+                        Parallel builds, Docker layer caching, and multi-stage pipelines
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel5'} onChange={handleAccordionChange('panel5')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>5. GitLab Runners and Customization</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Advanced Runner Management:</strong><br />
+                        Deep dive into GitLab Runner architecture, including custom executors<br />
+                        Setting up and managing auto-scaling runners in Kubernetes, Docker, and cloud environments<br /><br />
+                        
+                        <strong>Customization and Extensibility:</strong><br />
+                        Custom scripts and Docker images for runners<br />
+                        Extending GitLab CI/CD pipelines with custom integrations and tools
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel6'} onChange={handleAccordionChange('panel6')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>6. Security and Compliance</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Advanced Security Features:</strong><br />
+                        Implementing GitLab's built-in security scanning tools (SAST, DAST, Dependency Scanning, License Compliance)<br />
+                        Enforcing security policies, role-based access control (RBAC), and audit logging<br /><br />
+                        
+                        <strong>Compliance and Auditing:</strong><br />
+                        Configuring GitLab for industry-specific compliance (PCI DSS, HIPAA, GDPR)<br />
+                        Implementing and managing audit logs, enforcing regulatory requirements
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel7'} onChange={handleAccordionChange('panel7')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>7. Monitoring, Logging, and Performance Tuning</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Advanced Monitoring and Alerts:</strong><br />
+                        Integrating GitLab with Prometheus and Grafana for comprehensive monitoring<br />
+                        Setting up and tuning advanced alerting, performance dashboards, and health checks<br /><br />
+                        
+                        <strong>Performance Tuning and Optimization:</strong><br />
+                        Scaling GitLab for enterprise use: optimizing GitLab for performance, reducing latency, and managing large-scale deployments
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel8'} onChange={handleAccordionChange('panel8')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>8. GitLab Advanced Integrations</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Enterprise-Level Integrations:</strong><br />
+                        Integrating GitLab with enterprise tools (Jira, Jenkins, Slack, LDAP/AD, and custom third-party tools)<br />
+                        Automating workflows with GitLab’s API, webhooks, and custom scripts<br /><br />
+                        
+                        <strong>Kubernetes and Cloud-Native Deployments:</strong><br />
+                        Advanced GitLab Kubernetes integration, including GitOps, Helm charts, and managing Kubernetes clusters from GitLab<br />
+                        Managing cloud-native CI/CD pipelines with cloud providers (AWS, GCP, Azure)
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel9'} onChange={handleAccordionChange('panel9')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>9. Disaster Recovery, Backup, and High Availability</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Enterprise Backup Strategies:</strong><br />
+                        Setting up, managing, and automating GitLab backups for high availability<br />
+                        Implementing and testing disaster recovery plans<br /><br />
+                        
+                        <strong>High Availability and Scaling:</strong><br />
+                        Configuring GitLab for high availability with Geo, load balancing, and failover strategies<br />
+                        Scaling GitLab horizontally and vertically to meet enterprise demands
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+        </div>
+    );
 
     const renderContent = () => {
         switch (activeTab) {
@@ -23,11 +187,7 @@ const GitLabInfo = () => {
                     </Typography>
                 );
             case 1:
-                return (
-                    <Typography variant="body1">
-                        Curriculum content 
-                    </Typography>
-                );
+                return renderCurriculum();
             case 2:
                 return (
                     <Typography variant="body1">

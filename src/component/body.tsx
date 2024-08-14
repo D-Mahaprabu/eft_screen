@@ -492,7 +492,7 @@ const Body = () => {
                <Box sx={{ borderRadius: '5%',  display: 'flex', justifyContent: 'center', alignItems: 'center', border:'1px solid #D81B0E', mt:-2}} width={70} height={70}>
                     <img alt='EnterpriseArchitecture Logo' src={EnterpriseArchitectureLogo} width={75} height={40} style={{ cursor: 'pointer', marginBottom:25 }} onClick={handleClickEnterpriseArchitecture}></img>
                 </Box>
-                <Typography sx={{mt:-3.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Enterprice</Typography>
+                <Typography sx={{mt:-3.5}} fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Enterprise</Typography>
                 <Typography fontStyle={'Roboto'} fontWeight={'600'} fontSize={'11px'} lineHeight={'12.89px'} justifyContent={'center'} display={'flex'} alignItems={'center'}>Architecture</Typography>
                </Stack>
 
@@ -531,7 +531,7 @@ const Body = () => {
                </Stack>
 
                <Stack>
-                <Button size="large" sx={{ width: "130%", height: 95, mt: -2.4, ml: 2, bgcolor: '#D81B0E', color: 'white', '&:hover': {bgcolor: 'darkred',},}}>
+                <Button size="large" sx={{ width: "160%", height: 95, mt: -2.4, ml: 4, bgcolor: '#D81B0E', color: 'white', '&:hover': {bgcolor: 'darkred',},}}>
                     <Stack>
                     <Typography fontWeight={'bold'} display={'flex'} variant="h5" justifyContent={'center'}>
                         FULL STACK

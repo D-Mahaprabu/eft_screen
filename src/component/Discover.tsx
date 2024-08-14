@@ -21,7 +21,7 @@ const Discover: React.FC = () => {
                     <ListItem button key={index} component={Link} to={link.path}>
                         <ListItemText 
                             primary={link.name} 
-                            sx={{ color: 'red' }}
+                            sx={{ color: '#D81B0E' }}
                         />
                     </ListItem>
                 ))}

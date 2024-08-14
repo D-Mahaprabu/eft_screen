@@ -261,7 +261,7 @@ const SpringSecurityInfo = () => {
             <Box height={'auto'} width={'60%'} sx={{ ml: 2 }} >
                 <Stack direction={'row'} sx={{mt:3}}>
                     <Box height={'50px'} width={'50px'}><img src={SpringSecurityLogo} alt="" style={{ width: '100%', height: '100%', objectFit: 'contain' }}/></Box>
-                    <Typography variant="h4" sx={{mt:1, ml:1, textTransform:'uppercase'}}>SpringSecurity</Typography>
+                    <Typography variant="h4" sx={{mt:1, ml:1, textTransform:'uppercase'}}>Spring Security</Typography>
                 </Stack>
                 <Stack width={'auto'} direction={'row'}>
                     <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>

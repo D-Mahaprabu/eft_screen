@@ -3,11 +3,11 @@ import '../App.css';
 
 const Howitworks = () => {
     return(
-        <Box width="100%" height={350}>
-        <Typography variant="h4" gutterBottom color={'red'} sx={{ mt: 4, ml: 4 }}>
+        <Box width="100%" height={320}>
+        <Typography height={'22px'} width={'231px'} fontStyle={'Poppins'} fontWeight={'400'} fontSize={'32px'} lineHeight={'32px'} letterSpacing={'8%'} gutterBottom color={'red'} sx={{ mt: 4, ml: 8 }}>
                             How It Works
                         </Typography>
-                        <Typography variant="h3" gutterBottom color={'black'} sx={{ ml: 4 }}>
+                        <Typography height={'60px'} width={'817px'} fontStyle={'Poppins'} fontWeight={'500'} fontSize={'40px'} lineHeight={'60px'} gutterBottom color={'black'} sx={{ ml: 8 }}>
                             Your Online Learning Journey Made Easy
                         </Typography>
 
@@ -23,18 +23,12 @@ const Howitworks = () => {
                                         color: 'white',
                                         mx: 1,
                                         ml: 20,
-                                        mt: -14
+                                        mt: -6
                                     }}>
                                         01
                                     </Box>
                                     <Divider orientation="horizontal" sx={{ flexGrow: 1, borderColor: 'gray', borderBottomWidth: 1 }} />
-                                    <Typography variant="h5" gutterBottom color={'black'} sx={{ mt: 1, ml: -6.5 }} style={{ fontWeight: 'bold' }}>
-                                        Choose Your Course
-                                    </Typography>
-                                    <Typography variant="caption" gutterBottom color={'gray'} sx={{ mt: 8, ml: -27 }}>
-                                        Choose Your Course
-                                    </Typography>
-                                    <Typography variant="caption" gutterBottom color={'gray'} sx={{ mt: 13, ml: -14.5 }}>
+                                    <Typography height={'33px'} fontStyle={'Manrope'} fontWeight={'700'} fontSize={'24px'} lineHeight={'32.78px'} gutterBottom color={'black'} sx={{ mt: 10, ml: -6.5 }}>
                                         Choose Your Course
                                     </Typography>
                                     <Box sx={{
@@ -46,19 +40,13 @@ const Howitworks = () => {
                                         color: 'white',
                                         mx: 1,
                                         ml: 35,
-                                        mt: -14
+                                        mt: -6
                                     }}>
                                         02
                                     </Box>
                                     <Divider orientation="horizontal" sx={{ flexGrow: 20, borderColor: 'gray', borderBottomWidth: 10 }} />
-                                    <Typography variant="h5" gutterBottom color={'black'} sx={{ mt: 1, ml: -6.5 }} style={{ fontWeight: 'bold' }}>
-                                        Sign Up and Pay
-                                    </Typography>
-                                    <Typography variant="caption" gutterBottom color={'gray'} sx={{ mt: 8, ml: -21.5 }}>
-                                        Sign Up and Pay
-                                    </Typography>
-                                    <Typography variant="caption" gutterBottom color={'gray'} sx={{ mt: 13, ml: -11.5 }}>
-                                        Sign Up and Pay
+                                    <Typography height={'33px'} fontStyle={'Manrope'} fontWeight={'700'} fontSize={'24px'} lineHeight={'32.78px'} gutterBottom color={'black'} sx={{ mt: 10, ml: -6.5 }} style={{ fontWeight: 'bold' }}>
+                                        Register an Enquiry 
                                     </Typography>
                                     <Box sx={{
                                         width: 40, height: 40,
@@ -69,17 +57,11 @@ const Howitworks = () => {
                                         color: 'white',
                                         mx: 1,
                                         ml: 35,
-                                        mt: -14
+                                        mt: -6
                                     }}>
                                         03
                                     </Box>
-                                    <Typography variant="h5" gutterBottom color={'black'} sx={{ mt: 1, ml: -6.5 }} style={{ fontWeight: 'bold' }}>
-                                        Learn and Engage
-                                    </Typography>
-                                    <Typography variant="caption" gutterBottom color={'gray'} sx={{ mt: 8, ml: -23.7 }}>
-                                        Learn and Engage
-                                    </Typography>
-                                    <Typography variant="caption" gutterBottom color={'gray'} sx={{ mt: 13, ml: -12.7 }}>
+                                    <Typography height={'33px'} fontStyle={'Manrope'} fontWeight={'700'} fontSize={'24px'} lineHeight={'32.78px'} gutterBottom color={'black'} sx={{ mt: 10, ml: -6.5 }} style={{ fontWeight: 'bold' }}>
                                         Learn and Engage
                                     </Typography>
                                 </Box>

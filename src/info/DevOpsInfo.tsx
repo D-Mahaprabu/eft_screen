@@ -1,17 +1,244 @@
 import React, { useState } from 'react';
-import {Stack, Typography, Box, Paper, Tab, Tabs, Card, CardContent} from '@mui/material';
+import { Stack, Typography, Box, Paper, Tab, Tabs, Accordion, AccordionSummary, AccordionDetails, Card, CardContent } from '@mui/material';
 import AppBarComponent from '../component/Appbarcomponent';
-import laptopimg from '../images/laptop.jpg'
+import laptopimg from '../images/laptop.jpg';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import DevOpsLogo from '../images/devopsLogo.png';
 import CiCdQuickLinks from '../component/CicdQuickLinks';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const DevOpsInfo = () => {
     const [activeTab, setActiveTab] = useState(0);
+    const [expanded, setExpanded] = useState<string | false>(false);
 
     const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
         setActiveTab(newValue);
     };
+
+    const handleAccordionChange = (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
+        setExpanded(isExpanded ? panel : false);
+    };
+
+    const renderCurriculum = () => (
+        <div>
+            <Accordion expanded={expanded === 'panel1'} onChange={handleAccordionChange('panel1')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>1. DevOps Foundations</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Introduction to DevOps:</strong><br />
+                        History, culture, and principles of DevOps<br />
+                        Understanding the DevOps lifecycle and its significance in modern software development<br />
+                        Key concepts: CI/CD, Infrastructure as Code (IaC), automation, monitoring, and collaboration<br /><br />
+                        
+                        <strong>DevOps Ecosystem:</strong><br />
+                        Overview of the DevOps toolchain<br />
+                        Key technologies: Git, Docker, Kubernetes, Jenkins, Terraform, Ansible, Prometheus, Grafana, etc.<br />
+                        Integrating DevOps practices with Agile and Lean methodologies
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel2'} onChange={handleAccordionChange('panel2')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>2. Version Control and Collaboration</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Advanced Git:</strong><br />
+                        Mastering Git commands, branching strategies, and conflict resolution<br />
+                        Git workflows: Git Flow, GitHub Flow, GitLab Flow<br />
+                        Automating code reviews and pull requests<br /><br />
+
+                        <strong>Collaboration Tools:</strong><br />
+                        Integrating Git with CI/CD pipelines<br />
+                        Leveraging GitHub, GitLab, and Bitbucket for team collaboration<br />
+                        Advanced use of issues, merge requests, and project boards
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel3'} onChange={handleAccordionChange('panel3')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>3. Continuous Integration (CI)</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>CI Concepts and Practices:</strong><br />
+                        Deep dive into Continuous Integration: principles and benefits<br />
+                        Designing CI pipelines for efficiency and reliability<br />
+                        Implementing build automation, code quality checks, and test automation<br /><br />
+
+                        <strong>CI Tools:</strong><br />
+                        Expert-level configuration of Jenkins, GitLab CI, CircleCI, or Travis CI<br />
+                        Advanced pipeline scripting, shared libraries, and reusable templates<br />
+                        Integrating static code analysis tools (SonarQube, ESLint, Checkstyle)
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel4'} onChange={handleAccordionChange('panel4')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>4. Continuous Delivery and Deployment (CD)</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>CD Principles:</strong><br />
+                        Continuous Delivery vs. Continuous Deployment: when and how to use each<br />
+                        Building deployment pipelines: from development to production<br />
+                        Deployment strategies: Blue/Green, Canary, Rolling, A/B Testing<br /><br />
+
+                        <strong>Advanced CD Tools:</strong><br />
+                        Mastering Jenkins Pipelines, GitLab CD, Spinnaker, or Argo CD<br />
+                        Automating deployment to multiple environments (staging, production)<br />
+                        Managing release pipelines, rollbacks, and versioning
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel5'} onChange={handleAccordionChange('panel5')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>5. Infrastructure as Code (IaC)</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>IaC Concepts:</strong><br />
+                        Introduction to Infrastructure as Code: benefits and best practices<br />
+                        Immutable infrastructure and the importance of idempotency<br />
+                        IaC tools overview: Terraform, Ansible, Chef, Puppet<br /><br />
+
+                        <strong>Advanced Terraform:</strong><br />
+                        Writing and managing complex Terraform configurations<br />
+                        Advanced Terraform modules, workspaces, and state management<br />
+                        Integrating Terraform with CI/CD pipelines for automated provisioning<br /><br />
+
+                        <strong>Configuration Management with Ansible:</strong><br />
+                        Deep dive into Ansible playbooks, roles, and inventories<br />
+                        Managing complex environments and dynamic configurations<br />
+                        Integrating Ansible with Jenkins or GitLab for automated configuration management
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel6'} onChange={handleAccordionChange('panel6')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>6. Containerization and Orchestration</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Docker Mastery:</strong><br />
+                        Advanced Docker concepts: multi-stage builds, networking, storage, and security<br />
+                        Building, managing, and deploying Docker images and containers<br />
+                        Docker Compose for managing multi-container applications<br /><br />
+
+                        <strong>Kubernetes Deep Dive:</strong><br />
+                        Kubernetes architecture, components, and deployment models<br />
+                        Advanced Kubernetes features: Helm, Operators, Custom Resource Definitions (CRDs)<br />
+                        Managing Kubernetes clusters, namespaces, and deployments at scale<br />
+                        Integrating Kubernetes with CI/CD pipelines for automated deployments
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel7'} onChange={handleAccordionChange('panel7')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>7. Monitoring, Logging, and Observability</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Monitoring Best Practices:</strong><br />
+                        Understanding the pillars of observability: monitoring, logging, and tracing<br />
+                        Designing monitoring strategies for microservices and distributed systems<br />
+                        Key metrics to monitor: application performance, infrastructure health, and user experience<br /><br />
+
+                        <strong>Advanced Monitoring Tools:</strong><br />
+                        Mastering Prometheus for metrics collection and alerting<br />
+                        Grafana for building advanced dashboards and visualizations<br />
+                        Implementing distributed tracing with Jaeger or Zipkin<br />
+                        Centralized logging with ELK Stack (Elasticsearch, Logstash, Kibana) or EFK (Elasticsearch, Fluentd, Kibana)
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel8'} onChange={handleAccordionChange('panel8')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>8. Security in DevOps (DevSecOps)</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Security Fundamentals:</strong><br />
+                        Introduction to DevSecOps: integrating security into the DevOps pipeline<br />
+                        Security best practices: shift-left security, automated security testing, and vulnerability management<br />
+                        Key tools and technologies: OWASP ZAP, SonarQube, Snyk, Trivy, Clair<br /><br />
+
+                        <strong>Implementing DevSecOps:</strong><br />
+                        Automating security scans in CI/CD pipelines<br />
+                        Secrets management with HashiCorp Vault, AWS Secrets Manager, or Azure Key Vault<br />
+                        Implementing compliance checks and audit trails
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel9'} onChange={handleAccordionChange('panel9')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>9. Cloud and Hybrid Deployments</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Cloud-Native DevOps:</strong><br />
+                        Leveraging cloud services for DevOps: AWS, Azure, GCP<br />
+                        Building and deploying cloud-native applications using serverless, containers, and managed services<br />
+                        Hybrid cloud deployments: best practices and challenges<br /><br />
+
+                        <strong>Advanced Cloud Automation:</strong><br />
+                        Infrastructure as Code with AWS CloudFormation, Azure Resource Manager (ARM), or Google Cloud Deployment Manager<br />
+                        Automating multi-cloud deployments with Terraform or Pulumi<br />
+                        Managing cloud security and compliance in DevOps pipelines
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel10'} onChange={handleAccordionChange('panel10')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>10. Scaling and High Availability</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Scaling DevOps:</strong><br />
+                        Designing for scalability: horizontal vs. vertical scaling<br />
+                        High availability (HA) strategies for critical applications<br />
+                        Implementing load balancing, auto-scaling, and failover mechanisms<br /><br />
+
+                        <strong>Performance Optimization:</strong><br />
+                        Monitoring and optimizing CI/CD pipelines for performance<br />
+                        Implementing caching strategies: Docker layer caching, CI pipeline caching<br />
+                        Optimizing build times and reducing deployment latency
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel11'} onChange={handleAccordionChange('panel11')}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography>11. Advanced DevOps Automation and Scripting</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography variant="body1">
+                        <strong>Scripting for Automation:</strong><br />
+                        Advanced Bash, Python, or Groovy scripting for automating DevOps tasks<br />
+                        Writing reusable scripts and automating repetitive tasks in CI/CD pipelines<br />
+                        Integrating scripts with Jenkins, GitLab CI, or other CI/CD tools<br /><br />
+
+                        <strong>Automation Tools:</strong><br />
+                        Advanced usage of automation tools like Jenkinsfile, GitLab CI YAML, or Ansible playbooks<br />
+                        Creating self-healing systems using automated monitoring and response scripts<br />
+                        Automating infrastructure provisioning and management with Terraform, Packer, and cloud provider APIs
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+        </div>
+    );
+
 
     const renderContent = () => {
         switch (activeTab) {
@@ -25,11 +252,7 @@ const DevOpsInfo = () => {
                     </Typography>
                 );
             case 1:
-                return (
-                    <Typography variant="body1">
-                        Curriculum content 
-                    </Typography>
-                );
+                return renderCurriculum();
             case 2:
                 return (
                     <Typography variant="body1">

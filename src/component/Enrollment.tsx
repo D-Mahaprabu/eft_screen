@@ -3,83 +3,31 @@ import '../App.css';
 
 const Enrollment = () => {
     return(
-        <Stack sx={{ width: '100%', height: 500 }} bgcolor={'red'}>
+        <Stack sx={{ width: '100%', height: 400 }} bgcolor={'red'}>
 
-                <Typography variant='h6' color={'white'} sx={{ mt: 7, ml: 5 }}>Enrollment</Typography>
-                    <Typography variant='h4' color={'white'} sx={{ mt: 1, ml: 5 }}>Include</Typography>
-                    <Typography variant='caption' color={'white'} sx={{ mt: 1, ml: 5 }}>
-                        we will give you our best
-                    </Typography>
-                    <Typography variant='caption' color={'white'} sx={{ ml: 5 }}>
-                        we will give you our best
-                    </Typography>
-                    <Box sx={{ borderRadius: '50%',  display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 3, ml: 8.7 }} bgcolor={'white'} width={40} height={40}></Box>
-                      <Typography variant='body1' color={'white'} sx={{ ml: 15.7, mt: -5.4 }}>Unlimited Access</Typography>
-                      <Typography variant='caption' color={'white'} sx={{ ml: 15.7 }}>
-                         we can give you creative thoughts
-                      </Typography>
-                      <Typography variant='caption' color={'white'} sx={{ ml: 15.7, mt: -0.4 }}>
-                         we can give you creative thoughts
-                      </Typography>
-                      <Typography variant='caption' color={'white'} sx={{ ml: 15.7, mt: -0.4 }}>
-                         we can give you creative thoughts
-                      </Typography>
-                    <Box sx={{ borderRadius: '50%',  display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 8, ml: 8.7 }} bgcolor={'white'} width={40} height={40}></Box>
-                      <Typography variant='body1' color={'white'} sx={{ ml: 15.7, mt: -5.4 }}>Placement Assistence</Typography>
-                      <Typography variant='caption' color={'white'} sx={{ ml: 15.7 }}>
-                         we can give you placements oppurtunity
-                      </Typography>
-                      <Typography variant='caption' color={'white'} sx={{ ml: 15.7, mt: -0.4 }}>
-                         we can give you placements oppurtunity
-                      </Typography>
-                      <Typography variant='caption' color={'white'} sx={{ ml: 15.7, mt: -0.4 }}>
-                         we can give you placements oppurtunity
-                      </Typography>
-                    <Box sx={{ borderRadius: '50%',  display: 'flex', justifyContent: 'center', alignItems: 'center', mt: -26.5, ml: 65 }} bgcolor={'white'} width={40} height={40}></Box>
-                      <Typography variant='body1' color={'white'} sx={{ ml: 72, mt: -5.4 }}>Expert Teachers</Typography>
-                      <Typography variant='caption' color={'white'} sx={{ ml: 72 }}>
-                         we can give you future advices
-                      </Typography>
-                      <Typography variant='caption' color={'white'} sx={{ ml: 72, mt: -0.4 }}>
-                         we can give you future advices
-                      </Typography>
-                      <Typography variant='caption' color={'white'} sx={{ ml: 72, mt: -0.4 }}>
-                         we can give you future advices
-                      </Typography>
-                    <Box sx={{ borderRadius: '50%',  display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 8, ml: 65 }} bgcolor={'white'} width={40} height={40}></Box>
-                      <Typography variant='body1' color={'white'} sx={{ ml: 72, mt: -5.4 }}>Cost Effective</Typography>
-                      <Typography variant='caption' color={'white'} sx={{ ml: 72 }}>
-                         we can give you effective way to learn 
-                      </Typography>
-                      <Typography variant='caption' color={'white'} sx={{ ml: 72, mt: -0.4 }}>
-                         we can give you effective way to learn 
-                      </Typography>
-                      <Typography variant='caption' color={'white'} sx={{ ml: 72, mt: -0.4 }}>
-                         we can give you effective way to learn 
-                      </Typography>
-                    <Box sx={{ borderRadius: '50%',  display: 'flex', justifyContent: 'center', alignItems: 'center', mt: -26.5, ml: 120 }} bgcolor={'white'} width={40} height={40}></Box>
-                      <Typography variant='body1' color={'white'} sx={{ ml: 127, mt: -5.4 }}>Personalized Learning</Typography>
-                      <Typography variant='caption' color={'white'} sx={{ ml: 127 }}>
-                         we can give you perfect training
-                      </Typography>
-                      <Typography variant='caption' color={'white'} sx={{ ml: 127, mt: -0.4 }}>
-                         we can give you perfect training
-                      </Typography>
-                      <Typography variant='caption' color={'white'} sx={{ ml: 127, mt: -0.4 }}>
-                         we can give you perfect training
-                      </Typography>
-                    <Box sx={{ borderRadius: '50%',  display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 8, ml: 120 }} bgcolor={'white'} width={40} height={40}></Box>
-                      <Typography variant='body1' color={'white'} sx={{ ml: 127, mt: -5.4 }}>Continuous Support</Typography>
-                      <Typography variant='caption' color={'white'} sx={{ ml: 127 }}>
-                         we can give you more support
-                      </Typography>
-                      <Typography variant='caption' color={'white'} sx={{ ml: 127, mt: -0.4 }}>
-                         we can give you more support
-                      </Typography>
-                      <Typography variant='caption' color={'white'} sx={{ ml: 127, mt: -0.4 }}>
-                         we can give you more support
-                      </Typography> 
+                <Typography width={'170px'} height={'35px'} fontStyle={'Poppins'} fontWeight={'400'} fontSize={'32px'} lineHeight={'48px'} color={'white'} sx={{ mt: 5, ml: 8 }}>Enrollment</Typography>
+                    <Typography width={'179px'} height={'70px'} fontStyle={'Poppins'} fontWeight={'500'} fontSize={'48px'} lineHeight={'72px'} color={'white'} sx={{ mt: 1, ml: 8 }}>Include</Typography>
+                    
+                    <Box sx={{ borderRadius: '35px',  display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 3, ml: 13 }} bgcolor={'white'} width={'42px'} height={'44px'}></Box>
+                      <Typography width={'139px'} height={'24px'} fontStyle={'Poppins'} fontWeight={'500'} fontSize={'16px'} lineHeight={'24px'} color={'white'} sx={{ ml: 21, mt: -4.3 }}>Unlimited Access</Typography>
 
+                    <Box sx={{ borderRadius: '35px',  display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 8, ml: 13 }} bgcolor={'white'} width={'42px'} height={'44px'}></Box>
+                      <Typography width={'165px'} height={'24px'} fontStyle={'Poppins'} fontWeight={'500'} fontSize={'16px'} lineHeight={'24px'} color={'white'} sx={{ ml: 21, mt: -4.3 }}>Placement Assistance</Typography>
+                      
+
+                    <Box sx={{ borderRadius: '35px',  display: 'flex', justifyContent: 'center', alignItems: 'center', mt: -16.3, ml: 67 }} bgcolor={'white'} width={'42px'} height={'44px'}></Box>
+                      <Typography width={'139px'} height={'24px'} fontStyle={'Poppins'} fontWeight={'500'} fontSize={'16px'} lineHeight={'24px'} color={'white'} sx={{ ml: 75, mt: -4.3 }}>Expert Teachers</Typography>
+                      
+
+                    <Box sx={{ borderRadius: '35px',  display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 8, ml: 67 }} bgcolor={'white'} width={'42px'} height={'44px'}></Box>
+                      <Typography width={'139px'} height={'24px'} fontStyle={'Poppins'} fontWeight={'500'} fontSize={'16px'} lineHeight={'24px'} color={'white'} sx={{ ml: 75, mt: -4.3 }}>Cost Effective</Typography>
+                      
+
+                    <Box sx={{ borderRadius: '35px',  display: 'flex', justifyContent: 'center', alignItems: 'center', mt: -16.3, ml: 120 }} bgcolor={'white'} width={'42px'} height={'44px'}></Box>
+                      <Typography width={'165px'} height={'24px'} fontStyle={'Poppins'} fontWeight={'500'} fontSize={'16px'} lineHeight={'24px'} color={'white'} sx={{ ml: 128, mt: -4.3 }}>Personalized Learning</Typography>
+                      
+                    <Box sx={{ borderRadius: '35px',  display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 8, ml: 120 }} bgcolor={'white'} width={'42px'} height={'44px'}></Box>
+                      <Typography width={'160px'} height={'24px'} fontStyle={'Poppins'} fontWeight={'500'} fontSize={'16px'} lineHeight={'24px'} color={'white'} sx={{ ml: 128, mt: -4.3 }}>Continuous Support</Typography>
                 </Stack>
     )
 }

@@ -14,7 +14,7 @@ const Courses = () => {
             title: "Full Stack", 
             path: "/courses/fullstack", 
             image: FullStackBgImage,
-            info: "Become proficient in front-end and back-end technologies."
+            info: "Full Stack Developer program gives the ability to design complete web applications and websites. They will be upskilled in frontend, backend, database, and debugging of web applications or websites."
         },
         { 
             title: "Cloud Computing", 
@@ -44,16 +44,16 @@ const Courses = () => {
             title: "Web Development", 
             path: "/web-development", 
             image: WebDevelopmentBgImage,
-            info: "Become a data expert and Work with big data technologies and data pipelines."
+            info: "Web development program makes you how to create, build, and maintain of websites. It includes aspects such as web design, web publishing, web programming, and database management."
         }
     ];
 
     return (
-        <Box className="Courses" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: 1140 }}>
-            <Typography variant="h5" color="red" fontFamily="Roboto" sx={{ mt: 5, mr: 163 }}>
+        <Box className="Courses" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: 1120 }}>
+            <Typography width={'148px'} height={'35px'} fontStyle={'Poppins'} fontWeight={'400'} fontSize={'32px'} lineHeight={'48px'} color="red" sx={{ mt: 5, mr: 150 }}>
                 Available
             </Typography>
-            <Typography variant="h4" color="black" fontFamily="Roboto" sx={{ mt: 1, mr: 160  }} style={{ fontWeight: 'bold' }}>
+            <Typography width={'166px'} height={'60px'} fontStyle={'Poppins'} fontWeight={'500'} fontSize={'40px'} lineHeight={'60px'} sx={{ mt: 1, mr: 149  }} style={{ fontWeight: 'bold' }}>
                 Courses
             </Typography>
             <Stack 
@@ -64,12 +64,13 @@ const Courses = () => {
                     mt: 1, 
                     mr: 15, 
                     p: 2,
-                    gap: 9
+                    gap: 6,
+                    ml: 15
                 }} 
                 direction={'row'}
             >
                 {courses.map(course => (
-                    <Card sx={{ width: 350, height: 380, borderRadius: 2, mr: 4 }} key={course.title}>
+                    <Card sx={{ width: 350, height: 380, borderRadius: 2, mr: 1.5 }} key={course.title}>
                         <CardMedia
                             component="img"
                             width="350"
@@ -77,16 +78,16 @@ const Courses = () => {
                             image={course.image}
                             alt={course.title}
                         />
-                        <CardContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-                            <Typography fontFamily={"Roboto"} color={'red'} variant="h6" component={Link} to={course.path}>
+                        <CardContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'left', justifyContent: 'left' }}>
+                            <Typography width={'354px'} height={'34px'} fontStyle={'Poppins'} fontWeight={'bold'} fontSize={'24px'} lineHeight={'33.6px'} letterSpacing={'0.5%'} color={'red'} variant="h6" component={Link} to={course.path} sx={{textDecoration: 'none'}}>
                                 {course.title}
                             </Typography>
-                            <Typography fontFamily={"Roboto"} color={'black'} variant="caption" sx={{ textAlign: 'center' }}>
+                            {/* <Typography width={'352px'} height={'48px'} fontStyle={'Poppins'} fontWeight={'400'} fontSize={'16px'} lineHeight={'24px'} color={'gray'} variant="body1">
                                 {course.info.split('.')[0]}
                             </Typography>
-                            <Typography fontFamily={"Roboto"} color={'black'} variant="caption" sx={{ textAlign: 'center' }}>
+                            <Typography width={'352px'} height={'48px'} fontStyle={'Poppins'} fontWeight={'400'} fontSize={'16px'} lineHeight={'24px'} color={'gray'} variant="body1">
                                 {course.info.split('.')[1]}
-                            </Typography>
+                            </Typography> */}
                         </CardContent>
                     </Card>
                 ))}

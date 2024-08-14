@@ -39,12 +39,13 @@ import EnterpriseArchitectureInfo from './info/EnterpriseArchitectureInfo'
 import CapacityPlanningInfo from './info/CapacityPlanningInfo'
 import FullstackEngineerScreen from './component/FullStackEngineerScreen';
 import Home from './component/home';
-import Courses from './component/Courses';
+import Aboutus from './component/Aboutus';
+import Contactus from './component/Contactus';
 
 function App() {
 
   return (
-  <Router>
+  <Router> 
     <Box className="App">
       <Switch>
       <Route path="/" exact component={Home} />
@@ -86,6 +87,8 @@ function App() {
       <Route path="/courses/fullstack/debuggingskills-info" component={DebuggingSkillsInfo} />
       <Route path="/courses/fullstack/enterprisearchitecture-info" component={EnterpriseArchitectureInfo} />
       <Route path="/courses/fullstack/capacityplanning-info" component={CapacityPlanningInfo} />
+      <Route path="/about-us" component={Aboutus} />
+      <Route path="/contact-us" component={Contactus} />
       </Switch>
     </Box>
   </Router>

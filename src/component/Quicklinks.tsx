@@ -15,8 +15,8 @@ const quickLinks = [
 const QuickLinks: React.FC = () => {
     return (
         <Box sx={{ bgcolor: 'white', p: 2, borderRadius: 1, boxShadow: 1, mb: 2 }}>
-            <Typography variant="h6" sx={{ mb: 2, fontWeight: 'bold' }}>
-                Quick Links
+            <Typography variant="h6" sx={{ mb: 2, fontWeight: 'bold', color: '#D81B0E' }}>
+                Full Stack Quick Links
             </Typography>
             <List>
                 {quickLinks.map((link, index) => (
