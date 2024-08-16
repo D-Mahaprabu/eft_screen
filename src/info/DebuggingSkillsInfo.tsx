@@ -128,9 +128,26 @@ const DebuggingSkillsInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                       Debugging in Software Engineering is the process of identifying and resolving errors or bugs in a software system.<br/>
-                       It’s a critical aspect of software development, ensuring quality, performance, and user satisfaction.<br/> 
-                       Despite being time-consuming, effective debugging is essential for reliable and competitive software products.
+                        <strong>Debugging Skills</strong> involve identifying, isolating, and fixing issues or bugs in software to ensure correct functionality.<br /><br />
+                        <strong>Understanding Code</strong>: Develop a deep understanding of the codebase and its logic to effectively pinpoint and resolve issues.<br /><br />
+                        <strong>Reproducing Bugs</strong>: Reproduce the issue consistently to understand its behavior and context, aiding in diagnosing the problem.<br /><br />
+                        <strong>Reading Logs</strong>: Analyze application logs to identify error messages, stack traces, and other clues related to the bug.<br /><br />
+                        <strong>Using Debuggers</strong>: Employ debugging tools (e.g., breakpoints, watch expressions) to step through code and inspect variable states at runtime.<br /><br />
+                        <strong>Binary Search</strong>: Use binary search techniques in the code to isolate problematic areas by incrementally narrowing down the location of the bug.<br /><br />
+                        <strong>Code Review</strong>: Conduct code reviews to identify potential issues and understand changes that may have introduced bugs.<br /><br />
+                        <strong>Unit Testing</strong>: Write and run unit tests to verify individual components and functions, catching bugs early in the development process.<br /><br />
+                        <strong>Reproducing Environment</strong>: Ensure the issue can be reproduced in a controlled environment, such as a staging or test environment, for accurate diagnosis.<br /><br />
+                        <strong>Isolation</strong>: Isolate the problematic code or component to reduce the complexity and focus on the specific area where the issue occurs.<br /><br />
+                        <strong>Check Dependencies</strong>: Verify that external libraries and dependencies are up-to-date and correctly configured, as they can impact the application’s behavior.<br /><br />
+                        <strong>Code Walkthrough</strong>: Perform a code walkthrough with peers to gain additional insights and perspectives on the issue.<br /><br />
+                        <strong>Error Handling</strong>: Implement and review error handling code to ensure it properly captures and logs exceptions, aiding in debugging.<br /><br />
+                        <strong>Systematic Approach</strong>: Follow a systematic approach to debugging, such as dividing the problem into smaller parts and tackling each one methodically.<br /><br />
+                        <strong>Analyzing Core Dumps</strong>: Use core dumps and memory analysis tools to investigate crashes and memory-related issues.<br /><br />
+                        <strong>Profiling</strong>: Utilize profiling tools to analyze performance issues, such as memory leaks or slow execution times, that may be related to bugs.<br /><br />
+                        <strong>Documentation</strong>: Document the debugging process, findings, and fixes to build knowledge and assist with future issues.<br /><br />
+                        <strong>Version Control</strong>: Use version control systems to track changes, identify recent modifications, and revert to previous stable versions if needed.<br /><br />
+                        <strong>Collaborating</strong>: Collaborate with team members and leverage their expertise to tackle complex bugs or unfamiliar areas of the codebase.<br /><br />
+                        <strong>Continuous Learning</strong>: Stay updated with new debugging techniques, tools, and best practices to enhance debugging skills and efficiency.
                     </Typography>
                 );
             case 1:
@@ -161,15 +178,15 @@ const DebuggingSkillsInfo = () => {
                         <Typography variant="h4" sx={{ mt: 1, ml: 1, textTransform: 'uppercase' }}>Debugging Skills</Typography>
                     </Stack>
                     <Stack width="auto" direction="row">
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>15 Modules</Typography>
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>72 Hours</Typography>
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>Beginner</Typography>
@@ -185,21 +202,21 @@ const DebuggingSkillsInfo = () => {
                                 <Tab
                                     label="Overview"
                                     sx={{
-                                        color: activeTab === 0 ? 'red' : 'rgba(0, 0, 0, 0.54)'
+                                        color: activeTab === 0 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)'
                                     }}
                                 />
                                 <Tab
                                     label="Curriculum"
                                     sx={{
-                                        color: activeTab === 1 ? 'red' : 'rgba(0, 0, 0, 0.54)'
+                                        color: activeTab === 1 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)'
                                     }}
                                 />
-                                <Tab
+                                {/* <Tab
                                     label="Reviews"
                                     sx={{
                                         color: activeTab === 2 ? 'red' : 'rgba(0, 0, 0, 0.54)'
                                     }}
-                                />
+                                /> */}
                             </Tabs>
                         </Paper>
                         <Box sx={{ p: 3 }}>

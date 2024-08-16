@@ -250,10 +250,26 @@ const CssInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        CSS stands for Cascading Style Sheets<br />
-                        CSS describes how HTML elements are to be displayed on screen, paper, or in other media<br />
-                        CSS saves a lot of work. It can control the layout of multiple web pages all at once<br />
-                        External stylesheets are stored in CSS files
+                        <strong>CSS</strong> (Cascading Style Sheets) is a language used to style and layout web pages.<br />
+                        It controls the visual presentation of HTML elements, defining their appearance on the page.<br /><br />
+                        <strong>Cascading:</strong> refers to how styles are applied in a hierarchical order, with more specific rules overriding general ones.<br /><br />
+                        <strong>Selectors:</strong> are used to target specific HTML elements that you want to style.<br /><br />
+                        <strong>Properties:</strong> define the aspects of the elements you want to change, such as color, font, or margin.<br /><br />
+                        <strong>Values:</strong> are assigned to properties to specify the desired outcome (e.g., color: red;).<br /><br />
+                        <strong>Classes and IDs:</strong> allow for more specific targeting of elements, enabling reusability and consistency.<br /><br />
+                        <strong>Colors:</strong> can be defined using names, HEX codes, RGB, RGBA, HSL, or HSLA values.<br /><br />
+                        <strong>Fonts:</strong> control the typography of a webpage, including font family, size, weight, and style.<br /><br />
+                        <strong>Box Model:</strong> is a core concept that includes content, padding, border, and margin.<br /><br />
+                        <strong>Padding:</strong> is the space inside the element’s border, between the content and the border.<br /><br />
+                        <strong>Margins:</strong> are the space outside the element’s border, separating it from other elements.<br /><br />
+                        <strong>Borders:</strong> define the outline of an element and can be customized in terms of width, style, and color.<br /><br />
+                        <strong>Layouts:</strong> can be controlled using display properties like block, inline, inline-block, and flex.<br /><br />
+                        <strong>Flexbox:</strong> is a powerful layout model for aligning and distributing space among items in a container.<br /><br />
+                        <strong>Grid:</strong> layout provides a two-dimensional system to align items into rows and columns.<br /><br />
+                        <strong>Positioning:</strong> controls how elements are placed on the page, using static, relative, absolute, and fixed positions.<br /><br />
+                        <strong>Responsive design:</strong> is achieved by using media queries to apply different styles based on screen size or device.<br /><br />
+                        <strong>Pseudo-classes and pseudo-elements:</strong> allow for styling specific states or parts of elements (e.g., hover, before, after).<br /><br />
+                        <strong>Transitions and animations:</strong> bring elements to life by changing their properties smoothly over time.
                     </Typography>
                 );
             case 1:
@@ -281,15 +297,15 @@ const CssInfo = () => {
                     <Typography variant="h4" sx={{mt:1, ml:1, textTransform:'uppercase'}}>CSS</Typography>
                 </Stack>
                 <Stack width={'auto'} direction={'row'}>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>15 Modules</Typography>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>72 Hours</Typography>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>Beginner</Typography>
@@ -305,21 +321,21 @@ const CssInfo = () => {
                             <Tab 
                                 label="Overview" 
                                 sx={{ 
-                                    color: activeTab === 0 ? 'red' : 'rgba(0, 0, 0, 0.54)' 
+                                    color: activeTab === 0 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)' 
                                 }} 
                             />
                             <Tab 
                                 label="Curriculum" 
                                 sx={{ 
-                                    color: activeTab === 1 ? 'red' : 'rgba(0, 0, 0, 0.54)' 
+                                    color: activeTab === 1 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)' 
                                 }} 
                             />
-                            <Tab 
+                            {/* <Tab 
                                 label="Reviews" 
                                 sx={{ 
                                     color: activeTab === 2 ? 'red' : 'rgba(0, 0, 0, 0.54)' 
                                 }} 
-                            />
+                            /> */}
                         </Tabs>
                     </Paper>
                     <Box sx={{ p: 3 }}>

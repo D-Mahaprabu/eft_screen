@@ -1,7 +1,7 @@
-import Body from './body';
 import { Box} from '@mui/material';
 import AppBarComponent from './Appbarcomponent';
 import FullStackCource from './Fullstackcourcedetail';
+import Body from './Body';
 
 const FullstackEngineerScreen = () => {
 

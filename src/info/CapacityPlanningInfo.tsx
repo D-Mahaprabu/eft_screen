@@ -164,9 +164,26 @@ const CapacityPlanningInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        Capacity planning is the process of determining the potential needs of your project.<br />
-                        The goal of capacity planning is to have the right resources available when you’ll need them.<br />
-                        Resources could mean individuals with the right skills, time available to add another project, or the necessary budget.
+                        <strong>Capacity Planning</strong> is the process of determining the resources needed to meet future demand and ensure system performance.<br /><br />
+                        <strong>Demand Forecasting</strong>: Involves predicting future resource needs based on historical data, trends, and business growth projections.<br /><br />
+                        <strong>Resource Allocation</strong>: Ensures that resources such as CPU, memory, storage, and bandwidth are allocated appropriately to meet anticipated demand.<br /><br />
+                        <strong>Performance Metrics</strong>: Monitors key performance metrics like response times, throughput, and error rates to assess current system capacity.<br /><br />
+                        <strong>Scalability</strong>: Plans for scalability to accommodate growing workloads by scaling up (vertical scaling) or scaling out (horizontal scaling).<br /><br />
+                        <strong>Capacity Analysis</strong>: Analyzes current capacity and identifies potential bottlenecks or limitations that could impact system performance.<br /><br />
+                        <strong>Trend Analysis</strong>: Uses trend analysis to predict future demand based on historical usage patterns and anticipated changes.<br /><br />
+                        <strong>Resource Planning</strong>: Develops plans for acquiring additional resources, such as hardware or cloud services, to meet future requirements.<br /><br />
+                        <strong>Cost Management</strong>: Balances capacity needs with budget constraints to ensure cost-effective resource acquisition and utilization.<br /><br />
+                        <strong>Redundancy</strong>: Incorporates redundancy and failover strategies to ensure high availability and reliability of resources.<br /><br />
+                        <strong>Testing</strong>: Performs load testing and stress testing to validate capacity plans and identify potential issues before they impact production.<br /><br />
+                        <strong>Scalability Planning</strong>: Develops strategies for scaling infrastructure to handle peak loads and unexpected spikes in demand.<br /><br />
+                        <strong>Monitoring Tools</strong>: Utilizes monitoring tools and dashboards to continuously track resource usage and performance against capacity plans.<br /><br />
+                        <strong>Capacity Reviews</strong>: Conducts regular capacity reviews to reassess and adjust plans based on changing business needs and technology advancements.<br /><br />
+                        <strong>Documentation</strong>: Documents capacity planning processes, decisions, and assumptions to provide a reference for future planning and audits.<br /><br />
+                        <strong>Risk Management</strong>: Identifies and mitigates risks associated with capacity planning, such as resource shortages or system failures.<br /><br />
+                        <strong>Vendor Management</strong>: Manages relationships with vendors and service providers to ensure timely delivery of resources and support.<br /><br />
+                        <strong>Automated Scaling</strong>: Implements automated scaling solutions to dynamically adjust resources based on real-time demand.<br /><br />
+                        <strong>Capacity Planning Models</strong>: Utilizes models and simulations to predict future capacity needs and assess the impact of different scenarios.<br /><br />
+                        <strong>Continuous Improvement</strong>: Continuously improves capacity planning processes by incorporating feedback, lessons learned, and new best practices.
                     </Typography>
                 );
             case 1:
@@ -197,15 +214,15 @@ const CapacityPlanningInfo = () => {
                         <Typography variant="h4" sx={{ mt: 1, ml: 1, textTransform: 'uppercase' }}>Capacity Planning</Typography>
                     </Stack>
                     <Stack width="auto" direction="row">
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>15 Modules</Typography>
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>72 Hours</Typography>
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>Beginner</Typography>
@@ -221,21 +238,21 @@ const CapacityPlanningInfo = () => {
                                 <Tab
                                     label="Overview"
                                     sx={{
-                                        color: activeTab === 0 ? 'red' : 'rgba(0, 0, 0, 0.54)'
+                                        color: activeTab === 0 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)'
                                     }}
                                 />
                                 <Tab
                                     label="Curriculum"
                                     sx={{
-                                        color: activeTab === 1 ? 'red' : 'rgba(0, 0, 0, 0.54)'
+                                        color: activeTab === 1 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)'
                                     }}
                                 />
-                                <Tab
+                                {/* <Tab
                                     label="Reviews"
                                     sx={{
                                         color: activeTab === 2 ? 'red' : 'rgba(0, 0, 0, 0.54)'
                                     }}
-                                />
+                                /> */}
                             </Tabs>
                         </Paper>
                         <Box sx={{ p: 3 }}>

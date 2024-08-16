@@ -332,10 +332,26 @@ const JsInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        JavaScript is a programming language used for creating dynamic content on websites.<br />
-                        It is a lightweight, cross-platform and single-threaded programming language.<br />
-                        JavaScript is an interpreted language that executes code line by line providing more flexibility.<br />
-                        It is a commonly used programming language to create dynamic and interactive elements in web applications.
+                        <strong>JavaScript</strong> is a high-level, interpreted scripting language primarily used for web development.<br /><br />
+                        <strong>ECMAScript:</strong> is the standard specification for JavaScript, with major versions including ES5, ES6, and beyond.<br /><br />
+                        <strong>Variables:</strong> are declared using var, let, or const, with let and const having block scope.<br /><br />
+                        <strong>Data Types:</strong> include primitive types like number, string, boolean, null, undefined, and symbol, as well as objects.<br /><br />
+                        <strong>Functions:</strong> can be declared using function declarations, expressions, or arrow functions.<br /><br />
+                        <strong>Control Structures:</strong> include if, else, switch, for, while, and do-while loops for flow control.<br /><br />
+                        <strong>Objects:</strong> are collections of key-value pairs and can be created using object literals or constructors.<br /><br />
+                        <strong>Arrays:</strong> are ordered collections of values, which can be manipulated with methods like push, pop, map, and filter.<br /><br />
+                        <strong>Prototypes:</strong> enable inheritance, allowing objects to inherit properties and methods from other objects.<br /><br />
+                        <strong>Closures:</strong> allow functions to retain access to their lexical scope even after execution.<br /><br />
+                        <strong>Asynchronous Programming:</strong> is handled with callbacks, promises, and async/await.<br /><br />
+                        <strong>Events:</strong> are handled through event listeners that respond to user interactions and other actions.<br /><br />
+                        <strong>DOM Manipulation:</strong> allows interaction with HTML and CSS using methods like getElementById, querySelector, and innerHTML.<br /><br />
+                        <strong>Error Handling:</strong> uses try, catch, finally, and throw statements to manage exceptions.<br /><br />
+                        <strong>Modules:</strong> can be used to import and export code between files using import and export statements.<br /><br />
+                        <strong>JSON (JavaScript Object Notation):</strong> is a lightweight format for data interchange.<br /><br />
+                        <strong>Hoisting:</strong> refers to the behavior where variable and function declarations are moved to the top of their scope.<br /><br />
+                        <strong>Strict Mode:</strong> enforces stricter parsing and error handling with "use strict";.<br /><br />
+                        <strong>ES6 Features:</strong> include classes, template literals, destructuring, and arrow functions.<br /><br />
+                        <strong>JavaScript Engines:</strong> (like V8 in Chrome) execute JavaScript code, converting it into machine code.
                     </Typography>
                 );
             case 1:
@@ -368,15 +384,15 @@ const JsInfo = () => {
                         <Typography variant="h4" sx={{ mt: 1, ml: 1, textTransform: 'uppercase' }}>JavaScript</Typography>
                     </Stack>
                     <Stack width={'auto'} direction={'row'}>
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>16 Modules</Typography>
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>72 Hours</Typography>
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>Beginner</Typography>
@@ -392,21 +408,21 @@ const JsInfo = () => {
                                 <Tab
                                     label="Overview"
                                     sx={{
-                                        color: activeTab === 0 ? 'red' : 'rgba(0, 0, 0, 0.54)'
+                                        color: activeTab === 0 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)'
                                     }}
                                 />
                                 <Tab
                                     label="Curriculum"
                                     sx={{
-                                        color: activeTab === 1 ? 'red' : 'rgba(0, 0, 0, 0.54)'
+                                        color: activeTab === 1 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)'
                                     }}
                                 />
-                                <Tab
+                                {/* <Tab
                                     label="Reviews"
                                     sx={{
                                         color: activeTab === 2 ? 'red' : 'rgba(0, 0, 0, 0.54)'
                                     }}
-                                />
+                                /> */}
                             </Tabs>
                         </Paper>
                         <Box sx={{ p: 3 }}>

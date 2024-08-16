@@ -212,12 +212,26 @@ const HtmlInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        HTML stands for Hyper Text Markup Language<br />
-                        HTML is the standard markup language for creating Web pages<br />
-                        HTML describes the structure of a Web page<br />
-                        HTML consists of a series of elements<br />
-                        HTML elements tell the browser how to display the content<br />
-                        HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+                        <strong>HTML</strong> (HyperText Markup Language) is the standard language for creating web pages.<br />
+                        It structures web content into a hierarchical format, allowing browsers to interpret and render pages.<br /><br />
+                        <strong>HTML document:</strong> typically starts with a declaration and includes a head section for metadata and a body section for content.<br /><br />
+                        <strong>Elements:</strong> are the basic building blocks of HTML, defining the structure and content of a webpage.<br />
+                        Elements often consist of an opening and closing part, with content placed in between.<br /><br />
+                        <strong>Attributes:</strong> are used to provide additional information or configure elements, such as specifying URLs, images, or styles.<br /><br />
+                        <strong>Headings:</strong> define titles and subheadings, ranging from large and prominent to small and subtle.<br /><br />
+                        <strong>Paragraphs:</strong> are used to organize text into distinct blocks, improving readability and structure.<br /><br />
+                        <strong>Links:</strong> allow users to navigate between pages or resources on the web, enabling connectivity across sites.<br /><br />
+                        <strong>Images:</strong> can be embedded into pages, enriching content with visual media and supporting text.<br /><br />
+                        <strong>Lists:</strong> can be ordered or unordered, helping to organize content into numbered or bullet-point formats.<br /><br />
+                        <strong>Forms:</strong> enable interaction between users and websites, allowing for data input, selection, and submission.<br />
+                        Forms include various input types such as text fields, checkboxes, radio buttons, and submit buttons.<br /><br />
+                        <strong>Tables:</strong> organize data into rows and columns, making it easier to display structured information.<br /><br />
+                        <strong>Attributes like classes and IDs:</strong> help apply styles and scripts to specific elements for better customization.<br /><br />
+                        <strong>Comments:</strong> can be added to HTML code to explain sections, making it easier to understand and maintain.<br /><br />
+                        <strong>Semantic:</strong> elements provide meaning to the content, such as defining navigation sections, articles, and footers.<br /><br />
+                        <strong>Metadata:</strong> includes information about the document, like character encoding, author, and description.<br /><br />
+                        <strong>External resources:</strong> like stylesheets, scripts, and fonts can be linked to enhance the design and functionality of a webpage.<br /><br />
+                        <strong>Responsive design:</strong> is achieved through HTML, allowing webpages to adapt to different screen sizes and devices.
                     </Typography>
                 );
             case 1:
@@ -246,15 +260,15 @@ const HtmlInfo = () => {
                     <Typography variant="h4" sx={{mt:1, ml:1, textTransform:'uppercase'}}>HTML</Typography>
                 </Stack>
                 <Stack width={'auto'} direction={'row'}>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>15 Modules</Typography>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>72 Hours</Typography>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>Beginner</Typography>
@@ -270,21 +284,21 @@ const HtmlInfo = () => {
                             <Tab 
                                 label="Overview" 
                                 sx={{ 
-                                    color: activeTab === 0 ? 'red' : 'rgba(0, 0, 0, 0.54)' 
+                                    color: activeTab === 0 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)' 
                                 }} 
                             />
                             <Tab 
                                 label="Curriculum" 
                                 sx={{ 
-                                    color: activeTab === 1 ? 'red' : 'rgba(0, 0, 0, 0.54)' 
+                                    color: activeTab === 1 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)' 
                                 }} 
                             />
-                            <Tab 
+                            {/* <Tab 
                                 label="Reviews" 
                                 sx={{ 
                                     color: activeTab === 2 ? 'red' : 'rgba(0, 0, 0, 0.54)' 
                                 }} 
-                            />
+                            /> */}
                         </Tabs>
                     </Paper>
                     <Box sx={{ p: 3 }}>

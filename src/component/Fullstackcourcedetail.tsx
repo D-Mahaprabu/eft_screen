@@ -48,15 +48,15 @@ const FullStackCource = () => {
                     <Typography variant="h4">FULLSTACK ENGINEERING</Typography>
                 </Stack>
                 <Stack width={'auto'} direction={'row'}>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>15 Modules</Typography>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 1, position: 'relative', overflow: 'hidden' }}>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>8 Months</Typography>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 1, position: 'relative', overflow: 'hidden' }}>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>Beginner</Typography>
@@ -72,7 +72,7 @@ const FullStackCource = () => {
                             <Tab 
                                 label="Overview" 
                                 sx={{ 
-                                    color: activeTab === 0 ? 'red' : 'rgba(0, 0, 0, 0.54)' 
+                                    color: activeTab === 0 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)' 
                                 }} 
                             />
                         </Tabs>

@@ -9,7 +9,7 @@ import DevopsBgImage from '../images/devopsLogos.jpg';
 import WebDevelopmentBgImage from '../images/webLogo.png';
 
 const Courses = () => {
-    const courses = [
+    const Courses = [
         { 
             title: "Full Stack", 
             path: "/courses/fullstack", 
@@ -50,7 +50,7 @@ const Courses = () => {
 
     return (
         <Box className="Courses" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: 1120 }}>
-            <Typography width={'148px'} height={'35px'} fontStyle={'Poppins'} fontWeight={'400'} fontSize={'32px'} lineHeight={'48px'} color="red" sx={{ mt: 5, mr: 150 }}>
+            <Typography width={'148px'} height={'35px'} fontStyle={'Poppins'} fontWeight={'400'} fontSize={'32px'} lineHeight={'48px'} color="#D81B0E" sx={{ mt: 5, mr: 150 }}>
                 Available
             </Typography>
             <Typography width={'166px'} height={'60px'} fontStyle={'Poppins'} fontWeight={'500'} fontSize={'40px'} lineHeight={'60px'} sx={{ mt: 1, mr: 149  }} style={{ fontWeight: 'bold' }}>
@@ -62,32 +62,32 @@ const Courses = () => {
                     justifyContent: 'center', 
                     flexWrap: 'wrap', 
                     mt: 1, 
-                    mr: 15, 
+                    mr: 10, 
                     p: 2,
                     gap: 6,
-                    ml: 15
+                    ml: 10
                 }} 
                 direction={'row'}
             >
-                {courses.map(course => (
-                    <Card sx={{ width: 350, height: 380, borderRadius: 2, mr: 1.5 }} key={course.title}>
-                        <CardMedia
-                            component="img"
-                            width="350"
-                            height="280"
-                            image={course.image}
-                            alt={course.title}
-                        />
+                {Courses.map(course => (
+                    <Card sx={{ width: 300, height: 400, borderRadius: 2, mr: 1.5 }} key={course.title}>
+                      <CardMedia
+                        component="img"
+                        width="300"
+                        height="270"
+                        image={course.image}
+                        alt={course.title}
+                      />
                         <CardContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'left', justifyContent: 'left' }}>
-                            <Typography width={'354px'} height={'34px'} fontStyle={'Poppins'} fontWeight={'bold'} fontSize={'24px'} lineHeight={'33.6px'} letterSpacing={'0.5%'} color={'red'} variant="h6" component={Link} to={course.path} sx={{textDecoration: 'none'}}>
+                            <Typography width={'354px'} height={'34px'} fontStyle={'Poppins'} fontWeight={'bold'} fontSize={'24px'} lineHeight={'33.6px'} letterSpacing={'0.5%'} color={'#D81B0E'} variant="h6" component={Link} to={course.path} sx={{textDecoration: 'none', mt:-1.5}}>
                                 {course.title}
                             </Typography>
-                            {/* <Typography width={'352px'} height={'48px'} fontStyle={'Poppins'} fontWeight={'400'} fontSize={'16px'} lineHeight={'24px'} color={'gray'} variant="body1">
+                            <Typography fontStyle={'Poppins'} color={'#282938'} variant="caption" sx={{mt:-0.2}}>
                                 {course.info.split('.')[0]}
                             </Typography>
-                            <Typography width={'352px'} height={'48px'} fontStyle={'Poppins'} fontWeight={'400'} fontSize={'16px'} lineHeight={'24px'} color={'gray'} variant="body1">
+                            <Typography fontStyle={'Poppins'} color={'#282938'} variant="caption">
                                 {course.info.split('.')[1]}
-                            </Typography> */}
+                            </Typography>
                         </CardContent>
                     </Card>
                 ))}

@@ -307,10 +307,26 @@ const JenkinsInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                    Jenkins is a tool that is used for automation.<br />
-                    Jenkins facilitates the automation of several stages of the software development lifecycle, including application development, testing, and deployment.<br />  
-                    It is mainly an open-source server that allows all the developers to build, test and deploy software. It is written in Java and runs on java only.<br /> 
-                    By using Jenkins we can make a continuous integration of projects(jobs) or end-to-endpoint automation
+                        <strong>Jenkins</strong> is an open-source automation server used for continuous integration and continuous delivery (CI/CD).<br /><br />
+                        <strong>Pipelines:</strong> automate the build, test, and deployment processes through a series of stages defined in a Jenkinsfile.<br /><br />
+                        <strong>Plugins:</strong> extend Jenkins' functionality, allowing integration with version control systems, build tools, and deployment platforms.<br /><br />
+                        <strong>Nodes:</strong> (or agents) distribute the workload by running jobs on different machines.<br /><br />
+                        <strong>Master Node:</strong> manages the overall Jenkins environment and distributes tasks to the worker nodes.<br /><br />
+                        <strong>Freestyle Projects:</strong> are the simplest job type, offering a GUI for defining build steps and triggers.<br /><br />
+                        <strong>Declarative Pipeline:</strong> provides a more readable and structured way to define pipelines using a simplified syntax.<br /><br />
+                        <strong>Scripted Pipeline:</strong> offers greater flexibility through Groovy scripting for complex build processes.<br /><br />
+                        <strong>Build Triggers:</strong> can start jobs based on events like code commits, schedule, or manual initiation.<br /><br />
+                        <strong>Version Control Integration:</strong> supports systems like Git, Subversion, and Mercurial for source code management.<br /><br />
+                        <strong>Artifact Management:</strong> stores build outputs and dependencies, often integrating with tools like Nexus or Artifactory.<br /><br />
+                        <strong>Testing Integration:</strong> allows running unit tests, integration tests, and other types of testing within the build process.<br /><br />
+                        <strong>Notifications:</strong> send alerts and reports through email, chat systems, or other notification channels.<br /><br />
+                        <strong>Pipeline as Code:</strong> promotes defining CI/CD workflows as code, stored alongside the application code.<br /><br />
+                        <strong>Blue Ocean:</strong> is a modern UI for Jenkins that simplifies pipeline creation and visualization.<br /><br />
+                        <strong>Credentials Management:</strong> securely stores and manages sensitive information like passwords and API keys.<br /><br />
+                        <strong>Configuration:</strong> as Code allows Jenkins configuration to be defined in code, enabling reproducible environments.<br /><br />
+                        <strong>Scalability:</strong> is achieved by adding more nodes to handle larger workloads and parallel builds.<br /><br />
+                        <strong>Security features:</strong> include user authentication, role-based access control, and integration with LDAP or other authentication systems.<br /><br />
+                        <strong>Pipeline Libraries:</strong> Jenkins supports shared libraries for storing common pipeline code and reusable components, enabling better organization and DRY (Don't Repeat Yourself) principles across multiple pipelines.
                     </Typography>
                 );
             case 1:
@@ -338,15 +354,15 @@ const JenkinsInfo = () => {
                     <Typography variant="h4" sx={{mt:1, ml:1, textTransform:'uppercase'}}>jenkins</Typography>
                 </Stack>
                 <Stack width={'auto'} direction={'row'}>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>15 Modules</Typography>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>72 Hours</Typography>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>Beginner</Typography>
@@ -362,21 +378,21 @@ const JenkinsInfo = () => {
                             <Tab 
                                 label="Overview" 
                                 sx={{ 
-                                    color: activeTab === 0 ? 'red' : 'rgba(0, 0, 0, 0.54)' 
+                                    color: activeTab === 0 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)' 
                                 }} 
                             />
                             <Tab 
                                 label="Curriculum" 
                                 sx={{ 
-                                    color: activeTab === 1 ? 'red' : 'rgba(0, 0, 0, 0.54)' 
+                                    color: activeTab === 1 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)' 
                                 }} 
                             />
-                            <Tab 
+                            {/* <Tab 
                                 label="Reviews" 
                                 sx={{ 
                                     color: activeTab === 2 ? 'red' : 'rgba(0, 0, 0, 0.54)' 
                                 }} 
-                            />
+                            /> */}
                         </Tabs>
                     </Paper>
                     <Box sx={{ p: 3 }}>

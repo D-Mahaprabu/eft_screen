@@ -6,7 +6,7 @@ const AppBarComponent = () => {
 
     return (
             <Stack>
-                <AppBar sx={{ backgroundColor: 'red', height: '87px' }} position="static" elevation={0}>
+                <AppBar sx={{ backgroundColor: '#D81B0E', height: '87px' }} position="static" elevation={0}>
                     <Toolbar>
                         <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-start', flexGrow: 1 }}>
                             <Button color="inherit">

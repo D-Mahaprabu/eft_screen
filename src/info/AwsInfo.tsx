@@ -272,10 +272,26 @@ const AwsInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                       Amazon Web Services (AWS) is a cloud computing platform offered by Amazon.<br /> 
-                       It provides a wide range of on-demand services like computing power, storage, and databases, allowing businesses to scale and manage their IT resources efficiently.<br />
-                       AWS offers services such as EC2 for virtual servers, S3 for scalable storage, RDS for managed databases, and Lambda for serverless computing.<br />
-                       By using AWS, companies can reduce infrastructure costs, improve flexibility, and deploy applications globally with ease.
+                        <strong>AWS</strong> is a comprehensive cloud computing platform offered by Amazon, providing a wide range of cloud services.<br /><br />
+                        <strong>Compute Services:</strong> include Amazon EC2 (Elastic Compute Cloud) for scalable virtual servers and AWS Lambda for serverless computing.<br /><br />
+                        <strong>Storage Solutions:</strong> feature Amazon S3 (Simple Storage Service) for object storage and Amazon EBS (Elastic Block Store) for block storage.<br /><br />
+                        <strong>Databases:</strong> include managed services like Amazon RDS (Relational Database Service), Amazon DynamoDB (NoSQL), and Amazon Aurora.<br /><br />
+                        <strong>Networking:</strong> services include Amazon VPC (Virtual Private Cloud) for isolated networks, and AWS Route 53 for DNS and domain management.<br /><br />
+                        <strong>Content Delivery:</strong> is handled by Amazon CloudFront, a global CDN that distributes content with low latency and high transfer speeds.<br /><br />
+                        <strong>Security and Identity:</strong> features include AWS IAM (Identity and Access Management) for access control, and AWS KMS (Key Management Service) for encryption.<br /><br />
+                        <strong>Monitoring and Management:</strong> tools include Amazon CloudWatch for logging and metrics, and AWS CloudTrail for tracking API activity.<br /><br />
+                        <strong>Development and Deployment:</strong> services feature AWS CodePipeline for CI/CD, AWS CodeBuild for build automation, and AWS CodeDeploy for deployment.<br /><br />
+                        <strong>Cost Optimization Tools:</strong> include AWS Cost and Usage Reports, AWS Trusted Advisor, and AWS Compute Optimizer, which help analyze usage patterns and recommend ways to reduce costs.<br /><br />
+                        <strong>Serverless:</strong> computing options include AWS Lambda, which allows you to run code in response to events without managing servers.<br /><br />
+                        <strong>Containers:</strong> services include Amazon ECS (Elastic Container Service) and Amazon EKS (Elastic Kubernetes Service) for managing containerized applications.<br /><br />
+                        <strong>Analytics:</strong> tools include Amazon Redshift for data warehousing, Amazon EMR (Elastic MapReduce) for big data processing, and AWS Athena for querying data in S3.<br /><br />
+                        <strong>Migration Services:</strong> help with moving applications and data to AWS, including AWS Database Migration Service and AWS Server Migration Service.<br /><br />
+                        <strong>Blockchain Services:</strong> like Amazon Managed Blockchain allow you to set up and manage scalable blockchain networks using frameworks like Hyperledger Fabric and Ethereum.<br /><br />
+                        <strong>Internet of Things (IoT):</strong> services include AWS IoT Core for connecting and managing IoT devices.<br /><br />
+                        <strong>Application Integration:</strong> tools include Amazon SNS (Simple Notification Service) for messaging and Amazon SQS (Simple Queue Service) for queuing.<br /><br />
+                        <strong>Cost Management:</strong> tools help monitor and manage cloud spending, including AWS Cost Explorer and AWS Budgets.<br /><br />
+                        <strong>Global Infrastructure:</strong> includes a network of data centers organized into regions and availability zones for high availability and redundancy.<br /><br />
+                        <strong>Hybrid Cloud Solutions:</strong> enable integration between on-premises environments and AWS, using services like AWS Outposts and AWS Direct Connect.
                     </Typography>
                 );
             case 1:
@@ -304,15 +320,15 @@ const AwsInfo = () => {
                     <Typography variant="h4" sx={{mt:1, ml:1, textTransform:'uppercase'}}>AWS</Typography>
                 </Stack>
                 <Stack width={'auto'} direction={'row'}>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>15 Modules</Typography>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>72 Hours</Typography>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>Beginner</Typography>
@@ -328,21 +344,21 @@ const AwsInfo = () => {
                             <Tab 
                                 label="Overview" 
                                 sx={{ 
-                                    color: activeTab === 0 ? 'red' : 'rgba(0, 0, 0, 0.54)' 
+                                    color: activeTab === 0 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)' 
                                 }} 
                             />
                             <Tab 
                                 label="Curriculum" 
                                 sx={{ 
-                                    color: activeTab === 1 ? 'red' : 'rgba(0, 0, 0, 0.54)' 
+                                    color: activeTab === 1 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)' 
                                 }} 
                             />
-                            <Tab 
+                            {/* <Tab 
                                 label="Reviews" 
                                 sx={{ 
                                     color: activeTab === 2 ? 'red' : 'rgba(0, 0, 0, 0.54)' 
                                 }} 
-                            />
+                            /> */}
                         </Tabs>
                     </Paper>
                     <Box sx={{ p: 3 }}>

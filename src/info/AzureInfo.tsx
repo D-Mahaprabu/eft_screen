@@ -284,10 +284,26 @@ const AzureInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        Azure is Microsoft’s cloud platform, just like Google has its Google Cloud and Amazon has its Amazon Web Service or AWS.000.<br /> 
-                        Generally, it is a platform through which we can use Microsoft’s resources.<br /> 
-                        For example, to set up a huge server, we will require huge investment, effort, physical space, and so on.<br />  
-                        In such situations, Microsoft Azure comes to our rescue. It will provide us with virtual machines, fast processing of data, analytical and monitoring tools, and so on to make our work simpler.
+                        <strong>Azure</strong> is a comprehensive cloud computing platform from Microsoft that provides a wide range of cloud services.<br /><br />
+                        <strong>Compute Services:</strong> include Azure Virtual Machines for scalable virtual servers and Azure Functions for serverless computing.<br /><br />
+                        <strong>Storage Solutions:</strong> feature Azure Blob Storage for object storage, Azure Disk Storage for virtual machine disks, and Azure Files for managed file shares.<br /><br />
+                        <strong>Databases:</strong> include Azure SQL Database for relational data, Azure Cosmos DB for NoSQL data, and Azure Database for PostgreSQL/MySQL/MariaDB.<br /><br />
+                        <strong>Networking:</strong> services include Azure Virtual Network for isolated networks, Azure Load Balancer for distributing traffic, and Azure Traffic Manager for global traffic routing.<br /><br />
+                        <strong>Content Delivery:</strong> is managed by Azure Content Delivery Network (CDN), which caches content at edge locations for fast delivery.<br /><br />
+                        <strong>Security and Identity:</strong> features include Azure Active Directory (AD) for identity management, and Azure Key Vault for managing secrets and encryption keys.<br /><br />
+                        <strong>Monitoring and Management:</strong> tools include Azure Monitor for logging and metrics, and Azure Security Center for threat protection and compliance.<br /><br />
+                        <strong>Development and Deployment:</strong> services feature Azure DevOps for CI/CD, Azure Pipelines for automated workflows, and Azure Repos for source control.<br /><br />
+                        <strong>Edge Computing:</strong> services such as Azure IoT Edge and Azure Stack Edge extend cloud capabilities to edge locations, enabling real-time data processing and analytics closer to where data is generated.<br /><br />
+                        <strong>Containers:</strong> services include Azure Kubernetes Service (AKS) and Azure Container Instances for managing containerized applications.<br /><br />
+                        <strong>Serverless:</strong> options include Azure Functions for running code in response to events and Azure Logic Apps for automating workflows.<br /><br />
+                        <strong>Analytics:</strong> tools include Azure Synapse Analytics for data warehousing, Azure Data Lake for big data storage, and Azure Data Factory for data integration and ETL.<br /><br />
+                        <strong>Migration Services:</strong> help move applications and data to Azure, including Azure Migrate for assessment and migration.<br /><br />
+                        <strong>Blockchain Services:</strong> include Azure Blockchain Service and Azure Blockchain Workbench, which provide tools for building, deploying, and managing blockchain networks and applications.<br /><br />
+                        <strong>Internet of Things (IoT):</strong> services include Azure IoT Hub for managing IoT devices and Azure Digital Twins for modeling digital representations of physical environments.<br /><br />
+                        <strong>Application Integration:</strong> tools include Azure Service Bus for messaging and Azure Event Grid for event-driven architectures.<br /><br />
+                        <strong>Cost Management:</strong> tools help monitor and optimize cloud spending, including Azure Cost Management and Azure Pricing Calculator.<br /><br />
+                        <strong>Global Infrastructure:</strong> includes a network of data centers organized into regions and availability zones for high availability and disaster recovery.<br /><br />
+                        <strong>Hybrid Cloud Solutions:</strong> such as Azure Arc and Azure Stack enable integration between on-premises environments and Azure cloud services.<br /><br />
                     </Typography>
                 );
             case 1:
@@ -316,15 +332,15 @@ const AzureInfo = () => {
                     <Typography variant="h4" sx={{mt:1, ml:1, textTransform:'uppercase'}}>Azure</Typography>
                 </Stack>
                 <Stack width={'auto'} direction={'row'}>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>15 Modules</Typography>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>72 Hours</Typography>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>Beginner</Typography>
@@ -340,21 +356,21 @@ const AzureInfo = () => {
                             <Tab 
                                 label="Overview" 
                                 sx={{ 
-                                    color: activeTab === 0 ? 'red' : 'rgba(0, 0, 0, 0.54)' 
+                                    color: activeTab === 0 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)' 
                                 }} 
                             />
                             <Tab 
                                 label="Curriculum" 
                                 sx={{ 
-                                    color: activeTab === 1 ? 'red' : 'rgba(0, 0, 0, 0.54)' 
+                                    color: activeTab === 1 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)' 
                                 }} 
                             />
-                            <Tab 
+                            {/* <Tab 
                                 label="Reviews" 
                                 sx={{ 
                                     color: activeTab === 2 ? 'red' : 'rgba(0, 0, 0, 0.54)' 
                                 }} 
-                            />
+                            /> */}
                         </Tabs>
                     </Paper>
                     <Box sx={{ p: 3 }}>

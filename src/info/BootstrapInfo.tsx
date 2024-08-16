@@ -217,9 +217,26 @@ const BootStrapInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                       Bootstrap is a popular front-end framework that simplifies web design by providing a responsive grid system, pre-designed components, and customizable utilities.<br /> 
-                       It is designed to help developers create modern, visually appealing websites and applications quickly.<br /> 
-                       Bootstrap streamlines the development process with its easy-to-use tools and mobile-first approach.
+                        <strong>Bootstrap</strong> is a popular open-source CSS framework used for building responsive, mobile-first web pages.<br />
+                        It provides a grid system that divides the page into a 12-column layout, enabling flexible and consistent layouts.<br /><br />
+                        <strong>Responsive design:</strong> is a core feature, allowing websites to adapt seamlessly to different screen sizes and devices.<br /><br />
+                        <strong>Predefined:</strong> classes offer a wide range of styles for elements like buttons, forms, and typography without writing custom CSS.<br /><br />
+                        <strong>Containers:</strong> are used to center and pad content, ensuring consistent spacing and alignment.<br /><br />
+                        <strong>Rows and columns:</strong> within the grid system allow for structured and responsive layouts, adjusting based on screen size.<br /><br />
+                        <strong>Breakpoints:</strong> define the responsive behavior at different screen widths, such as small, medium, large, and extra-large.<br /><br />
+                        <strong>Typography:</strong> classes provide control over font styles, sizes, weights, and alignment for headings, paragraphs, and text.<br /><br />
+                        <strong>Buttons:</strong> come with various styles, colors, sizes, and states, with classes for primary, secondary, success, danger, and more.<br /><br />
+                        <strong>Forms:</strong> are easily styled with Bootstrap, offering classes for input fields, checkboxes, radio buttons, and form validation.<br /><br />
+                        <strong>Components:</strong> like navbars, modals, dropdowns, and carousels are ready-to-use, providing common UI elements.<br /><br />
+                        <strong>Cards:</strong> are flexible content containers with options for headers, footers, images, and content blocks.<br /><br />
+                        <strong>Utilities:</strong> offer quick styling options for margins, padding, text alignment, colors, and visibility.<br /><br />
+                        <strong>Icons:</strong> are available through Bootstrap Icons, a library of SVG-based icons that integrate easily with the framework.<br /><br />
+                        <strong>Themes:</strong> Bootstrap supports custom themes, allowing developers to easily change the appearance of their entire site by modifying a few variables or using pre-built themes to quickly apply a consistent design.<br /><br />
+                        <strong>Customizable:</strong> Bootstrap allows customization of themes, colors, and components using Sass variables and built-in tools.<br /><br />
+                        <strong>Flexbox:</strong> utilities in Bootstrap simplify alignment, order, and spacing of items within a container.<br /><br />
+                        <strong>Tables:</strong> are styled with classes for striped rows, bordered cells, and responsive behavior.<br /><br />
+                        <strong>Alerts and Badges:</strong> are available for displaying notifications or highlighting important information.<br /><br />
+                        <strong>Documentation:</strong> is comprehensive, offering detailed examples and guidelines for all components and utilities.
                     </Typography>
                 );
             case 1:
@@ -250,15 +267,15 @@ const BootStrapInfo = () => {
                         <Typography variant="h4" sx={{ mt: 1, ml: 1, textTransform: 'uppercase' }}>BOOTSTRAP</Typography>
                     </Stack>
                     <Stack width={'auto'} direction={'row'}>
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>15 Modules</Typography>
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>72 Hours</Typography>
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>Beginner</Typography>
@@ -274,21 +291,21 @@ const BootStrapInfo = () => {
                                 <Tab 
                                     label="Overview" 
                                     sx={{ 
-                                        color: activeTab === 0 ? 'red' : 'rgba(0, 0, 0, 0.54)' 
+                                        color: activeTab === 0 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)' 
                                     }} 
                                 />
                                 <Tab 
                                     label="Curriculum" 
                                     sx={{ 
-                                        color: activeTab === 1 ? 'red' : 'rgba(0, 0, 0, 0.54)' 
+                                        color: activeTab === 1 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)' 
                                     }} 
                                 />
-                                <Tab 
+                                {/* <Tab 
                                     label="Reviews" 
                                     sx={{ 
                                         color: activeTab === 2 ? 'red' : 'rgba(0, 0, 0, 0.54)' 
                                     }} 
-                                />
+                                /> */}
                             </Tabs>
                         </Paper>
                         <Box sx={{ p: 3 }}>

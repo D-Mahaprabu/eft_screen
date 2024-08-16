@@ -256,10 +256,26 @@ const KubernetesInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        Kubernetes is an open-source Container Management tool that automates container deployment, container scaling, descaling, and container load balancing (also called a container orchestration tool).<br />
-                        It is written in Golang and has a vast community because it was first developed by Google and later donated to CNCF (Cloud Native Computing Foundation).<br />
-                        Kubernetes can group ‘n’ number of containers into one logical unit for managing and deploying them easily.<br />
-                        It works brilliantly with all cloud vendors i.e. public, hybrid, and on-premises.
+                        <strong>Kubernetes (K8s)</strong> is an open-source platform for automating the deployment, scaling, and management of containerized applications.<br /><br />
+                        <strong>Cluster:</strong> A Kubernetes cluster is made up of a master node (control plane) and multiple worker nodes where applications run.<br /><br />
+                        <strong>Pods:</strong> The smallest deployable units in Kubernetes, a Pod can contain one or more containers that share storage and network resources.<br /><br />
+                        <strong>Nodes:</strong> The worker machines in a Kubernetes cluster, either virtual or physical, where Pods are deployed.<br /><br />
+                        <strong>Control Plane:</strong> Manages the Kubernetes cluster and consists of components like the API server, scheduler, and etcd.<br /><br />
+                        <strong>API Server:</strong> The entry point for all administrative tasks in Kubernetes, exposing the Kubernetes API.<br /><br />
+                        <strong>etcd:</strong> A key-value store used by Kubernetes to store all cluster data, ensuring consistent state across the cluster.<br /><br />
+                        <strong>Scheduler:</strong> Assigns Pods to nodes based on resource availability and requirements.<br /><br />
+                        <strong>Controller Manager:</strong> Ensures the desired state of the cluster, managing tasks like node lifecycles and replica scaling.<br /><br />
+                        <strong>Kubelet:</strong> An agent that runs on each node, ensuring that containers are running in Pods as expected.<br /><br />
+                        <strong>Service:</strong> A Kubernetes abstraction that defines a logical set of Pods and a policy for accessing them, typically through a stable IP.<br /><br />
+                        <strong>Ingress:</strong> Manages external access to services within a Kubernetes cluster, typically HTTP/HTTPS traffic.<br /><br />
+                        <strong>ConfigMaps & Secrets:</strong> Used to manage application configuration and sensitive information like passwords, separately from the container image.<br /><br />
+                        <strong>Namespaces:</strong> Provide a mechanism to divide cluster resources between multiple users or teams, enabling isolation and resource management.<br /><br />
+                        <strong>Deployments:</strong> Define how to deploy and manage application Pods, including updates and rollbacks.<br /><br />
+                        <strong>ReplicaSets:</strong> Ensure a specified number of Pod replicas are running at any given time, providing high availability.<br /><br />
+                        <strong>StatefulSets:</strong> Manage stateful applications, ensuring Pods have stable identities and persistent storage.<br /><br />
+                        <strong>DaemonSets:</strong> Ensure that a copy of a specific Pod is running on all or selected nodes in a cluster.<br /><br />
+                        <strong>Horizontal Pod Autoscaler:</strong> Automatically scales the number of Pods in a deployment or replica set based on observed CPU utilization or other metrics.<br /><br />
+                        <strong>Kubernetes Ecosystem:</strong> Integrates with tools like Helm (for managing packages), Prometheus (for monitoring), and Istio (for service mesh), enhancing functionality and flexibility.<br /><br />
                     </Typography>
                 );
             case 1:
@@ -290,15 +306,15 @@ const KubernetesInfo = () => {
                         <Typography variant="h4" sx={{ mt: 1, ml: 1, textTransform: 'uppercase' }}>Kubernetes</Typography>
                     </Stack>
                     <Stack width={'auto'} direction={'row'}>
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>15 Modules</Typography>
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>72 Hours</Typography>
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>Beginner</Typography>
@@ -314,21 +330,21 @@ const KubernetesInfo = () => {
                                 <Tab
                                     label="Overview"
                                     sx={{
-                                        color: activeTab === 0 ? 'red' : 'rgba(0, 0, 0, 0.54)'
+                                        color: activeTab === 0 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)'
                                     }}
                                 />
                                 <Tab
                                     label="Curriculum"
                                     sx={{
-                                        color: activeTab === 1 ? 'red' : 'rgba(0, 0, 0, 0.54)'
+                                        color: activeTab === 1 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)'
                                     }}
                                 />
-                                <Tab
+                                {/* <Tab
                                     label="Reviews"
                                     sx={{
                                         color: activeTab === 2 ? 'red' : 'rgba(0, 0, 0, 0.54)'
                                     }}
-                                />
+                                /> */}
                             </Tabs>
                         </Paper>
                         <Box sx={{ p: 3 }}>

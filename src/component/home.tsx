@@ -4,11 +4,11 @@ import { Link, useLocation } from 'react-router-dom';
 import '../App.css';
 import Stairs7SolutionsLogo from '../images/Stairs7SolutionsIcon.png';
 import EnquiryForm from './EnquiryForm';
-import Courses from './courses';
 import Howitworks from './HowItWorks';
 import Enrollment from './Enrollment';
 import Whychooseus from './Whychooseus';
 import Carousel from './Carousel';
+import Courses from './Courses';
 
 const Home = () => {
     const location = useLocation();
@@ -37,7 +37,7 @@ const Home = () => {
     return (
         <Box className="Home">
             <Stack>
-                <AppBar sx={{ backgroundColor: 'red', height: '87px' }} position="static" elevation={0}>
+                <AppBar sx={{ backgroundColor: '#D81B0E', height: '87px' }} position="static" elevation={0}>
                     <Toolbar>
                         <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-start', flexGrow: 1 }}>
                             <Button color="inherit">
@@ -61,14 +61,14 @@ const Home = () => {
                 </AppBar>
 
                 <Stack sx={{ width: '100%', height: 680 }} direction={'row'}>
-                    <Box width={800} height={610}>
+                    <Box width={800} height={'auto'}>
                         <Carousel />
                     </Box>
-                    <Box width={688} height={610}>
+                    <Box width={688} height={'auto'}>
                         <EnquiryForm />
                     </Box>
                 </Stack>
-                <Stack sx={{ width: '100%', height: 350 }}>
+                <Stack sx={{ width: '100%', height: 300 }}>
                     <Howitworks />
                 </Stack>
 
@@ -77,6 +77,11 @@ const Home = () => {
                 </div>
                 <Enrollment />
                 <Whychooseus />
+                <Stack>
+                  <Box width={'100%'} height={80} bgcolor={'black'}>
+                    <Typography width={'250px'} height={'22px'} fontStyle={'Poppins'} fontWeight={'500'} fontSize={'16px'} lineHeight={'22px'} color={'white'} sx={{ ml: 10, mt: 3.5 }}>Copy Rights @ All rights reserved</Typography>
+                  </Box>
+                </Stack>
             </Stack>
         </Box>
     );

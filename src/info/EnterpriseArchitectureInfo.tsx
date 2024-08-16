@@ -129,7 +129,26 @@ const EnterpriseArchitectureInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                       EA (Enterprise Architecture) is a framework that facilitates an organization’s integration of IT architecture into its business strategy, allowing for streamlined and efficient integration of all business components.
+                        <strong>Enterprise Architecture</strong> is a strategic framework for aligning an organization's IT infrastructure with its business goals and processes.<br /><br />
+                        <strong>Holistic View</strong>: Provides a comprehensive view of the organization’s structure, including business processes, information systems, and technology.<br /><br />
+                        <strong>Frameworks</strong>: Utilizes frameworks like TOGAF, Zachman, and FEAF to standardize and guide the development of the enterprise architecture.<br /><br />
+                        <strong>Business Alignment</strong>: Ensures that IT investments and strategies are closely aligned with business objectives and requirements.<br /><br />
+                        <strong>Architecture Layers</strong>: Consists of multiple layers, including business, information, application, and technology, each addressing different aspects of the enterprise.<br /><br />
+                        <strong>Documentation</strong>: Involves creating detailed documentation of the architecture, including diagrams, models, and descriptions of processes and systems.<br /><br />
+                        <strong>Governance</strong>: Establishes governance structures to oversee the development, implementation, and maintenance of the architecture.<br /><br />
+                        <strong>Standards and Policies</strong>: Defines standards and policies for technology, processes, and data management to ensure consistency and quality across the organization.<br /><br />
+                        <strong>Change Management</strong>: Facilitates effective change management by providing a structured approach to integrating new technologies and processes.<br /><br />
+                        <strong>Integration</strong>: Focuses on integrating various systems and applications to improve interoperability and streamline operations.<br /><br />
+                        <strong>Risk Management</strong>: Identifies and mitigates risks associated with IT and business processes, ensuring resilience and security.<br /><br />
+                        <strong>Performance Measurement</strong>: Includes mechanisms for measuring and evaluating the performance of IT systems and their alignment with business goals.<br /><br />
+                        <strong>Technology Roadmap</strong>: Develops a technology roadmap to guide future technology investments and upgrades in alignment with business strategies.<br /><br />
+                        <strong>Data Management</strong>: Establishes practices for managing data, including data governance, quality, and integration, to support business decisions.<br /><br />
+                        <strong>Stakeholder Engagement</strong>: Engages stakeholders from various departments to gather requirements, address concerns, and ensure alignment with business needs.<br /><br />
+                        <strong>Optimization</strong>: Focuses on optimizing IT resources, processes, and systems to enhance efficiency and reduce costs.<br /><br />
+                        <strong>Agility</strong>: Promotes agility by enabling organizations to adapt to changing business environments and technological advancements.<br /><br />
+                        <strong>Compliance</strong>: Ensures compliance with industry regulations and standards, mitigating legal and operational risks.<br /><br />
+                        <strong>Best Practices</strong>: Incorporates best practices and lessons learned to continuously improve the architecture and its implementation.<br /><br />
+                        <strong>Continuous Improvement</strong>: Emphasizes continuous improvement by regularly reviewing and updating the architecture to meet evolving business and technology needs.
                     </Typography>
                 );
             case 1:
@@ -160,15 +179,15 @@ const EnterpriseArchitectureInfo = () => {
                         <Typography variant="h4" sx={{ mt: 1, ml: 1, textTransform: 'uppercase' }}>Enterprise Architecture</Typography>
                     </Stack>
                     <Stack width="auto" direction="row">
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>15 Modules</Typography>
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>72 Hours</Typography>
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>Beginner</Typography>
@@ -184,21 +203,21 @@ const EnterpriseArchitectureInfo = () => {
                                 <Tab
                                     label="Overview"
                                     sx={{
-                                        color: activeTab === 0 ? 'red' : 'rgba(0, 0, 0, 0.54)'
+                                        color: activeTab === 0 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)'
                                     }}
                                 />
                                 <Tab
                                     label="Curriculum"
                                     sx={{
-                                        color: activeTab === 1 ? 'red' : 'rgba(0, 0, 0, 0.54)'
+                                        color: activeTab === 1 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)'
                                     }}
                                 />
-                                <Tab
+                                {/* <Tab
                                     label="Reviews"
                                     sx={{
                                         color: activeTab === 2 ? 'red' : 'rgba(0, 0, 0, 0.54)'
                                     }}
-                                />
+                                /> */}
                             </Tabs>
                         </Paper>
                         <Box sx={{ p: 3 }}>

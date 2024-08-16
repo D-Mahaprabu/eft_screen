@@ -201,10 +201,26 @@ const MongoDbInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        MongoDB, the most popular NoSQL database, is an open-source document-oriented database.<br /> 
-                        The term NoSQL means ‘non-relational‘.<br />
-                        It means that MongoDB isn’t based on the table-like relational database structure but provides an altogether different mechanism for the storage and retrieval of data.<br /> 
-                        This format of storage is called BSON (similar to JSON format). 
+                        <strong>MongoDB</strong> is a NoSQL, open-source, document-oriented database designed for high performance, scalability, and flexibility.<br /><br />
+                        <strong>Document Model:</strong> MongoDB stores data in flexible, JSON-like documents, allowing varied and dynamic data structures.<br /><br />
+                        <strong>Collections:</strong> Documents are grouped into collections, which are analogous to tables in relational databases but without a fixed schema.<br /><br />
+                        <strong>BSON:</strong> MongoDB stores documents in BSON (Binary JSON) format, which extends JSON with additional data types like dates and binary data.<br /><br />
+                        <strong>Schema Flexibility:</strong> MongoDB does not require a predefined schema, allowing developers to modify the structure of documents as needs evolve.<br /><br />
+                        <strong>Horizontal Scaling:</strong> MongoDB supports sharding, which allows data to be distributed across multiple servers for horizontal scaling.<br /><br />
+                        <strong>Replication:</strong> MongoDB provides replica sets, which maintain copies of data across multiple servers for redundancy and high availability.<br /><br />
+                        <strong>Indexing:</strong> MongoDB supports a variety of indexes, including single field, compound, geospatial, and text indexes, to optimize query performance.<br /><br />
+                        <strong>Aggregation Framework:</strong> MongoDB’s aggregation framework allows for powerful data processing and transformation, similar to SQL’s GROUP BY and JOIN operations.<br /><br />
+                        <strong>MongoDB Query Language (MQL):</strong> MongoDB uses its own query language, MQL, which allows for complex queries using JSON-like syntax.<br /><br />
+                        <strong>GridFS:</strong> MongoDB includes GridFS, a specification for storing and retrieving large files, such as images and videos, in the database.<br /><br />
+                        <strong>Atlas:</strong> MongoDB Atlas is a fully managed cloud database service that automates deployment, scaling, and maintenance tasks.<br /><br />
+                        <strong>Transactions:</strong> MongoDB supports multi-document ACID transactions, allowing for complex operations to be executed with full data integrity.<br /><br />
+                        <strong>Change Streams:</strong> MongoDB provides change streams, enabling real-time data processing by monitoring changes to documents in a collection.<br /><br />
+                        <strong>Drivers:</strong> MongoDB offers official drivers for various programming languages, including JavaScript, Python, Java, and C#, facilitating integration with diverse applications.<br /><br />
+                        <strong>Security:</strong> MongoDB includes robust security features such as role-based access control (RBAC), encryption at rest, and SSL/TLS for data in transit.<br /><br />
+                        <strong>Atlas Data Lake:</strong> A service that allows users to query and analyze data stored in various formats and locations, integrating seamlessly with MongoDB.<br /><br />
+                        <strong>Backup and Recovery:</strong> MongoDB offers tools and services for automated backups, point-in-time recovery, and disaster recovery strategies.<br /><br />
+                        <strong>Time Series Data:</strong> MongoDB has built-in support for time series data, optimized for storing and querying time-stamped data efficiently, making it suitable for IoT, financial applications, and more.<br /><br />
+                        <strong>Aggregation Pipelines:</strong> MongoDB’s aggregation pipelines allow for complex data processing operations, enabling stages like filtering, sorting, grouping, and projecting, which can be chained together to transform and analyze data in a powerful and flexible manner. 
                     </Typography>
                 );
             case 1:
@@ -235,15 +251,15 @@ const MongoDbInfo = () => {
                         <Typography variant="h4" sx={{ mt: 1, ml: 1, textTransform: 'uppercase' }}>MongoDB</Typography>
                     </Stack>
                     <Stack width={'auto'} direction={'row'}>
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>15 Modules</Typography>
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>72 Hours</Typography>
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>Beginner</Typography>
@@ -259,21 +275,21 @@ const MongoDbInfo = () => {
                                 <Tab
                                     label="Overview"
                                     sx={{
-                                        color: activeTab === 0 ? 'red' : 'rgba(0, 0, 0, 0.54)'
+                                        color: activeTab === 0 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)'
                                     }}
                                 />
                                 <Tab
                                     label="Curriculum"
                                     sx={{
-                                        color: activeTab === 1 ? 'red' : 'rgba(0, 0, 0, 0.54)'
+                                        color: activeTab === 1 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)'
                                     }}
                                 />
-                                <Tab
+                                {/* <Tab
                                     label="Reviews"
                                     sx={{
                                         color: activeTab === 2 ? 'red' : 'rgba(0, 0, 0, 0.54)'
                                     }}
-                                />
+                                /> */}
                             </Tabs>
                         </Paper>
                         <Box sx={{ p: 3 }}>

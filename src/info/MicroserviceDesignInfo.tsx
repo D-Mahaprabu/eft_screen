@@ -202,9 +202,26 @@ const MicroservicesDesignInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        Microservices Design Patterns explains how to build and manage microservices, which are small, independent services that work together in an application.<br />
-                        It introduces different design patterns, or best practices, that help in organizing these services effectively.<br />
-                        These patterns cover various aspects such as service communication, data management, and handling failures.
+                        <strong>Microservice Design</strong> is a design pattern where an application is composed of small, independent services that communicate over a network.<br /><br />
+                        <strong>Decentralized Services</strong>: Each microservice is developed, deployed, and scaled independently, focusing on a specific business capability.<br /><br />
+                        <strong>Domain-Driven Design</strong>: Microservices are often aligned with business domains, with each service responsible for a particular domain or functionality.<br /><br />
+                        <strong>API Gateway</strong>: Acts as a single entry point for all client requests, routing them to the appropriate microservices and handling cross-cutting concerns like authentication.<br /><br />
+                        <strong>Service Discovery</strong>: A mechanism for services to find and communicate with each other dynamically, often using tools like Eureka or Consul.<br /><br />
+                        <strong>Data Management</strong>: Each microservice typically has its own database or data store, ensuring loose coupling and service autonomy.<br /><br />
+                        <strong>Inter-Service Communication</strong>: Services communicate via lightweight protocols such as HTTP/REST or messaging systems like RabbitMQ or Kafka.<br /><br />
+                        <strong>Load Balancing</strong>: Distributes incoming requests across multiple instances of a microservice to ensure high availability and reliability.<br /><br />
+                        <strong>Fault Tolerance</strong>: Implementing patterns like circuit breakers and retries to handle failures gracefully and maintain system resilience.<br /><br />
+                        <strong>Deployment</strong>: Microservices can be deployed independently, often using containerization technologies like Docker and orchestration tools like Kubernetes.<br /><br />
+                        <strong>Continuous Integration/Continuous Deployment (CI/CD)</strong>: Automated pipelines for building, testing, and deploying microservices to streamline development and operations.<br /><br />
+                        <strong>Security</strong>: Each microservice should implement its own security measures and communicate securely, using protocols like OAuth2 and TLS.<br /><br />
+                        <strong>Logging and Monitoring</strong>: Centralized logging and monitoring are essential for tracking the health and performance of microservices, often using tools like ELK Stack or Prometheus.<br /><br />
+                        <strong>Configuration Management</strong>: Externalize configuration to manage settings across different environments, using tools like Spring Cloud Config or Consul.<br /><br />
+                        <strong>Service Coordination</strong>: Orchestrate interactions between microservices using workflows or business processes, often managed by tools like Camunda or Apache Airflow.<br /><br />
+                        <strong>Versioning</strong>: Manage API versioning to ensure compatibility and support backward and forward compatibility of microservices.<br /><br />
+                        <strong>Database Integration</strong>: Each microservice manages its own data, but may need to integrate or synchronize data across services using patterns like event sourcing.<br /><br />
+                        <strong>Scaling</strong>: Microservices can be scaled independently based on demand, improving resource utilization and system performance.<br /><br />
+                        <strong>Deployment Strategies</strong>: Use strategies like blue-green deployments or canary releases to minimize downtime and risk during updates.<br /><br />
+                        <strong>Team Autonomy</strong>: Microservices enable teams to work independently on different services, promoting faster development and deployment cycles.
                     </Typography>
                 );
             case 1:
@@ -235,15 +252,15 @@ const MicroservicesDesignInfo = () => {
                         <Typography variant="h4" sx={{ mt: 1, ml: 1, textTransform: 'uppercase' }}>Microservice Design</Typography>
                     </Stack>
                     <Stack width={'auto'} direction={'row'}>
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>15 Modules</Typography>
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>72 Hours</Typography>
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>Beginner</Typography>
@@ -259,21 +276,21 @@ const MicroservicesDesignInfo = () => {
                                 <Tab
                                     label="Overview"
                                     sx={{
-                                        color: activeTab === 0 ? 'red' : 'rgba(0, 0, 0, 0.54)'
+                                        color: activeTab === 0 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)'
                                     }}
                                 />
                                 <Tab
                                     label="Curriculum"
                                     sx={{
-                                        color: activeTab === 1 ? 'red' : 'rgba(0, 0, 0, 0.54)'
+                                        color: activeTab === 1 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)'
                                     }}
                                 />
-                                <Tab
+                                {/* <Tab
                                     label="Reviews"
                                     sx={{
                                         color: activeTab === 2 ? 'red' : 'rgba(0, 0, 0, 0.54)'
                                     }}
-                                />
+                                /> */}
                             </Tabs>
                         </Paper>
                         <Box sx={{ p: 3 }}>

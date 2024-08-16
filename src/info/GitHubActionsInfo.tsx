@@ -251,9 +251,26 @@ const GitHubActionsInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        GitHub Actions is a CI/CD (Continuous Integration/ Continuous Deployment) platform for automating the builds, test, and deployment process.<br /> 
-                        Using GitHub actions, we can build and test every pull request in the repository using workflows, or push the merged pull requests to production with workflows.<br /> 
-                        GitHub Actions allows you to conduct processes in response to the events in your repository.
+                        <strong>GitHub Actions</strong> is a CI/CD and automation tool integrated directly within GitHub repositories.<br /><br />
+                        <strong>Workflows:</strong> are defined in YAML files located in the .github/workflows directory of a repository.<br /><br />
+                        <strong>Jobs:</strong> represent individual tasks within a workflow, and they can run in parallel or sequentially based on dependencies.<br /><br />
+                        <strong>Actions:</strong> are reusable units of code that can be used to perform tasks like building, testing, or deploying; they are available in the GitHub Marketplace.<br /><br />
+                        <strong>Runners:</strong> execute jobs and can be GitHub-hosted or self-hosted on your own infrastructure.<br /><br />
+                        <strong>Triggers:</strong> start workflows based on events such as push, pull request, issue creation, or scheduled times.<br /><br />
+                        <strong>Artifacts:</strong> are files produced by jobs that can be saved and shared across jobs within the same workflow.<br /><br />
+                        <strong>Secrets:</strong> are used to store sensitive information securely, such as API keys or deployment credentials.<br /><br />
+                        <strong>Matrices:</strong> enable you to run jobs across multiple configurations, such as different operating systems or versions of a language.<br /><br />
+                        <strong>Caching:</strong> speeds up workflows by storing and reusing dependencies and other files between runs.<br /><br />
+                        <strong>Environments:</strong> define deployment environments and enable environment-specific rules and protection, such as manual approvals.<br /><br />
+                        <strong>GitHub Marketplace:</strong> offers a wide range of pre-built actions and workflows contributed by the community.<br /><br />
+                        <strong>Reusable Workflows:</strong> allow you to create and share workflows across multiple repositories for consistency and efficiency.<br /><br />
+                        <strong>Self-hosted Runners:</strong> provide control over the execution environment, allowing custom configurations and specialized hardware.<br /><br />
+                        <strong>Logs:</strong> offer detailed visibility into the execution of workflows and jobs, helping with debugging and monitoring.<br /><br />
+                        <strong>Manual Triggers:</strong> let you start workflows manually from the GitHub UI or via API calls.<br /><br />
+                        <strong>Concurrent Jobs:</strong> can be run in parallel to speed up build and test processes, depending on your configuration.<br /><br />
+                        <strong>Deployment Strategies:</strong>support various methods such as blue-green deployments, rolling updates, and canary releases.<br /><br />
+                        <strong>Approval Gates:</strong> allow for manual intervention and approval before certain jobs or deployments are executed.<br /><br />
+                        <strong>Integration with GitHub:</strong> provides seamless access to repository data, including code, issues, and pull requests, directly within workflows.<br /><br />
                     </Typography>
                 );
             case 1:
@@ -281,15 +298,15 @@ const GitHubActionsInfo = () => {
                     <Typography variant="h4" sx={{mt:1, ml:1, textTransform:'uppercase'}}>github actions</Typography>
                 </Stack>
                 <Stack width={'auto'} direction={'row'}>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>15 Modules</Typography>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>72 Hours</Typography>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>Beginner</Typography>
@@ -305,21 +322,21 @@ const GitHubActionsInfo = () => {
                             <Tab 
                                 label="Overview" 
                                 sx={{ 
-                                    color: activeTab === 0 ? 'red' : 'rgba(0, 0, 0, 0.54)' 
+                                    color: activeTab === 0 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)' 
                                 }} 
                             />
                             <Tab 
                                 label="Curriculum" 
                                 sx={{ 
-                                    color: activeTab === 1 ? 'red' : 'rgba(0, 0, 0, 0.54)' 
+                                    color: activeTab === 1 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)' 
                                 }} 
                             />
-                            <Tab 
+                            {/* <Tab 
                                 label="Reviews" 
                                 sx={{ 
                                     color: activeTab === 2 ? 'red' : 'rgba(0, 0, 0, 0.54)' 
                                 }} 
-                            />
+                            /> */}
                         </Tabs>
                     </Paper>
                     <Box sx={{ p: 3 }}>

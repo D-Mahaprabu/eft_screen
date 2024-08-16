@@ -202,10 +202,26 @@ const OracleInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        Oracle Database is a relational database management system (RDBMS) that Oracle Corporation created and marketed.<br />
-                        It is one of the most popular RDBMSs on the market and is used to store and retrieve data for a wide range of applications.<br />
-                        Oracle Database is well-known for its dependability, scalability, and performance, and it is compatible with a wide range of programming languages and development frameworks.<br />
-                        It includes data warehousing, online transaction processing, and advanced analytics, as well as high availability, disaster recovery, and security.
+                        <strong>Oracle Database</strong> is a powerful relational database management system (RDBMS) known for scalability, security, and robustness.<br /><br />
+                        <strong>SQL:</strong> Oracle Database uses SQL (Structured Query Language) as its primary language for managing and querying data.<br /><br />
+                        <strong>PL/SQL:</strong> Oracle’s proprietary extension to SQL, allowing procedural programming with features like loops, conditions, and functions.<br /><br />
+                        <strong>Oracle Cloud Infrastructure (OCI):</strong> Oracle’s cloud platform offering computing, storage, and networking services along with cloud applications.<br /><br />
+                        <strong>Oracle Autonomous Database:</strong> A cloud-based, self-driving database that uses machine learning to automate patching, tuning, and backups.<br /><br />
+                        <strong>Oracle E-Business Suite:</strong> A suite of integrated business applications for enterprise resource planning (ERP), customer relationship management (CRM), and supply chain management (SCM).<br /><br />
+                        <strong>Oracle Fusion Middleware:</strong> A collection of software products that provides a development and runtime environment for enterprise applications.<br /><br />
+                        <strong>Oracle Enterprise Manager:</strong> A comprehensive management tool for monitoring and administering Oracle environments, including databases, middleware, and hardware.<br /><br />
+                        <strong>Oracle Real Application Clusters (RAC):</strong> Enables multiple servers to run a single Oracle Database, providing high availability and scalability.<br /><br />
+                        <strong>Oracle Data Guard:</strong> Provides disaster recovery and data protection by maintaining standby databases that can take over if the primary database fails.<br /><br />
+                        <strong>Oracle GoldenGate:</strong> A tool for real-time data integration and replication, enabling high availability and zero downtime migrations.<br /><br />
+                        <strong>Oracle Exadata:</strong> An engineered system optimized for running Oracle Database workloads with high performance and efficiency.<br /><br />
+                        <strong>Oracle VM:</strong> Oracle’s virtualization technology that provides a platform for deploying, managing, and running virtualized workloads.<br /><br />
+                        <strong>Oracle Financials:</strong> Part of the Oracle E-Business Suite, Oracle Financials is a comprehensive set of financial management applications that automate and streamline financial processes, including general ledger, accounts payable, accounts receivable, and asset management.<br /><br />
+                        <strong>Oracle PeopleSoft:</strong> An enterprise software solution for human capital management, financial management, and other business processes.<br /><br />
+                        <strong>Oracle Hyperion:</strong> A suite of performance management applications that support enterprise planning, budgeting, and financial management.<br /><br />
+                        <strong>Oracle Siebel CRM:</strong> A customer relationship management solution providing sales, service, and marketing automation.<br /><br />
+                        <strong>Oracle Licensing:</strong> Oracle’s software licensing can be complex, with options for on-premises, cloud, and hybrid environments, often requiring careful management.<br /><br />
+                        <strong>Oracle APEX:</strong> A low-code development platform for building scalable, secure enterprise applications with minimal coding effort, integrated within Oracle Database.<br /><br />
+                        <strong>Oracle Cloud Applications:</strong> Oracle offers a suite of SaaS (Software as a Service) applications covering areas like ERP, HCM (Human Capital Management), CRM, and SCM, designed to help businesses manage and automate their core processes in the cloud.
                     </Typography>
                 );
             case 1:
@@ -236,15 +252,15 @@ const OracleInfo = () => {
                         <Typography variant="h4" sx={{ mt: 1, ml: 1, textTransform: 'uppercase' }}>Oracle</Typography>
                     </Stack>
                     <Stack width={'auto'} direction={'row'}>
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>15 Modules</Typography>
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>72 Hours</Typography>
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>Beginner</Typography>
@@ -260,21 +276,21 @@ const OracleInfo = () => {
                                 <Tab
                                     label="Overview"
                                     sx={{
-                                        color: activeTab === 0 ? 'red' : 'rgba(0, 0, 0, 0.54)'
+                                        color: activeTab === 0 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)'
                                     }}
                                 />
                                 <Tab
                                     label="Curriculum"
                                     sx={{
-                                        color: activeTab === 1 ? 'red' : 'rgba(0, 0, 0, 0.54)'
+                                        color: activeTab === 1 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)'
                                     }}
                                 />
-                                <Tab
+                                {/* <Tab
                                     label="Reviews"
                                     sx={{
                                         color: activeTab === 2 ? 'red' : 'rgba(0, 0, 0, 0.54)'
                                     }}
-                                />
+                                /> */}
                             </Tabs>
                         </Paper>
                         <Box sx={{ p: 3 }}>

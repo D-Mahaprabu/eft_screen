@@ -245,9 +245,26 @@ const TsInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        TypeScript is a powerful, open-source programming language developed and maintained by Microsoft.<br />
-                        It builds on JavaScript by adding static type definitions, making it a superset of JavaScript. <br />
-                        TypeScript enhances the development experience by enabling developers to catch errors early through type checking, and it facilitates the development of large-scale applications with improved code quality and maintainability.
+                        <strong>TypeScript</strong> is a statically typed superset of JavaScript that adds optional type annotations.<br /><br />
+                        <strong>Type Annotations:</strong> allow you to specify types for variables, function parameters, and return values.<br /><br />
+                        <strong>Interfaces:</strong> define contracts for objects and classes, enforcing structure and type safety.<br /><br />
+                        <strong>Classes:</strong> in TypeScript support inheritance, access modifiers (public, private, protected), and interfaces.<br /><br />
+                        <strong>Generics:</strong> allow you to create reusable components that work with different types, enhancing flexibility and type safety.<br /><br />
+                        <strong>Enums:</strong> provide a way to define a set of named constants, improving code readability and maintainability.<br /><br />
+                        <strong>Type Aliases:</strong> create new names for existing types, making complex types easier to manage.<br /><br />
+                        <strong>Union Types:</strong> enable a variable to be one of several types, improving flexibility in function and variable definitions.<br /><br />
+                        <strong>Intersection Types:</strong> combine multiple types into one, allowing you to compose complex types.<br /><br />
+                        <strong>Type Inference:</strong> automatically infers types based on context, reducing the need for explicit annotations.<br /><br />
+                        <strong>Modules:</strong> are used to organize code into separate files and namespaces, with support for import and export statements.<br /><br />
+                        <strong>Type Guards:</strong> are used to narrow down types within conditional blocks, improving type safety.<br /><br />
+                        <strong>Decorators:</strong> are experimental features used to modify classes and properties at design time.<br /><br />
+                        <strong>TypeScript Compiler (tsc):</strong> converts TypeScript code into JavaScript, checking for type errors and syntax issues.<br /><br />
+                        <strong>Strict Mode:</strong> enforces more rigorous type checking and better error detection.<br /><br />
+                        <strong>Mapping Types:</strong> allow you to create new types based on existing ones, useful for transforming or extending types.<br /><br />
+                        <strong>Utility Types:</strong> like Partial, Required, and Readonly provide common type transformations.<br /><br />
+                        <strong>Assertion:</strong> allows you to override TypeScript’s inferred types using type assertions.<br /><br />
+                        <strong>Type Compatibility:</strong> TypeScript uses structural typing, meaning that types are compatible based on their members rather than their names, which helps in creating more flexible and reusable code.<br /><br />
+                        <strong>Integration:</strong> with popular frameworks and tools like React, Angular, and Node.js enhances development experience and productivity.
                     </Typography>
                 );
             case 1:
@@ -278,15 +295,15 @@ const TsInfo = () => {
                         <Typography variant="h4" sx={{ mt: 1, ml: 1, textTransform: 'uppercase' }}>TypeScript</Typography>
                     </Stack>
                     <Stack width={'auto'} direction={'row'}>
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>15 Modules</Typography>
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>72 Hours</Typography>
-                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: 'red', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
+                        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
                         <Typography sx={{ mt: 2.5, ml: 1 }}>Beginner</Typography>
@@ -302,21 +319,21 @@ const TsInfo = () => {
                                 <Tab 
                                     label="Overview" 
                                     sx={{ 
-                                        color: activeTab === 0 ? 'red' : 'rgba(0, 0, 0, 0.54)' 
+                                        color: activeTab === 0 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)' 
                                     }} 
                                 />
                                 <Tab 
                                     label="Curriculum" 
                                     sx={{ 
-                                        color: activeTab === 1 ? 'red' : 'rgba(0, 0, 0, 0.54)' 
+                                        color: activeTab === 1 ? '#D81B0E' : 'rgba(0, 0, 0, 0.54)' 
                                     }} 
                                 />
-                                <Tab 
+                                {/* <Tab 
                                     label="Reviews" 
                                     sx={{ 
                                         color: activeTab === 2 ? 'red' : 'rgba(0, 0, 0, 0.54)' 
                                     }} 
-                                />
+                                /> */}
                             </Tabs>
                         </Paper>
                         <Box sx={{ p: 3 }}>
