@@ -245,26 +245,7 @@ const DevOpsInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        <strong>DevOps</strong> is a set of practices and cultural philosophies that aim to improve collaboration between development and operations teams.<br /><br />
-                        <strong>Continuous Integration (CI):</strong> involves frequently integrating code changes into a shared repository, followed by automated testing.<br /><br />
-                        <strong>Continuous Delivery (CD):</strong> automates the deployment process, ensuring code changes can be reliably and quickly released to production.<br /><br />
-                        <strong>Infrastructure as Code (IaC):</strong> manages and provisions infrastructure through code, using tools like Terraform, Ansible, or AWS CloudFormation.<br /><br />
-                        <strong>Configuration Management:</strong> involves automating the configuration of systems and applications, ensuring consistency and reducing manual errors.<br /><br />
-                        <strong>Monitoring and Logging:</strong> provide visibility into system performance and application behavior, helping to detect and troubleshoot issues.<br /><br />
-                        <strong>Automation:</strong> is central to DevOps, encompassing build, test, deployment, and operations processes to increase efficiency and reduce manual work.<br /><br />
-                        <strong>Collaboration:</strong> emphasizes communication and cooperation between development, operations, and other stakeholders.<br /><br />
-                        <strong>Version Control:</strong> systems like Git are used to track and manage changes to code and configuration files.<br /><br />
-                        <strong>Continuous Testing:</strong> integrates automated testing into the CI/CD pipeline, ensuring that code is thoroughly tested before deployment.<br /><br />
-                        <strong>Feature Flags:</strong> allow teams to deploy code with features turned off, enabling incremental releases and controlled experimentation without affecting the entire system.<br /><br />
-                        <strong>Containers:</strong> package applications and their dependencies into portable units, using technologies like Docker and Kubernetes for orchestration.<br /><br />
-                        <strong>Metrics and KPIs:</strong> are used to measure and evaluate the effectiveness of DevOps practices, including deployment frequency, lead time, change failure rate, and mean time to recovery (MTTR).<br /><br />
-                        <strong>Feedback Loops:</strong> enable continuous improvement by incorporating feedback from monitoring, testing, and user experiences.<br /><br />
-                        <strong>Security:</strong> practices, often referred to as DevSecOps, integrate security measures into the development and deployment processes.<br /><br />
-                        <strong>Release Management:</strong> involves planning, scheduling, and controlling the deployment of software to production environments.<br /><br />
-                        <strong>Incident Management:</strong> processes help respond to and resolve issues quickly, minimizing downtime and impact on users.<br /><br />
-                        <strong>Change Management:</strong> ensures that changes to systems are made in a controlled and predictable manner.<br /><br />
-                        <strong>Performance Optimization:</strong> focuses on improving the efficiency and speed of applications and infrastructure.<br /><br />
-                        <strong>Cultural Change:</strong> is a critical aspect of DevOps, fostering a culture of collaboration, experimentation, and continuous learning.
+                        Mastering DevOps equips you with a comprehensive understanding of both development and operations, enabling you to streamline software delivery, automation, and infrastructure management.
                     </Typography>
                 );
             case 1:
@@ -295,11 +276,11 @@ const DevOpsInfo = () => {
                     <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
-                    <Typography sx={{ mt: 2.5, ml:1 }}>15 Modules</Typography>
+                    <Typography sx={{ mt: 2.5, ml:1 }}>11 Modules</Typography>
                     <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
-                    <Typography sx={{ mt: 2.5, ml:1 }}>72 Hours</Typography>
+                    <Typography sx={{ mt: 2.5, ml:1 }}>40 Hours</Typography>
                     <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>

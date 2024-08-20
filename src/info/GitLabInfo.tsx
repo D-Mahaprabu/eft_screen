@@ -182,26 +182,7 @@ const GitLabInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        <strong>GitLab</strong> is a web-based DevOps platform that provides source code management, CI/CD, and project management tools.<br /><br />
-                        <strong>Repositories:</strong> support Git for version control, allowing for collaborative development and code management.<br /><br />
-                        <strong>CI/CD Pipelines:</strong> automate the build, test, and deployment processes through configurable pipelines defined in .gitlab-ci.yml.<br /><br />
-                        <strong>Jobs:</strong> are individual tasks within a pipeline, such as compiling code or running tests, and can be executed sequentially or in parallel.<br /><br />
-                        <strong>Stages:</strong> organize jobs into phases, allowing you to control the order of execution within a pipeline.<br /><br />
-                        <strong>Runners:</strong> execute the jobs defined in pipelines and can be GitLab-hosted or self-hosted for customized execution environments.<br /><br />
-                        <strong>Merge Requests (MRs):</strong> facilitate code reviews and discussions before changes are merged into the main branch.<br /><br />
-                        <strong>Issues:</strong> track bugs, tasks, and feature requests, providing a way to manage and prioritize work.<br /><br />
-                        <strong>Boards:</strong> offer a Kanban-style interface for tracking and organizing issues and tasks.<br /><br />
-                        <strong>Milestones:</strong> group issues and merge requests into larger projects or goals, helping to manage timelines and deliverables.<br /><br />
-                        <strong>Secrets and Variables:</strong> securely store sensitive information and configuration settings for use in CI/CD pipelines.<br /><br />
-                        <strong>Container Registry:</strong> provides a built-in Docker image registry for managing and distributing container images.<br /><br />
-                        <strong>Package Registry:</strong> supports various package formats (like Maven, NPM) for managing dependencies and artifacts.<br /><br />
-                        <strong>Code Quality:</strong> features include static code analysis, security scanning, and performance metrics integrated into pipelines.<br /><br />
-                        <strong>Deployment Strategies:</strong> support methods like rolling deployments and blue-green deployments, enhancing deployment flexibility.<br /><br />
-                        <strong>Security:</strong> includes features like vulnerability scanning, compliance management, and audit logs to ensure the security of the application.<br /><br />
-                        <strong>Collaborative Tools:</strong> include wiki pages, snippet sharing, and real-time chat integration for enhanced team collaboration.<br /><br />
-                        <strong>Self-Managed or Cloud:</strong> GitLab can be used as a self-hosted instance or as a cloud service, providing flexibility in deployment options.<br /><br />
-                        <strong>Analytics and Reporting:</strong> offer insights into pipeline performance, code quality, and project progress through dashboards and reports.<br /><br />
-                        <strong>Integrations:</strong> with external tools and services allow for extended functionality, such as third-party issue trackers, chat systems, and cloud providers.
+                        Mastering GitLab enables you to manage the entire DevOps lifecycle within a single platform, from source code management to CI/CD and project planning.
                     </Typography>
                 );
             case 1:
@@ -232,12 +213,12 @@ const GitLabInfo = () => {
                     <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
-                    <Typography sx={{ mt: 2.5, ml:1 }}>15 Modules</Typography>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 1, position: 'relative', overflow: 'hidden' }}>
+                    <Typography sx={{ mt: 2.5, ml:1 }}>9 Modules</Typography>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
-                    <Typography sx={{ mt: 2.5, ml:1 }}>6 Months</Typography>
-                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 1, position: 'relative', overflow: 'hidden' }}>
+                    <Typography sx={{ mt: 2.5, ml:1 }}>20 Hours</Typography>
+                    <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
                     <Typography sx={{ mt: 2.5, ml:1 }}>Beginner</Typography>

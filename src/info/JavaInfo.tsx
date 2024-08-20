@@ -270,26 +270,7 @@ const JavaInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        <strong>Java</strong> is a widely-used, high-level, object-oriented programming language developed by Sun Microsystems, now owned by Oracle.<br /><br />
-                        <strong>Platform Independence</strong>: Java is designed to be platform-independent, meaning code written in Java can run on any device with a Java Virtual Machine (JVM).<br /><br />
-                        <strong>JVM</strong>: The Java Virtual Machine executes Java bytecode, providing an abstraction layer between the compiled code and the underlying hardware.<br /><br />
-                        <strong>Bytecode</strong>: Java source code is compiled into bytecode, which is then interpreted or compiled into native code by the JVM.<br /><br />
-                        <strong>Object-Oriented</strong>: Java is an object-oriented language, focusing on concepts like inheritance, encapsulation, polymorphism, and abstraction.<br /><br />
-                        <strong>Syntax</strong>: Java’s syntax is similar to C++, making it relatively easy to learn for developers familiar with C-based languages.<br /><br />
-                        <strong>Standard Libraries</strong>: Java includes a comprehensive set of standard libraries, known as the Java Standard Edition (SE) API, for various programming tasks.<br /><br />
-                        <strong>Concurrency</strong>: Java provides built-in support for multithreading and concurrency, allowing efficient execution of multiple threads simultaneously.<br /><br />
-                        <strong>Garbage Collection</strong>: Java has automatic garbage collection, which helps manage memory by automatically reclaiming unused resources.<br /><br />
-                        <strong>Java Development Kit (JDK)</strong>: The JDK includes the Java Runtime Environment (JRE), compiler, and tools for developing Java applications.<br /><br />
-                        <strong>Java Enterprise Edition (EE)</strong>: Java EE extends the Java SE with additional libraries and APIs for enterprise applications, including servlets and JSP.<br /><br />
-                        <strong>JavaFX</strong>: A set of graphics and media packages used for building rich client applications with a modern user interface.<br /><br />
-                        <strong>Annotations</strong>: Java supports annotations, which are metadata added to code to provide information to the compiler and runtime environments.<br /><br />
-                        <strong>Exception Handling</strong>: Java provides a robust exception handling mechanism to manage runtime errors and maintain normal program flow.<br /><br />
-                        <strong>Development Tools</strong>: Java developers use integrated development environments (IDEs) like Eclipse, IntelliJ IDEA, and NetBeans for coding and debugging.<br /><br />
-                        <strong>Frameworks</strong>: Popular Java frameworks include Spring, Hibernate, and Apache Struts, which simplify development and improve productivity.<br /><br />
-                        <strong>Cross-Platform Compatibility</strong>: Java applications can run on various operating systems, including Windows, macOS, and Linux, without modification.<br /><br />
-                        <strong>Java Community</strong>: Java has a large and active community, offering extensive resources, libraries, and support through forums and user groups.<br /><br />
-                        <strong>Security</strong>: Java includes a range of built-in security features, including a security manager, bytecode verification, and sandboxing.<br /><br />
-                        <strong>Backward Compatibility</strong>: Java maintains backward compatibility, allowing newer versions of the language to run applications written in older versions.
+                        Gaining Java skills allow you to work on a diverse range of projects, from web and mobile applications to large-scale enterprise systems, leveraging Java’s extensive libraries and frameworks.
                     </Typography>
                 );
             case 1:
@@ -323,7 +304,7 @@ const JavaInfo = () => {
                         <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
-                        <Typography sx={{ mt: 2.5, ml: 1 }}>15 Modules</Typography>
+                        <Typography sx={{ mt: 2.5, ml: 1 }}>13 Modules</Typography>
                         <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>

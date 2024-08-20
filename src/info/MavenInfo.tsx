@@ -155,26 +155,8 @@ const MavenInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        <strong>Maven</strong> is a build automation tool used primarily for Java projects, managing project builds, dependencies, and documentation.<br /><br />
-                        <strong>Project Object Model (POM)</strong>: The central configuration file, pom.xml, defines project structure, dependencies, plugins, and other settings.<br /><br />
-                        <strong>Dependency Management</strong>: Maven automatically handles downloading, updating, and managing project dependencies from a central repository.<br /><br />
-                        <strong>Repositories</strong>: Maven uses repositories to store and retrieve project dependencies, with a central repository and support for local and remote repositories.<br /><br />
-                        <strong>Build Lifecycle</strong>: Maven follows a build lifecycle consisting of phases such as compile, test, package, and install, which are executed in order.<br /><br />
-                        <strong>Plugins</strong>: Maven uses plugins to perform various tasks during the build process, such as compiling code, running tests, and packaging artifacts.<br /><br />
-                        <strong>Archetypes</strong>: Maven archetypes are templates for generating new projects, providing a standardized project structure and configuration.<br /><br />
-                        <strong>Multi-Module Projects</strong>: Maven supports multi-module projects, allowing you to manage multiple sub-projects with a single parent POM.<br /><br />
-                        <strong>Site Generation</strong>: Maven can generate project documentation and reports using the mvn site command, providing insights into project quality and status.<br /><br />
-                        <strong>Build Profiles</strong>: Profiles allow you to customize build configurations for different environments, such as development, testing, and production.<br /><br />
-                        <strong>Dependency Scope</strong>: Maven defines different dependency scopes, such as compile, test, and runtime, to control when dependencies are included.<br /><br />
-                        <strong>Effective POM</strong>: Maven can generate the "effective POM," a combination of the project's POM and all inherited settings from parent POMs and profiles.<br /><br />
-                        <strong>Plugins Repository</strong>: Maven Central provides a repository for plugins and extensions, allowing easy access to additional build functionalities.<br /><br />
-                        <strong>Dependency Management Section</strong>: The Dependency Management section in the POM allows you to define dependency versions centrally for all modules.<br /><br />
-                        <strong>Build Profiles</strong>: Profiles enable you to customize the build process for different environments or configurations, like development or production.<br /><br />
-                        <strong>Plugins Configuration</strong>: Plugins can be configured in the POM file to customize their behavior and integrate with different parts of the build process.<br /><br />
-                        <strong>Continuous Integration</strong>: Maven integrates with CI tools like Jenkins, Bamboo, and GitLab CI to automate builds and deployments.<br /><br />
-                        <strong>Community Support</strong>: Maven has a large and active community, offering extensive documentation, forums, and support for users.<br /><br />
-                        <strong>Profiles</strong>: Maven profiles allow for customized build configurations, making it easier to manage builds for different environments or use cases.<br /><br />
-                        <strong>Command Line Interface</strong>: Maven provides a command-line interface for executing build tasks, such as mvn clean install, to manage and build projects.
+                       Gaining proficiency in Maven simplifies project builds and dependency management, streamlining the development process and also
+                       ensures consistent builds across different environments, reducing errors and configuration issues.
                     </Typography>
                 );
             case 1:
@@ -206,11 +188,11 @@ const MavenInfo = () => {
                     <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
-                    <Typography sx={{ mt: 2.5, ml:1 }}>15 Modules</Typography>
+                    <Typography sx={{ mt: 2.5, ml:1 }}>10 Modules</Typography>
                     <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
-                    <Typography sx={{ mt: 2.5, ml:1 }}>72 Hours</Typography>
+                    <Typography sx={{ mt: 2.5, ml:1 }}>14 Hours</Typography>
                     <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>

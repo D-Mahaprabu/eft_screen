@@ -152,26 +152,7 @@ const KafkaInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        <strong>Kafka</strong> is an open-source, distributed event streaming platform designed for high-throughput, fault-tolerant data processing.<br /><br />
-                        <strong>Publish-Subscribe Model</strong>: Kafka operates on a publish-subscribe model where producers send messages to topics and consumers read messages from topics.<br /><br />
-                        <strong>Topics</strong>: Data is organized into topics, which are logical channels to which messages are published and from which messages are consumed.<br /><br />
-                        <strong>Partitions</strong>: Topics are divided into partitions, allowing Kafka to scale horizontally and distribute data across multiple brokers.<br /><br />
-                        <strong>Brokers</strong>: Kafka clusters consist of multiple brokers that store and manage partitions, providing high availability and fault tolerance.<br /><br />
-                        <strong>Producers</strong>: Producers are components that send data to Kafka topics, pushing messages to partitions within topics.<br /><br />
-                        <strong>Consumers</strong>: Consumers read data from Kafka topics, typically organized into consumer groups for parallel processing and load balancing.<br /><br />
-                        <strong>Offset Management</strong>: Kafka tracks the position of messages within partitions using offsets, allowing consumers to process messages from specific points.<br /><br />
-                        <strong>Replication</strong>: Data within Kafka is replicated across multiple brokers to ensure durability and availability in case of broker failures.<br /><br />
-                        <strong>High Throughput</strong>: Kafka is designed for high throughput, capable of handling large volumes of data with low latency.<br /><br />
-                        <strong>Durability</strong>: Kafka guarantees message durability by persisting messages to disk and replicating them across multiple brokers.<br /><br />
-                        <strong>Fault Tolerance</strong>: The distributed nature of Kafka and its replication mechanism provide resilience to broker failures and ensure data integrity.<br /><br />
-                        <strong>Stream Processing</strong>: Kafka integrates with Kafka Streams for real-time stream processing, enabling complex data transformations and aggregations.<br /><br />
-                        <strong>Connectors</strong>: Kafka Connect provides a framework for integrating Kafka with external systems like databases, message queues, and data lakes.<br /><br />
-                        <strong>Schema Registry</strong>: Kafka Schema Registry helps manage and enforce message schemas, ensuring compatibility and data consistency across producers and consumers.<br /><br />
-                        <strong>Consumer Groups</strong>: Consumers can be organized into consumer groups, allowing parallel consumption of messages from partitions and scalable processing.<br /><br />
-                        <strong>Log Compaction</strong>: Kafka supports log compaction, which retains only the latest value for each key, reducing storage requirements and providing up-to-date data.<br /><br />
-                        <strong>Monitoring and Management</strong>: Kafka provides metrics and management tools for monitoring cluster health, performance, and operational metrics.<br /><br />
-                        <strong>Security</strong>: Kafka includes security features such as encryption, authentication, and authorization to protect data and control access.<br /><br />
-                        <strong>Community and Ecosystem</strong>: Kafka has a vibrant community and a rich ecosystem of tools and integrations, supported by extensive documentation and active development.
+                        This Kafka module equips you to build scalable, real-time data processing systems, manage high-throughput data streams, improve system resilience, enable seamless data integration across diverse platforms, and enhance your skills in event-driven architecture, making you more valuable in data-intensive roles.
                     </Typography>
                 );
             case 1:
@@ -203,11 +184,11 @@ const KafkaInfo = () => {
                     <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
-                    <Typography sx={{ mt: 2.5, ml:1 }}>15 Modules</Typography>
+                    <Typography sx={{ mt: 2.5, ml:1 }}>8 Modules</Typography>
                     <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
-                    <Typography sx={{ mt: 2.5, ml:1 }}>72 Hours</Typography>
+                    <Typography sx={{ mt: 2.5, ml:1 }}>20 Hours</Typography>
                     <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>

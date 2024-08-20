@@ -289,26 +289,8 @@ const ReactInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        <strong>React</strong> is a popular JavaScript library for building user interfaces, particularly single-page applications.<br />
-                        It focuses on creating components, which are reusable pieces of UI that manage their own state and logic.<br /><br />
-                        <strong>JSX:</strong> is a syntax extension that allows writing HTML-like code directly within JavaScript, making the code more readable.<br /><br />
-                        <strong>Components:</strong> can be functional or class-based, with functional components being more common in modern React.<br /><br />
-                        <strong>Props:</strong> are used to pass data from one component to another, enabling reusability and modularity.<br /><br />
-                        <strong>State:</strong> is used to manage dynamic data within a component, allowing it to react to user interactions and other changes.<br /><br />
-                        <strong>Hooks:</strong> like useState, useEffect, and useContext enable functional components to use state and other React features.<br /><br />
-                        <strong>useEffect:</strong> is a hook that handles side effects, such as fetching data, directly within functional components.<br /><br />
-                        <strong>React:</strong> Router is a popular library for managing navigation and routing in React applications, enabling multi-page experiences.<br /><br />
-                        <strong>Virtual DOM:</strong> is a key concept where React creates a lightweight copy of the real DOM, improving performance by minimizing direct manipulation of the DOM.<br /><br />
-                        <strong>Reconciliation:</strong> is the process React uses to update the UI by comparing the Virtual DOM with the real DOM and applying changes efficiently.<br /><br />
-                        <strong>Context API:</strong> allows for state management across multiple components without prop drilling, facilitating global state management.<br /><br />
-                        <strong>Redux:</strong> is a state management library often used with React to handle complex state logic in larger applications.<br /><br />
-                        <strong>Testing:</strong> React applications can be tested using tools like Jest (for unit testing) and React Testing Library (for testing components and interactions).<br /><br />
-                        <strong>Event Handling:</strong> in React is done using camelCase syntax and functions, similar to JavaScript but with some differences in implementation.<br /><br />
-                        <strong>React Developer Tools:</strong> is a browser extension that provides debugging and inspection capabilities for React components.<br /><br />
-                        <strong>React Native:</strong> allows developers to use React to build mobile applications for iOS and Android with the same codebase.<br /><br />
-                        <strong>Code Splitting and Lazy Loading:</strong> help improve performance by loading components and assets only when needed.<br /><br />
-                        <strong>React’s Unidirectional Data:</strong> flow makes it easier to understand and manage the flow of data throughout the application.<br /><br />
-                        <strong>React’s Ecosystem:</strong> includes a vast array of libraries and tools, making it versatile and suitable for various project needs.
+                        React is widely used in the industry, and expertise in it opens up numerous job opportunities in front-end development with competitive salaries.
+                        Advanced React knowledge lets you leverage a vast ecosystem of libraries, tools, and community support, enabling you to create scalable and complex applications more effectively.
                     </Typography>
                 );
             case 1:
@@ -344,11 +326,11 @@ const ReactInfo = () => {
                         <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
-                        <Typography sx={{ mt: 2.5, ml: 1 }}>15 Modules</Typography>
+                        <Typography sx={{ mt: 2.5, ml: 1 }}>14 Modules</Typography>
                         <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
-                        <Typography sx={{ mt: 2.5, ml: 1 }}>72 Hours</Typography>
+                        <Typography sx={{ mt: 2.5, ml: 1 }}>80 Hours</Typography>
                         <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>

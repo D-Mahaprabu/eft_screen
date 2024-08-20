@@ -14,37 +14,37 @@ const Courses = () => {
             title: "Full Stack", 
             path: "/courses/fullstack", 
             image: FullStackBgImage,
-            info: "Full Stack Developer program gives the ability to design complete web applications and websites. They will be upskilled in frontend, backend, database, and debugging of web applications or websites."
+            info: "Full Stack Developer program gives the ability to design complete web applications."
         },
         { 
             title: "Cloud Computing", 
             path: "/cloud", 
             image: ClougBgImage,
-            info: "Master cloud computing platforms. Gain skills in AWS, Azure, and Google Cloud."
+            info: "Master cloud computing platforms gain skills in AWS, Azure, and Google Cloud."
         },
         { 
             title: "DevOps", 
             path: "/devops", 
             image: DevopsBgImage,
-            info: "Integrate development and operations. Learn CI/CD pipelines, automation, and more."
+            info: "Integrate development and operations learn CI/CD pipelines, automation and more."
         },
         { 
             title: "AI & ML", 
             path: "/ai&ml", 
             image: AiMlBgImage,
-            info: "Dive into artificial intelligence and machine learning and data science."
+            info: "This Course helps you to master the fundamentals of AI and Machine Learning."
         },
         { 
             title: "Data Engineering", 
             path: "/data-engineering", 
             image: DataEngineerBgImage,
-            info: "Become a data expert and Work with big data technologies and data pipelines."
+            info: "Become a data expert and work with big data technologies and data pipelines."
         },
         { 
             title: "Web Development", 
             path: "/web-development", 
             image: WebDevelopmentBgImage,
-            info: "Web development program makes you how to create, build, and maintain of websites. It includes aspects such as web design, web publishing, web programming, and database management."
+            info: "Web development program makes you how to create, build, and maintain of websites."
         }
     ];
 
@@ -70,7 +70,7 @@ const Courses = () => {
                 direction={'row'}
             >
                 {Courses.map(course => (
-                    <Card sx={{ width: 300, height: 400, borderRadius: 2, mr: 1.5 }} key={course.title}>
+                    <Card sx={{ width: 300, height: 380, borderRadius: 2, mr: 1.5 }} key={course.title}>
                       <CardMedia
                         component="img"
                         width="300"
@@ -82,10 +82,10 @@ const Courses = () => {
                             <Typography width={'354px'} height={'34px'} fontStyle={'Poppins'} fontWeight={'bold'} fontSize={'24px'} lineHeight={'33.6px'} letterSpacing={'0.5%'} color={'#D81B0E'} variant="h6" component={Link} to={course.path} sx={{textDecoration: 'none', mt:-1.5}}>
                                 {course.title}
                             </Typography>
-                            <Typography fontStyle={'Poppins'} color={'#282938'} variant="caption" sx={{mt:-0.2}}>
+                            <Typography fontStyle={'Poppins'} color={'#282938'} variant="caption" sx={{mt:-0.2}} fontWeight={'bold'}>
                                 {course.info.split('.')[0]}
                             </Typography>
-                            <Typography fontStyle={'Poppins'} color={'#282938'} variant="caption">
+                            <Typography fontStyle={'Poppins'} color={'#282938'} variant="caption" fontWeight={'bold'}>
                                 {course.info.split('.')[1]}
                             </Typography>
                         </CardContent>

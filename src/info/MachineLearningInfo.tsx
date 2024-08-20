@@ -6,6 +6,7 @@ import MenuBookIcon from '@mui/icons-material/MenuBook';
 import MachineLearningLogo from '../images/machineLearning.png';
 import ExclusiveCoursesQuickLinks from '../component/ExclusiveCoursesQuickLinks';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Discover from '../component/Discover';
 
 const MachineLearningInfo = () => {
     const [activeTab, setActiveTab] = useState(0);
@@ -185,26 +186,7 @@ const MachineLearningInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        <strong>Machine Learning (ML)</strong> is a subset of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed.<br /><br />
-                        <strong>Supervised Learning</strong>: Involves training models on labeled data where the correct output is provided, such as classification and regression tasks.<br /><br />
-                        <strong>Unsupervised Learning</strong>: Uses unlabeled data to identify patterns and relationships, including clustering and dimensionality reduction.<br /><br />
-                        <strong>Reinforcement Learning</strong>: An ML approach where an agent learns to make decisions by receiving rewards or penalties based on its actions in an environment.<br /><br />
-                        <strong>Algorithms</strong>: Utilizes various algorithms like linear regression, decision trees, support vector machines, and neural networks to solve different problems.<br /><br />
-                        <strong>Feature Engineering</strong>: The process of selecting, transforming, and creating features from raw data to improve model performance.<br /><br />
-                        <strong>Model Training</strong>: Involves using training data to adjust the model's parameters and improve its ability to make accurate predictions.<br /><br />
-                        <strong>Overfitting and Underfitting</strong>: Challenges where a model may either memorize the training data too closely (overfitting) or fail to capture important patterns (underfitting).<br /><br />
-                        <strong>Cross-Validation</strong>: A technique for evaluating model performance by splitting the data into training and validation sets to ensure generalization.<br /><br />
-                        <strong>Hyperparameter Tuning</strong>: The process of adjusting model parameters to optimize performance and achieve the best results on the validation data.<br /><br />
-                        <strong>Evaluation Metrics</strong>: Measures such as accuracy, precision, recall, and F1 score used to assess the performance of machine learning models.<br /><br />
-                        <strong>Data Preprocessing</strong>: Involves cleaning, normalizing, and transforming data to prepare it for training and improve model accuracy.<br /><br />
-                        <strong>Ensemble Methods</strong>: Techniques that combine multiple models, such as bagging and boosting, to enhance predictive performance and robustness.<br /><br />
-                        <strong>Deep Learning</strong>: A subset of ML involving neural networks with multiple layers (deep neural networks) to model complex patterns and features.<br /><br />
-                        <strong>Model Deployment</strong>: The process of integrating a trained machine learning model into production systems for real-world applications and use.<br /><br />
-                        <strong>Scalability</strong>: Ensures that machine learning models and infrastructure can handle large volumes of data and computational demands.<br /><br />
-                        <strong>Ethics and Bias</strong>: Addresses concerns related to fairness, transparency, and potential biases in machine learning models and their impact on decision-making.<br /><br />
-                        <strong>Continuous Learning</strong>: Involves updating models with new data and retraining to adapt to changing environments and improve performance over time.<br /><br />
-                        <strong>Toolkits and Libraries</strong>: Utilizes tools and libraries such as TensorFlow, PyTorch, and scikit-learn for developing and implementing machine learning models.<br /><br />
-                        <strong>Applications</strong>: Machine learning is applied in various domains including healthcare, finance, marketing, and autonomous systems to solve complex problems and drive innovation.
+                        Machine learning enables you to build and deploy sophisticated models, gain deep insights from data, optimize algorithms for better performance, tackle complex problems with predictive analytics, and enhance your ability to drive data-driven decision-making across various domains.
                     </Typography>
                 );
             case 1:
@@ -238,11 +220,11 @@ const MachineLearningInfo = () => {
                         <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
-                        <Typography sx={{ mt: 2.5, ml: 1 }}>15 Modules</Typography>
+                        <Typography sx={{ mt: 2.5, ml: 1 }}>8 Modules</Typography>
                         <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
-                        <Typography sx={{ mt: 2.5, ml: 1 }}>72 Hours</Typography>
+                        <Typography sx={{ mt: 2.5, ml: 1 }}>20 Hours</Typography>
                         <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
@@ -294,6 +276,7 @@ const MachineLearningInfo = () => {
                     </Card>
                     <Box sx={{ mt: 2 }}>
                         <ExclusiveCoursesQuickLinks />
+                        <Discover />
                     </Box>
                 </Box>
             </Stack>

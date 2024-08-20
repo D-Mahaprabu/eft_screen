@@ -6,9 +6,9 @@ const quickLinks = [
     { name: 'HTML', path: '/courses/fullstack/html-info' },
     { name: 'CSS', path: '/courses/fullstack/css-info' },
     { name: 'Bootstrap', path: '/courses/fullstack/bootstrap-info' },
-    { name: 'React', path: '/courses/fullstack/react-info' },
     { name: 'JavaScript', path: '/courses/fullstack/js-info' },
     { name: 'TypeScript', path: '/courses/fullstack/ts-info' },
+    { name: 'React', path: '/courses/fullstack/react-info' },
     { name: 'CI/CD Options', path: '/courses/fullstack/jenkins-info' }, 
 ];
 

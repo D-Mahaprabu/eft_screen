@@ -196,26 +196,7 @@ const RedisInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        <strong>Redis</strong> is an open-source, in-memory data structure store used as a database, cache, and message broker.<br /><br />
-                        <strong>In-Memory Storage</strong>: Redis stores data in memory for fast access and high performance, with optional persistence to disk.<br /><br />
-                        <strong>Data Structures</strong>: Redis supports a variety of data structures, including strings, lists, sets, hashes, sorted sets, and bitmaps.<br /><br />
-                        <strong>Persistence</strong>: Redis provides options for data persistence with RDB snapshots and AOF (Append-Only File) logs to ensure data durability.<br /><br />
-                        <strong>Replication</strong>: Redis supports master-slave replication, allowing data to be copied from a master node to one or more slave nodes.<br /><br />
-                        <strong>High Availability</strong>: Redis Sentinel provides high availability and monitoring, enabling automatic failover and monitoring of Redis instances.<br /><br />
-                        <strong>Cluster Mode</strong>: Redis Cluster enables horizontal scaling by distributing data across multiple Redis nodes in a cluster.<br /><br />
-                        <strong>Pub/Sub</strong>: Redis includes a publish/subscribe messaging paradigm for real-time messaging and event distribution.<br /><br />
-                        <strong>Atomic Operations</strong>: Redis supports atomic operations on data structures, allowing for complex operations to be performed safely.<br /><br />
-                        <strong>Transactions</strong>: Redis transactions allow grouping multiple commands into a single atomic operation with the MULTI, EXEC, and WATCH commands.<br /><br />
-                        <strong>Lua Scripting</strong>: Redis supports Lua scripting, enabling custom scripts to be executed atomically on the server side.<br /><br />
-                        <strong>TTL (Time-To-Live)</strong>: Redis allows setting expiration times on keys, enabling automatic deletion of data after a specified period.<br /><br />
-                        <strong>Memory Management</strong>: Redis provides various memory management options, including eviction policies to handle scenarios where memory is full.<br /><br />
-                        <strong>Backup and Restore</strong>: Supports creating backups and restoring data using RDB snapshots and AOF logs.<br /><br />
-                        <strong>Security</strong>: Redis includes security features such as authentication, authorization, and TLS encryption to secure data and communication.<br /><br />
-                        <strong>Client Libraries</strong>: Redis has a wide range of client libraries available for various programming languages, facilitating integration with applications.<br /><br />
-                        <strong>Performance</strong>: Redis is known for its high performance and low latency, making it suitable for real-time applications and caching.<br /><br />
-                        <strong>Community and Ecosystem</strong>: Redis has an active community and a broad ecosystem, with extensive documentation and third-party tools and integrations.<br /><br />
-                        <strong>Data Modeling</strong>: Redis supports flexible data modeling, enabling efficient storage and retrieval of complex data types.<br /><br />
-                        <strong>Use Cases</strong>: Common use cases for Redis include caching, session management, real-time analytics, and message queuing.
+                       Knowing Redis empowers you to optimize application performance with lightning-fast data access, improve scalability with advanced caching techniques, enhance real-time analytics capabilities, manage high-throughput workloads, and boost your expertise in building responsive, data-driven applications.
                     </Typography>
                 );
             case 1:
@@ -247,11 +228,11 @@ const RedisInfo = () => {
                     <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
-                    <Typography sx={{ mt: 2.5, ml:1 }}>15 Modules</Typography>
+                    <Typography sx={{ mt: 2.5, ml:1 }}>9 Modules</Typography>
                     <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
-                    <Typography sx={{ mt: 2.5, ml:1 }}>72 Hours</Typography>
+                    <Typography sx={{ mt: 2.5, ml:1 }}>18 Hours</Typography>
                     <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>

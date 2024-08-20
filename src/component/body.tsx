@@ -531,7 +531,7 @@ const Body = () => {
                </Stack>
 
                <Stack>
-                <Button size="large" sx={{ width: "160%", height: 95, mt: -2.4, ml: 4, bgcolor: '#D81B0E', color: 'white', '&:hover': {bgcolor: 'darkred',},}}>
+                <Button size="large" sx={{ width: "130%", height: 95, mt: -2.4, ml: 4, bgcolor: '#D81B0E', color: 'white', '&:hover': {bgcolor: 'darkred',},}}>
                     <Stack>
                     <Typography fontWeight={'bold'} display={'flex'} variant="h5" justifyContent={'center'}>
                         FULL STACK

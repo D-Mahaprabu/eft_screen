@@ -270,26 +270,7 @@ const SpringBootInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        <strong>Spring Boot</strong> is an open-source framework designed to simplify the development of production-ready Spring applications.<br /><br />
-                        <strong>Auto-Configuration</strong>: Spring Boot automatically configures application settings based on the dependencies present on the classpath.<br /><br />
-                        <strong>Standalone Applications</strong>: Spring Boot applications are standalone and can be run directly without needing an external server.<br /><br />
-                        <strong>Embedded Servers</strong>: It supports embedded servers like Tomcat, Jetty, and Undertow, eliminating the need for a separate web server.<br /><br />
-                        <strong>Spring Initializr</strong>: A web-based tool that generates a basic Spring Boot project with the required dependencies and configurations.<br /><br />
-                        <strong>Convention Over Configuration</strong>: Spring Boot follows the principle of "convention over configuration," providing sensible defaults to reduce boilerplate code.<br /><br />
-                        <strong>Spring Boot Starter POMs</strong>: Starters are pre-configured dependencies for various functionalities, like web development or database access.<br /><br />
-                        <strong>Production-Ready Features</strong>: Includes features such as health checks, metrics, and application monitoring to support production environments.<br /><br />
-                        <strong>Actuator</strong>: A set of tools for managing and monitoring Spring Boot applications, including endpoints for health, metrics, and configuration.<br /><br />
-                        <strong>External Configuration</strong>: Supports externalized configuration via properties files, YAML files, environment variables, and command-line arguments.<br /><br />
-                        <strong>Spring Boot CLI</strong>: A command-line interface tool for running and testing Spring Boot applications from the command line.<br /><br />
-                        <strong>Microservices</strong>: Spring Boot is well-suited for building microservices architectures due to its ease of deployment and minimal configuration.<br /><br />
-                        <strong>Security</strong>: Integrates with Spring Security to provide comprehensive security features such as authentication and authorization.<br /><br />
-                        <strong>Data Access</strong>: Simplifies database interactions through Spring Data JPA, MongoDB, and other data access libraries.<br /><br />
-                        <strong>RESTful APIs</strong>: Makes it easy to build RESTful web services using Spring MVC with minimal setup and configuration.<br /><br />
-                        <strong>Embedded Databases</strong>: Supports embedded databases like H2 and Derby for development and testing purposes.<br /><br />
-                        <strong>Spring Boot DevTools</strong>: Provides additional development tools for improving productivity, such as automatic restart and live reload.<br /><br />
-                        <strong>Testing Support</strong>: Includes built-in support for unit and integration testing with libraries such as JUnit, Mockito, and Spring Test.<br /><br />
-                        <strong>Community and Documentation</strong>: Spring Boot benefits from extensive documentation and a large, active community providing support and resources.<br /><br />
-                        <strong>Modular Architecture</strong>: Spring Boot's modular architecture allows for easy integration with other Spring projects and third-party libraries.
+                       Learning Spring Boot becomes priority for back-end developers since it is widely used in the industry for building scalable, production-ready applications, making you more marketable.
                     </Typography>
                 );
             case 1:
@@ -323,11 +304,11 @@ const SpringBootInfo = () => {
                         <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
-                        <Typography sx={{ mt: 2.5, ml: 1 }}>15 Modules</Typography>
+                        <Typography sx={{ mt: 2.5, ml: 1 }}>13 Modules</Typography>
                         <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
-                        <Typography sx={{ mt: 2.5, ml: 1 }}>72 Hours</Typography>
+                        <Typography sx={{ mt: 2.5, ml: 1 }}>54 Hours</Typography>
                         <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>

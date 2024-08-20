@@ -14,7 +14,7 @@ const Discover: React.FC = () => {
     return (
         <Box sx={{ bgcolor: 'white', p: 2, borderRadius: 1, boxShadow: 1 }}>
             <Typography variant="h6" sx={{ mb: 2, fontWeight: 'bold' }}>
-                Discover
+                Discover Other Courses
             </Typography>
             <List>
                 {discoverLinks.map((link, index) => (

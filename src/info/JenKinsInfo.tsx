@@ -307,26 +307,8 @@ const JenkinsInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        <strong>Jenkins</strong> is an open-source automation server used for continuous integration and continuous delivery (CI/CD).<br /><br />
-                        <strong>Pipelines:</strong> automate the build, test, and deployment processes through a series of stages defined in a Jenkinsfile.<br /><br />
-                        <strong>Plugins:</strong> extend Jenkins' functionality, allowing integration with version control systems, build tools, and deployment platforms.<br /><br />
-                        <strong>Nodes:</strong> (or agents) distribute the workload by running jobs on different machines.<br /><br />
-                        <strong>Master Node:</strong> manages the overall Jenkins environment and distributes tasks to the worker nodes.<br /><br />
-                        <strong>Freestyle Projects:</strong> are the simplest job type, offering a GUI for defining build steps and triggers.<br /><br />
-                        <strong>Declarative Pipeline:</strong> provides a more readable and structured way to define pipelines using a simplified syntax.<br /><br />
-                        <strong>Scripted Pipeline:</strong> offers greater flexibility through Groovy scripting for complex build processes.<br /><br />
-                        <strong>Build Triggers:</strong> can start jobs based on events like code commits, schedule, or manual initiation.<br /><br />
-                        <strong>Version Control Integration:</strong> supports systems like Git, Subversion, and Mercurial for source code management.<br /><br />
-                        <strong>Artifact Management:</strong> stores build outputs and dependencies, often integrating with tools like Nexus or Artifactory.<br /><br />
-                        <strong>Testing Integration:</strong> allows running unit tests, integration tests, and other types of testing within the build process.<br /><br />
-                        <strong>Notifications:</strong> send alerts and reports through email, chat systems, or other notification channels.<br /><br />
-                        <strong>Pipeline as Code:</strong> promotes defining CI/CD workflows as code, stored alongside the application code.<br /><br />
-                        <strong>Blue Ocean:</strong> is a modern UI for Jenkins that simplifies pipeline creation and visualization.<br /><br />
-                        <strong>Credentials Management:</strong> securely stores and manages sensitive information like passwords and API keys.<br /><br />
-                        <strong>Configuration:</strong> as Code allows Jenkins configuration to be defined in code, enabling reproducible environments.<br /><br />
-                        <strong>Scalability:</strong> is achieved by adding more nodes to handle larger workloads and parallel builds.<br /><br />
-                        <strong>Security features:</strong> include user authentication, role-based access control, and integration with LDAP or other authentication systems.<br /><br />
-                        <strong>Pipeline Libraries:</strong> Jenkins supports shared libraries for storing common pipeline code and reusable components, enabling better organization and DRY (Don't Repeat Yourself) principles across multiple pipelines.
+                        Jenkins expertise is highly valued in DevOps roles, making you a sought-after candidate for positions in automation and infrastructure management.
+                        Mastering Jenkins enables you to automate complex CI/CD pipelines, improving software delivery speed, consistency, and reliability.
                     </Typography>
                 );
             case 1:
@@ -361,7 +343,7 @@ const JenkinsInfo = () => {
                     <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
-                    <Typography sx={{ mt: 2.5, ml:1 }}>72 Hours</Typography>
+                    <Typography sx={{ mt: 2.5, ml:1 }}>36 Hours</Typography>
                     <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>

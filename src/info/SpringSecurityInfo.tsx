@@ -232,26 +232,7 @@ const SpringSecurityInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        <strong>Spring Security</strong> is a powerful and customizable authentication and access control framework for Java applications.<br /><br />
-                        <strong>Authentication</strong>: Provides mechanisms for verifying the identity of users, supporting various methods such as username/password, OAuth2, and JWT.<br /><br />
-                        <strong>Authorization</strong>: Manages access control by enforcing permissions and roles to ensure users can access only the resources they are allowed to.<br /><br />
-                        <strong>Filter Chain</strong>: Spring Security uses a filter chain to apply security controls to HTTP requests and responses, ensuring that security measures are consistently applied.<br /><br />
-                        <strong>Spring Security Configuration</strong>: Configurable via Java-based configuration, XML configuration, or using annotations to define security rules and policies.<br /><br />
-                        <strong>Method Security</strong>: Supports securing methods at the application level using annotations like @PreAuthorize and @Secured to control access based on user roles.<br /><br />
-                        <strong>CSRF Protection</strong>: Includes Cross-Site Request Forgery (CSRF) protection to prevent unauthorized commands from being transmitted from a user that the web application trusts.<br /><br />
-                        <strong>Session Management</strong>: Manages user sessions, including handling session fixation and concurrent session control to enhance security.<br /><br />
-                        <strong>OAuth2 Integration</strong>: Provides support for integrating OAuth2 for authorization, enabling secure access to resources on behalf of users.<br /><br />
-                        <strong>JWT Support</strong>: Spring Security can work with JSON Web Tokens (JWT) for stateless authentication and authorization in RESTful applications.<br /><br />
-                        <strong>Security Context</strong>: Maintains the security context for the duration of a request, storing user authentication and authorization details.<br /><br />
-                        <strong>Custom Filters</strong>: Allows the creation and integration of custom filters into the security filter chain to address specific security requirements.<br /><br />
-                        <strong>Exception Handling</strong>: Provides mechanisms for handling security-related exceptions and customizing error responses, such as for failed logins.<br /><br />
-                        <strong>Password Encoding</strong>: Supports password encoding and hashing with algorithms like BCrypt, PBKDF2, and Argon2 for secure storage of user passwords.<br /><br />
-                        <strong>LDAP Integration</strong>: Integrates with LDAP (Lightweight Directory Access Protocol) for user authentication and authorization using directory services.<br /><br />
-                        <strong>Single Sign-On (SSO)</strong>: Supports SSO to enable users to authenticate once and gain access to multiple applications without re-entering credentials.<br /><br />
-                        <strong>Security Policies</strong>: Allows defining security policies and constraints at different levels, including URLs, HTTP methods, and user roles.<br /><br />
-                        <strong>Default Security Settings</strong>: Provides a set of default security settings to quickly get started with common security practices, which can be customized as needed.<br /><br />
-                        <strong>Security Context Holder</strong>: Provides access to the security context, allowing retrieval of user details and permissions within the application.<br /><br />
-                        <strong>Community and Documentation</strong>: Spring Security benefits from extensive documentation and a large community, providing resources and support for configuration and implementation.
+                       Learning Spring Security gives deep knowledge of securing applications, protecting against common vulnerabilities like CSRF, XSS, and SQL injection.
                     </Typography>
                 );
             case 1:
@@ -283,11 +264,11 @@ const SpringSecurityInfo = () => {
                     <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
-                    <Typography sx={{ mt: 2.5, ml:1 }}>15 Modules</Typography>
+                    <Typography sx={{ mt: 2.5, ml:1 }}>11 Modules</Typography>
                     <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
-                    <Typography sx={{ mt: 2.5, ml:1 }}>72 Hours</Typography>
+                    <Typography sx={{ mt: 2.5, ml:1 }}>26 Hours</Typography>
                     <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>

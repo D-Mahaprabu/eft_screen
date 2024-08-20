@@ -87,8 +87,8 @@ function App() {
       <Route path="/courses/fullstack/debuggingskills-info" component={DebuggingSkillsInfo} />
       <Route path="/courses/fullstack/enterprisearchitecture-info" component={EnterpriseArchitectureInfo} />
       <Route path="/courses/fullstack/capacityplanning-info" component={CapacityPlanningInfo} />
-      <Route path="/about-us" component={Aboutus} />
-      <Route path="/contact-us" component={Contactus} />
+      <Route path="/about-us" component={Home} />
+      <Route path="/contact-us" component={Home} />
       </Switch>
     </Box>
   </Router>

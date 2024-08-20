@@ -172,26 +172,7 @@ const ElasticStackInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        <strong>Elastic Stack</strong>, formerly known as the ELK Stack, is a set of open-source tools for search, logging, and analytics.<br /><br />
-                        <strong>Elastic Search</strong>: The core search and analytics engine of the stack, providing fast full-text search, indexing, and data analysis.<br /><br />
-                        <strong>Kibana</strong>: A data visualization and exploration tool that provides a graphical interface for interacting with data stored in Elasticsearch.<br /><br />
-                        <strong>Logstash</strong>: A data processing pipeline that ingests, transforms, and ships data to Elasticsearch or other destinations.<br /><br />
-                        <strong>Beats</strong>: Lightweight data shippers that send various types of data (logs, metrics, etc.) from clients to Logstash or Elasticsearch.<br /><br />
-                        <strong>Indexing</strong>: Elasticsearch indexes data to enable fast and efficient search queries and analytics.<br /><br />
-                        <strong>Full-Text Search</strong>: Elasticsearch provides powerful full-text search capabilities, including relevance scoring and language processing.<br /><br />
-                        <strong>Data Visualization</strong>: Kibana allows users to create visualizations like charts, graphs, and dashboards to analyze and interpret data.<br /><br />
-                        <strong>Data Ingestion</strong>: Logstash and Beats handle data ingestion from various sources, including logs, metrics, and application data.<br /><br />
-                        <strong>Real-Time Analytics</strong>: Elasticsearch supports real-time data indexing and querying, enabling up-to-date analytics and search results.<br /><br />
-                        <strong>Aggregation</strong>: Elasticsearch provides powerful aggregation capabilities to summarize and analyze large volumes of data.<br /><br />
-                        <strong>Cluster Management</strong>: Elasticsearch can be deployed in a cluster configuration, allowing horizontal scaling and high availability.<br /><br />
-                        <strong>Security</strong>: The Elastic Stack includes security features like authentication, authorization, and encryption to protect data.<br /><br />
-                        <strong>Alerting</strong>: Provides alerting capabilities to monitor data and trigger notifications or actions based on specified conditions.<br /><br />
-                        <strong>Machine Learning</strong>: Integrates machine learning features to automatically detect anomalies and patterns in data.<br /><br />
-                        <strong>Visualization Dashboards</strong>: Kibana dashboards can be customized to display different visualizations, providing insights into data trends and metrics.<br /><br />
-                        <strong>Data Enrichment</strong>: Logstash supports data enrichment by adding context or transforming data before sending it to Elasticsearch.<br /><br />
-                        <strong>APIs</strong>: Elasticsearch offers RESTful APIs for interacting with and managing data, making integration with other systems straightforward.<br /><br />
-                        <strong>Community and Support</strong>: The Elastic Stack has an active community and offers commercial support options for enterprise needs.<br /><br />
-                        <strong>Open Source and Commercial</strong>: While the core components are open-source, Elastic also offers commercial features and support through Elastic Stack subscriptions.
+                        Elastic Stack course equips you with the skills to efficiently search, analyze, and visualize large volumes of data in real-time, enhances your ability to monitor and troubleshoot applications, improves your data-driven decision-making, and boosts your employability in data-centric roles.
                     </Typography>
                 );
             case 1:
@@ -225,11 +206,11 @@ const ElasticStackInfo = () => {
                         <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
-                        <Typography sx={{ mt: 2.5, ml: 1 }}>15 Modules</Typography>
+                        <Typography sx={{ mt: 2.5, ml: 1 }}>8 Modules</Typography>
                         <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
-                        <Typography sx={{ mt: 2.5, ml: 1 }}>72 Hours</Typography>
+                        <Typography sx={{ mt: 2.5, ml: 1 }}>15 Hours</Typography>
                         <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>

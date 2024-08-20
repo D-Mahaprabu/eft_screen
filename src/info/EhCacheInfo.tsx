@@ -174,26 +174,7 @@ const EhCacheInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        <strong>Ehcache</strong> is an open-source, Java-based caching library designed for high-performance and scalable caching.<br /><br />
-                        <strong>In-Memory Caching</strong>: Ehcache provides fast, in-memory caching of frequently accessed data to improve application performance.<br /><br />
-                        <strong>Cache Configuration</strong>: Supports flexible configuration through XML, annotations, or programmatic API to define cache properties and behaviors.<br /><br />
-                        <strong>Cache Management</strong>: Allows management of caches including creation, eviction policies, and statistics monitoring.<br /><br />
-                        <strong>Persistence</strong>: Offers persistence options to store cache data on disk, ensuring data availability across application restarts.<br /><br />
-                        <strong>Cache Tiers</strong>: Supports multiple cache tiers such as in-memory and disk-based caches to balance performance and capacity.<br /><br />
-                        <strong>Eviction Policies</strong>: Implements various eviction policies like Least Recently Used (LRU) and Least Frequently Used (LFU) to manage cache size.<br /><br />
-                        <strong>Cache Expiration</strong>: Provides mechanisms for cache entry expiration based on time-to-live (TTL) or time-to-idle (TTI) settings.<br /><br />
-                        <strong>Clustered Caching</strong>: Supports clustering and distributed caching for scaling across multiple nodes and ensuring consistency.<br /><br />
-                        <strong>Concurrency</strong>: Ehcache is designed for high concurrency, providing thread-safe operations to handle multiple simultaneous cache accesses.<br /><br />
-                        <strong>Cache Loader</strong>: Integrates with cache loaders to populate caches with data on-demand or during initialization.<br /><br />
-                        <strong>Cache Writers</strong>: Supports cache writers for persisting updates to a data store or other external systems.<br /><br />
-                        <strong>Integration</strong>: Easily integrates with frameworks like Spring and Hibernate, and supports various data sources and formats.<br /><br />
-                        <strong>Monitoring</strong>: Provides monitoring and management capabilities through JMX or other management interfaces to track cache performance.<br /><br />
-                        <strong>Custom Cache Factories</strong>: Allows the creation of custom cache factories and components to extend or modify default behavior.<br /><br />
-                        <strong>API</strong>: Offers a comprehensive API for interacting with caches, including operations for put, get, and remove cache entries.<br /><br />
-                        <strong>Cache Statistics</strong>: Collects and exposes statistics such as hit rates, miss rates, and eviction counts for performance analysis.<br /><br />
-                        <strong>Memory Management</strong>: Provides options for fine-tuning memory usage and managing cache size to optimize performance and resource utilization.<br /><br />
-                        <strong>Data Integrity</strong>: Ensures data integrity and consistency across caches, particularly in clustered and distributed environments.<br /><br />
-                        <strong>Documentation and Community</strong>: Ehcache has extensive documentation and an active community, offering support and resources for users and developers.
+                        Learning Ehcache enables you to optimize application performance by reducing database load, improve data retrieval speed through effective caching strategies, enhance scalability, and ensure better resource management, all of which contribute to more efficient and responsive applications.
                     </Typography>
                 );
             case 1:
@@ -227,11 +208,11 @@ const EhCacheInfo = () => {
                         <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
-                        <Typography sx={{ mt: 2.5, ml: 1 }}>15 Modules</Typography>
+                        <Typography sx={{ mt: 2.5, ml: 1 }}>10 Modules</Typography>
                         <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
-                        <Typography sx={{ mt: 2.5, ml: 1 }}>72 Hours</Typography>
+                        <Typography sx={{ mt: 2.5, ml: 1 }}>16 Hours</Typography>
                         <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>

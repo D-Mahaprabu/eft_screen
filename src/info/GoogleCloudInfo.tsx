@@ -288,26 +288,7 @@ const GoogleCloudInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        <strong>Google Cloud Platform (GCP)</strong> is a suite of cloud computing services provided by Google, offering infrastructure, platform, and software solutions.<br /><br />
-                        <strong>Compute Services:</strong> include Google Compute Engine for scalable virtual machines and Google Cloud Functions for serverless computing.<br /><br />
-                        <strong>Storage Solutions:</strong> feature Google Cloud Storage for object storage, Google Persistent Disks for block storage, and Google Filestore for managed file storage.<br /><br />
-                        <strong>Databases:</strong> include Cloud SQL for relational databases, Google Cloud Bigtable for NoSQL, and Google Cloud Firestore for document databases.<br /><br />
-                        <strong>Networking:</strong> services include Google Virtual Private Cloud (VPC) for isolated networks, Google Cloud Load Balancing for distributing traffic, and Cloud CDN for content delivery.<br /><br />
-                        <strong>Security and Identity:</strong> include Google Cloud Identity and Access Management (IAM) for managing permissions, and Google Cloud Key Management for managing encryption keys.<br /><br />
-                        <strong>Monitoring and Management Tools:</strong> include Google Cloud Operations Suite (formerly Stackdriver) for logging, monitoring, and application performance management.<br /><br />
-                        <strong>Development and Deployment:</strong> services feature Google Cloud Build for CI/CD pipelines, and Google Cloud Source Repositories for source control.<br /><br />
-                        <strong>Data Migration Tools:</strong> like Transfer Service for on-premises data and Cloud Storage Transfer Service simplify the process of migrating large volumes of data from on-premises systems or other cloud providers to GCP.<br /><br />
-                        <strong>Containers:</strong> services include Google Kubernetes Engine (GKE) for managing Kubernetes clusters and Google Cloud Run for running containerized applications.<br /><br />
-                        <strong>Serverless:</strong> options include Google Cloud Functions for event-driven computing and Google App Engine for platform-as-a-service (PaaS) applications.<br /><br />
-                        <strong>Analytics Tools:</strong> include BigQuery for large-scale data analytics, Google Cloud Dataflow for stream and batch data processing, and Google Cloud Dataproc for managed Apache Spark and Hadoop.<br /><br />
-                        <strong>Migration Services:</strong> assist in moving applications and data to GCP, including Database Migration Service and Transfer Appliance for large data transfers.<br /><br />
-                        <strong>Networking Security:</strong> services include Google Cloud Armor for DDoS protection and Web Application Firewall (WAF), and Google Cloud Identity-Aware Proxy (IAP) for controlling access to applications based on user identity and context.<br /><br />
-                        <strong>IoT:</strong> services include Google Cloud IoT Core for connecting and managing IoT devices and Google Cloud IoT Edge for edge computing.<br /><br />
-                        <strong>Application Integration Tools:</strong> include Google Cloud Pub/Sub for messaging and Google Cloud Tasks for managing distributed tasks.<br /><br />
-                        <strong>Cost Management Tools:</strong> help monitor and optimize spending, including Google Cloud Billing and Google Cloud Cost Management.<br /><br />
-                        <strong>Global Infrastructure:</strong> includes a network of data centers organized into regions and zones for high availability and disaster recovery.<br /><br />
-                        <strong>Hybrid Cloud Solutions:</strong> such as Anthos enable management of applications across on-premises, hybrid, and multi-cloud environments.<br /><br />
-                        <strong>Big Data Solutions:</strong> offer capabilities for analyzing large datasets, including Google Cloud Bigtable for time-series data and Google Cloud Spanner for globally distributed databases. 
+                        Learning Advanced GCP skills enable you to integrate with Google's ecosystem and cutting-edge technologies, such as AI and big data solutions, enhancing your ability to build and deploy innovative cloud-based applications.
                     </Typography>
                 );
             case 1:
@@ -341,11 +322,11 @@ const GoogleCloudInfo = () => {
                         <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
-                        <Typography sx={{ mt: 2.5, ml:1 }}>15 Modules</Typography>
+                        <Typography sx={{ mt: 2.5, ml:1 }}>12 Modules</Typography>
                         <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
-                        <Typography sx={{ mt: 2.5, ml:1 }}>72 Hours</Typography>
+                        <Typography sx={{ mt: 2.5, ml:1 }}>28 Hours</Typography>
                         <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>

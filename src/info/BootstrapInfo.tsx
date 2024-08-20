@@ -217,26 +217,8 @@ const BootStrapInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        <strong>Bootstrap</strong> is a popular open-source CSS framework used for building responsive, mobile-first web pages.<br />
-                        It provides a grid system that divides the page into a 12-column layout, enabling flexible and consistent layouts.<br /><br />
-                        <strong>Responsive design:</strong> is a core feature, allowing websites to adapt seamlessly to different screen sizes and devices.<br /><br />
-                        <strong>Predefined:</strong> classes offer a wide range of styles for elements like buttons, forms, and typography without writing custom CSS.<br /><br />
-                        <strong>Containers:</strong> are used to center and pad content, ensuring consistent spacing and alignment.<br /><br />
-                        <strong>Rows and columns:</strong> within the grid system allow for structured and responsive layouts, adjusting based on screen size.<br /><br />
-                        <strong>Breakpoints:</strong> define the responsive behavior at different screen widths, such as small, medium, large, and extra-large.<br /><br />
-                        <strong>Typography:</strong> classes provide control over font styles, sizes, weights, and alignment for headings, paragraphs, and text.<br /><br />
-                        <strong>Buttons:</strong> come with various styles, colors, sizes, and states, with classes for primary, secondary, success, danger, and more.<br /><br />
-                        <strong>Forms:</strong> are easily styled with Bootstrap, offering classes for input fields, checkboxes, radio buttons, and form validation.<br /><br />
-                        <strong>Components:</strong> like navbars, modals, dropdowns, and carousels are ready-to-use, providing common UI elements.<br /><br />
-                        <strong>Cards:</strong> are flexible content containers with options for headers, footers, images, and content blocks.<br /><br />
-                        <strong>Utilities:</strong> offer quick styling options for margins, padding, text alignment, colors, and visibility.<br /><br />
-                        <strong>Icons:</strong> are available through Bootstrap Icons, a library of SVG-based icons that integrate easily with the framework.<br /><br />
-                        <strong>Themes:</strong> Bootstrap supports custom themes, allowing developers to easily change the appearance of their entire site by modifying a few variables or using pre-built themes to quickly apply a consistent design.<br /><br />
-                        <strong>Customizable:</strong> Bootstrap allows customization of themes, colors, and components using Sass variables and built-in tools.<br /><br />
-                        <strong>Flexbox:</strong> utilities in Bootstrap simplify alignment, order, and spacing of items within a container.<br /><br />
-                        <strong>Tables:</strong> are styled with classes for striped rows, bordered cells, and responsive behavior.<br /><br />
-                        <strong>Alerts and Badges:</strong> are available for displaying notifications or highlighting important information.<br /><br />
-                        <strong>Documentation:</strong> is comprehensive, offering detailed examples and guidelines for all components and utilities.
+                        Proficiency in Bootstrap is highly valued in web development, making you more attractive to employers and improving job prospects.
+                        Mastering Bootstrap enables you to quickly create responsive, mobile-first websites using a rich set of pre-designed components and a powerful grid system.
                     </Typography>
                 );
             case 1:
@@ -270,11 +252,11 @@ const BootStrapInfo = () => {
                         <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
-                        <Typography sx={{ mt: 2.5, ml: 1 }}>15 Modules</Typography>
+                        <Typography sx={{ mt: 2.5, ml: 1 }}>9 Modules</Typography>
                         <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
-                        <Typography sx={{ mt: 2.5, ml: 1 }}>72 Hours</Typography>
+                        <Typography sx={{ mt: 2.5, ml: 1 }}>32 Hours</Typography>
                         <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>

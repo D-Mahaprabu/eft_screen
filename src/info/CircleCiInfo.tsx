@@ -209,26 +209,8 @@ const CircleCiInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        <strong>CircleCI</strong> is a continuous integration and continuous delivery (CI/CD) platform that automates the software development pipeline.<br /><br />
-                        <strong>Configuration:</strong> is done using a .circleci/config.yml file, which defines workflows, jobs, and steps.<br /><br />
-                        <strong>Jobs:</strong> are individual tasks like building, testing, or deploying, and they are executed in parallel or sequentially as defined.<br /><br />
-                        <strong>Workflows:</strong> orchestrate the execution of jobs, allowing you to define complex pipelines with dependencies and conditional logic.<br /><br />
-                        <strong>Insights Dashboard:</strong> provides visualizations and metrics on pipeline performance, success rates, and build times, helping teams monitor and optimize their CI/CD processes.<br /><br />
-                        <strong>Build Caching:</strong> improves build performance by reusing previously built artifacts and dependencies.<br /><br />
-                        <strong>Parallelism:</strong> allows jobs to run concurrently, speeding up the build and test process.<br /><br />
-                        <strong>Customizable Executors:</strong> let you choose between Docker, machine (VM), or macOS environments for running jobs.<br /><br />
-                        <strong>Integrations:</strong> with version control systems like GitHub, GitLab, and Bitbucket streamline the CI/CD process.<br /><br />
-                        <strong>Orbs:</strong> are reusable packages of CircleCI configuration that simplify and standardize common tasks.<br /><br />
-                        <strong>Environment Variables:</strong> are used to store sensitive information and configuration settings securely.<br /><br />
-                        <strong>Workspaces:</strong> allow jobs to share data between steps within the same workflow, facilitating complex pipelines.<br /><br />
-                        <strong>Artifacts:</strong> are files or directories produced by jobs that can be saved and used later in the pipeline.<br /><br />
-                        <strong>SSH:</strong> Access provides the ability to debug running jobs by connecting directly to the build environment.<br /><br />
-                        <strong>Test Insights:</strong> offer detailed analytics on test performance and failures, helping you identify and address issues quickly.<br /><br />
-                        <strong>Deployment:</strong> features support various deployment strategies, including rolling deployments and blue-green deployments.<br /><br />
-                        <strong>CircleCI CLI:</strong> (Command Line Interface) allows you to interact with CircleCI from your local machine for tasks like local builds and pipeline configuration validation.<br /><br />
-                        <strong>Security:</strong> practices include role-based access control, secure environment variable management, and integration with security tools.<br /><br />
-                        <strong>Monitoring and Notifications:</strong> provide real-time updates on build and deployment status through various channels like email or Slack.<br /><br />
-                        <strong>Scalability:</strong> handles increased workloads by dynamically scaling resources based on demand, ensuring efficient build processes.
+                        CircleCI is highly valued in DevOps and software development roles, increasing your job prospects and potential for higher salaries.
+                        Mastering CircleCI allows you to build, test, and deploy applications more efficiently, optimizing continuous integration and continuous delivery (CI/CD) pipelines.
                     </Typography>
                 );
             case 1:
@@ -259,11 +241,11 @@ const CircleCiInfo = () => {
                     <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
-                    <Typography sx={{ mt: 2.5, ml:1 }}>15 Modules</Typography>
+                    <Typography sx={{ mt: 2.5, ml:1 }}>11 Modules</Typography>
                     <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
-                    <Typography sx={{ mt: 2.5, ml:1 }}>72 Hours</Typography>
+                    <Typography sx={{ mt: 2.5, ml:1 }}>39 Hours</Typography>
                     <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>

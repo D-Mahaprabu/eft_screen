@@ -162,26 +162,7 @@ const SwaggerInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        <strong>Swagger</strong> is a set of open-source tools for designing, building, and documenting RESTful APIs.<br /><br />
-                        <strong>OpenAPI Specification</strong>: Swagger implements the OpenAPI Specification (OAS), which defines a standard format for describing RESTful APIs.<br /><br />
-                        <strong>API Documentation</strong>: Swagger generates interactive API documentation that allows developers to explore and test API endpoints directly from the browser.<br /><br />
-                        <strong>Swagger UI</strong>: A web-based interface that displays API documentation and provides an interactive environment for making API calls and viewing responses.<br /><br />
-                        <strong>Swagger Editor</strong>: An online editor or downloadable tool used for designing and editing API definitions in the OpenAPI format.<br /><br />
-                        <strong>Swagger Codegen</strong>: A tool for generating client libraries, server stubs, and API documentation from an OpenAPI Specification.<br /><br />
-                        <strong>API Definition</strong>: Swagger uses a JSON or YAML file to describe API endpoints, request/response formats, authentication methods, and more.<br /><br />
-                        <strong>Interactive API Testing</strong>: Provides an interactive way to test API endpoints by inputting parameters and viewing the response directly in the Swagger UI.<br /><br />
-                        <strong>Versioning</strong>: Supports versioning of APIs to manage changes and updates while maintaining backward compatibility.<br /><br />
-                        <strong>Security Definitions</strong>: Allows for defining security schemes such as API keys, OAuth2, and JWT tokens for API authentication and authorization.<br /><br />
-                        <strong>Parameter Types</strong>: Supports various parameter types, including query parameters, path parameters, header parameters, and request bodies.<br /><br />
-                        <strong>Response Definitions</strong>: Describes the possible responses for each API endpoint, including status codes, response schemas, and error messages.<br /><br />
-                        <strong>SwaggerHub</strong>: A collaborative platform for designing, documenting, and sharing APIs, offering version control and team collaboration features.<br /><br />
-                        <strong>Code Generation</strong>: Automatically generates client SDKs and server implementations in various programming languages to speed up development.<br /><br />
-                        <strong>API Mocking</strong>: Allows for mocking API responses to simulate and test API behavior before the actual implementation is complete.<br /><br />
-                        <strong>Integration</strong>: Can be integrated into CI/CD pipelines to automate the generation of API documentation and client libraries.<br /><br />
-                        <strong>Compatibility</strong>: Swagger tools support a wide range of programming languages and frameworks, making it versatile for different tech stacks.<br /><br />
-                        <strong>Customizable UI</strong>: The Swagger UI can be customized with themes and styles to match the branding and requirements of the organization.<br /><br />
-                        <strong>Testing and Debugging</strong>: Provides a built-in mechanism for testing and debugging APIs, helping to identify and resolve issues early in the development process.<br /><br />
-                        <strong>Community and Support</strong>: Swagger has a strong community and extensive documentation, with support available through forums, GitHub, and commercial options.
+                        Knowing Swagger tool offers the ability to create clear, interactive API documentation, streamline API development and testing, improve collaboration between developers and stakeholders, ensure consistency in API design, and enhance the overall quality of your API services.
                     </Typography>
                 );
             case 1:
@@ -215,11 +196,11 @@ const SwaggerInfo = () => {
                         <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
-                        <Typography sx={{ mt: 2.5, ml: 1 }}>15 Modules</Typography>
+                        <Typography sx={{ mt: 2.5, ml: 1 }}>8 Modules</Typography>
                         <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
-                        <Typography sx={{ mt: 2.5, ml: 1 }}>72 Hours</Typography>
+                        <Typography sx={{ mt: 2.5, ml: 1 }}>15 Hours</Typography>
                         <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>

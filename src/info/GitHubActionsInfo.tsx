@@ -251,26 +251,7 @@ const GitHubActionsInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        <strong>GitHub Actions</strong> is a CI/CD and automation tool integrated directly within GitHub repositories.<br /><br />
-                        <strong>Workflows:</strong> are defined in YAML files located in the .github/workflows directory of a repository.<br /><br />
-                        <strong>Jobs:</strong> represent individual tasks within a workflow, and they can run in parallel or sequentially based on dependencies.<br /><br />
-                        <strong>Actions:</strong> are reusable units of code that can be used to perform tasks like building, testing, or deploying; they are available in the GitHub Marketplace.<br /><br />
-                        <strong>Runners:</strong> execute jobs and can be GitHub-hosted or self-hosted on your own infrastructure.<br /><br />
-                        <strong>Triggers:</strong> start workflows based on events such as push, pull request, issue creation, or scheduled times.<br /><br />
-                        <strong>Artifacts:</strong> are files produced by jobs that can be saved and shared across jobs within the same workflow.<br /><br />
-                        <strong>Secrets:</strong> are used to store sensitive information securely, such as API keys or deployment credentials.<br /><br />
-                        <strong>Matrices:</strong> enable you to run jobs across multiple configurations, such as different operating systems or versions of a language.<br /><br />
-                        <strong>Caching:</strong> speeds up workflows by storing and reusing dependencies and other files between runs.<br /><br />
-                        <strong>Environments:</strong> define deployment environments and enable environment-specific rules and protection, such as manual approvals.<br /><br />
-                        <strong>GitHub Marketplace:</strong> offers a wide range of pre-built actions and workflows contributed by the community.<br /><br />
-                        <strong>Reusable Workflows:</strong> allow you to create and share workflows across multiple repositories for consistency and efficiency.<br /><br />
-                        <strong>Self-hosted Runners:</strong> provide control over the execution environment, allowing custom configurations and specialized hardware.<br /><br />
-                        <strong>Logs:</strong> offer detailed visibility into the execution of workflows and jobs, helping with debugging and monitoring.<br /><br />
-                        <strong>Manual Triggers:</strong> let you start workflows manually from the GitHub UI or via API calls.<br /><br />
-                        <strong>Concurrent Jobs:</strong> can be run in parallel to speed up build and test processes, depending on your configuration.<br /><br />
-                        <strong>Deployment Strategies:</strong>support various methods such as blue-green deployments, rolling updates, and canary releases.<br /><br />
-                        <strong>Approval Gates:</strong> allow for manual intervention and approval before certain jobs or deployments are executed.<br /><br />
-                        <strong>Integration with GitHub:</strong> provides seamless access to repository data, including code, issues, and pull requests, directly within workflows.<br /><br />
+                        Learning Advanced GitHub Actions skills allow you to create complex, customized workflows that improve efficiency, reduce manual tasks, and accelerate software development and deployment.
                     </Typography>
                 );
             case 1:
@@ -301,11 +282,11 @@ const GitHubActionsInfo = () => {
                     <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
-                    <Typography sx={{ mt: 2.5, ml:1 }}>15 Modules</Typography>
+                    <Typography sx={{ mt: 2.5, ml:1 }}>11 Modules</Typography>
                     <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>
-                    <Typography sx={{ mt: 2.5, ml:1 }}>72 Hours</Typography>
+                    <Typography sx={{ mt: 2.5, ml:1 }}>20 Hours</Typography>
                     <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                         <MenuBookIcon />
                     </Box>

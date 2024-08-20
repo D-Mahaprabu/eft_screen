@@ -230,26 +230,7 @@ const SystemDesignInfo = () => {
             case 0:
                 return (
                     <Typography variant="body1">
-                        <strong>System Design</strong> is the process of defining the architecture, components, and interfaces of a system to meet specific requirements.<br /><br />
-                        <strong>Architectural Patterns</strong>: Utilizes various architectural patterns such as microservices, monolithic, and serverless to structure and design systems.<br /><br />
-                        <strong>Scalability</strong>: Ensures that a system can handle increasing loads by scaling up (vertical scaling) or out (horizontal scaling) as needed.<br /><br />
-                        <strong>Reliability</strong>: Designs systems to be dependable and available, minimizing downtime and handling failures gracefully.<br /><br />
-                        <strong>Performance</strong>: Focuses on optimizing system performance, including response time and throughput, to meet user expectations and requirements.<br /><br />
-                        <strong>Fault Tolerance</strong>: Implements mechanisms to tolerate and recover from faults, ensuring continuous operation despite hardware or software failures.<br /><br />
-                        <strong>Load Balancing</strong>: Distributes incoming traffic across multiple servers or instances to ensure even load distribution and high availability.<br /><br />
-                        <strong>Data Storage</strong>: Chooses appropriate data storage solutions, such as relational databases, NoSQL databases, or file systems, based on requirements.<br /><br />
-                        <strong>Security</strong>: Incorporates security measures to protect data and system integrity, including encryption, authentication, and authorization.<br /><br />
-                        <strong>API Design</strong>: Defines APIs for communication between system components and external services, ensuring clear and consistent interfaces.<br /><br />
-                        <strong>Monitoring and Logging</strong>: Implements monitoring and logging to track system performance, detect issues, and facilitate troubleshooting and analysis.<br /><br />
-                        <strong>Redundancy</strong>: Adds redundancy at various levels (e.g., hardware, network, services) to ensure system availability and fault tolerance.<br /><br />
-                        <strong>Concurrency</strong>: Designs systems to handle concurrent operations efficiently, using techniques like locking, synchronization, and parallel processing.<br /><br />
-                        <strong>Data Consistency</strong>: Ensures data consistency across distributed components and systems using techniques like consensus algorithms and data replication.<br /><br />
-                        <strong>Scalability Strategies</strong>: Employs strategies such as sharding, partitioning, and caching to enhance system scalability and performance.<br /><br />
-                        <strong>Deployment</strong>: Plans deployment strategies, including continuous integration and continuous deployment (CI/CD) pipelines, for efficient updates and releases.<br /><br />
-                        <strong>User Experience</strong>: Considers user experience in the design process, ensuring that the system is intuitive, responsive, and meets user needs.<br /><br />
-                        <strong>Cost Management</strong>: Balances cost considerations with system requirements, optimizing resource usage and minimizing operational expenses.<br /><br />
-                        <strong>Documentation</strong>: Provides comprehensive documentation for system components, architecture, and design decisions to facilitate maintenance and onboarding.<br /><br />
-                        <strong>Testing and Validation</strong>: Incorporates rigorous testing and validation processes to ensure that the system meets functional and non-functional requirements.
+                        System design module helps you master the creation of scalable, efficient architectures, tackle complex design challenges, improve system reliability and performance, enable effective communication of technical solutions, and enhance your ability to architect robust systems for diverse applications.
                     </Typography>
                 );
             case 1:
@@ -283,11 +264,11 @@ const SystemDesignInfo = () => {
                         <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
-                        <Typography sx={{ mt: 2.5, ml: 1 }}>15 Modules</Typography>
+                        <Typography sx={{ mt: 2.5, ml: 1 }}>9 Modules</Typography>
                         <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
-                        <Typography sx={{ mt: 2.5, ml: 1 }}>72 Hours</Typography>
+                        <Typography sx={{ mt: 2.5, ml: 1 }}>26 Hours</Typography>
                         <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 35, height: 35, borderRadius: '50%', bgcolor: '#D82C25', color: 'white', mt: 2, ml: 3, position: 'relative', overflow: 'hidden' }}>
                             <MenuBookIcon />
                         </Box>
