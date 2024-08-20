@@ -38,9 +38,7 @@ import DebuggingSkillsInfo from './info/DebuggingSkillsInfo'
 import EnterpriseArchitectureInfo from './info/EnterpriseArchitectureInfo'
 import CapacityPlanningInfo from './info/CapacityPlanningInfo'
 import FullstackEngineerScreen from './component/FullStackEngineerScreen';
-import Home from './component/Home'
-import Aboutus from './component/Aboutus';
-import Contactus from './component/Contactus';
+import Home from './component/Home';
 
 function App() {
 

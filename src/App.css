@@ -2,46 +2,12 @@
 @import "~slick-carousel/slick/slick-theme.css";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* .App {
-  background-size: cover;
-  background-position: center;
-  min-height: 100h;
-  width: 219h;
-} */
-
-/* .Home {
-  background-size: 1510px 800px;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.9;
-} */
-
-/* .Fullstack {
-  background-image: url('./images/background.jpg');
-  background-size: cover;
-  background-position: center;
-  min-height: 100h;
-  width: 100%;
-} */
-
 .Courses {
   background-size: 1510px 800px;
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.9;
 }
-
-/* .carousel-slide {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-background-size: cover;
-background-position: top center;
-background-repeat: no-repeat;
-text-align: center; 
-position: relative;
-} */
 
 .CarouselandForm {
 background-image: url('./images/BgImg3.jpeg');
@@ -84,10 +50,4 @@ position: relative;
   to {
     transform: rotate(360deg);
   }
-}
-
-*.poppins-thin {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
 }
