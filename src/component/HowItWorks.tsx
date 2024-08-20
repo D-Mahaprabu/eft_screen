@@ -7,7 +7,7 @@ const Howitworks = () => {
             <Typography height={'22px'} width={'231px'} fontFamily={'Poppins'} fontWeight={'400'} fontSize={'32px'} lineHeight={'32px'} letterSpacing={'8%'} gutterBottom color={'#D81B0E'} sx={{ mt: 4, ml: 8 }}>
                 How It Works
             </Typography>
-            <Typography height={'60px'} width={'817px'} fontFamily={'Poppins'} fontWeight={'500'} fontSize={'40px'} lineHeight={'60px'} gutterBottom color={'black'} sx={{ ml: 8 }}>
+            <Typography height={'60px'} width={'850px'} fontFamily={'Poppins'} fontWeight={'500'} fontSize={'40px'} lineHeight={'60px'} gutterBottom color={'black'} sx={{ ml: 8 }}>
                 Your Online Learning Journey Made Easy
             </Typography>
 
@@ -39,11 +39,11 @@ const Howitworks = () => {
                                 backgroundColor: '#D81B0E',
                                 color: 'white',
                                 mx: 1,
-                                ml: 25
+                                ml: 20
                         }}>
                                 02
                         </Box>
-                        <Typography height={'33px'} fontFamily={'Poppins'} fontWeight={'700'} fontSize={'24px'} lineHeight={'32.78px'} gutterBottom color={'black'} sx={{ mt: 3, ml: 25 }} style={{ fontWeight: 'bold' }}>
+                        <Typography height={'33px'} fontFamily={'Poppins'} fontWeight={'700'} fontSize={'24px'} lineHeight={'32.78px'} gutterBottom color={'black'} sx={{ mt: 3, ml: 20 }} style={{ fontWeight: 'bold' }}>
                             Register an Enquiry 
                         </Typography>
                     </Stack> 
@@ -57,11 +57,11 @@ const Howitworks = () => {
                                 backgroundColor: '#D81B0E',
                                 color: 'white',
                                 mx: 1,
-                                ml: 25
+                                ml: 20
                         }}>
                                 03
                         </Box>
-                        <Typography height={'33px'} fontFamily={'Poppins'} fontWeight={'700'} fontSize={'24px'} lineHeight={'32.78px'} gutterBottom color={'black'} sx={{  mt: 3, ml: 25 }} style={{ fontWeight: 'bold' }}>
+                        <Typography height={'33px'} fontFamily={'Poppins'} fontWeight={'700'} fontSize={'24px'} lineHeight={'32.78px'} gutterBottom color={'black'} sx={{  mt: 3, ml: 20 }} style={{ fontWeight: 'bold' }}>
                             Learn and Engage
                         </Typography>
                     </Stack>

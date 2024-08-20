@@ -119,7 +119,7 @@ const Home = () => {
                       {showContactUs && <Contactus />}   
                     </div> 
                     <Box width={'100%'} height={80} bgcolor={'#D81B0E'}>
-                      <Typography width={'250px'} height={'22px'} fontFamily={'Poppins'} fontWeight={'bold'} fontSize={'16px'} lineHeight={'22px'} color={'white'} sx={{mt: 3.5, ml: 75}}>Copy Rights @ All rights reserved</Typography>
+                      <Typography width={'285px'} height={'22px'} fontFamily={'Poppins'} fontWeight={'bold'} fontSize={'16px'} lineHeight={'22px'} color={'white'} sx={{mt: 3.5, ml: 75}}>Copy Rights @ All rights reserved</Typography>
                     </Box>
                 </Stack>
             </Stack>

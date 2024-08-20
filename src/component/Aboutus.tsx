@@ -11,7 +11,7 @@ const Aboutus = () => {
             </Box>
 
             <Box height={230} width={'60%'}>
-              <Typography color={'white'} fontWeight={'bold'} fontFamily={'Poppins'} fontSize={'24px'}  sx={{mt: 5}}>Who We Are</Typography>
+              <Typography color={'white'} fontWeight={'bold'} fontFamily={'Poppins'} fontSize={'24px'} sx={{mt: 5}}>Who We Are</Typography>
               <Typography color={'white'} fontWeight={'bold'} fontFamily={'Poppins'} fontSize={'14px'} alignContent={'left'} textAlign={'left'} sx={{mt: 4}}>
                 At Stairs7 Solutions, we’re redefining excellence in education. 
                 Our custom-built curriculum is engineered to keep you ahead in today’s fast-paced world. 
