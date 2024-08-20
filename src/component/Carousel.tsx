@@ -69,7 +69,7 @@ const Carousel = () => {
                     <Typography 
                                     width={'426px'}
                                     height={'120px'}
-                                    fontStyle={'Poppins'}
+                                    fontFamily={'Poppins'}
                                     fontWeight={500}
                                     fontSize={'40px'}
                                     lineHeight={'60px'}
@@ -93,7 +93,7 @@ const Carousel = () => {
                                         key={idx} 
                                         width={'480px'}
                                         height={'72px'}
-                                        fontStyle={'Poppins'}
+                                        fontFamily={'Poppins'}
                                         fontWeight={500}
                                         fontSize={'16px'}
                                         lineHeight={'24px'}

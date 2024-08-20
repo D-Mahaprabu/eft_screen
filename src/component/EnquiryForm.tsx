@@ -165,10 +165,10 @@ const EnquiryForm: React.FC = () => {
 
     return (
         <Box component="form" onSubmit={handleSubmit} p={3} boxShadow={3} borderRadius={2} bgcolor="#D81B0E" width={550} height={500} sx={{ mt: 7.5, ml: 6 }}>
-            <Typography fontStyle={'Poppins'} fontWeight={'600'} fontSize={'16px'} lineHeight={'24px'} gutterBottom color={'white'} sx={{mt: 3}}>
+            <Typography fontFamily={'Poppins'} fontWeight={'600'} fontSize={'16px'} lineHeight={'24px'} gutterBottom color={'white'} sx={{mt: 3}}>
                 Enquire the Course
             </Typography>
-            <Typography fontStyle={'Poppins'} fontWeight={'500'} fontSize={'12px'} lineHeight={'18px'} gutterBottom color={'white'}>
+            <Typography fontFamily={'Poppins'} fontWeight={'500'} fontSize={'12px'} lineHeight={'18px'} gutterBottom color={'white'}>
                 We will get back to you
             </Typography>
             <TextField
@@ -178,7 +178,7 @@ const EnquiryForm: React.FC = () => {
                 value={fullname}
                 onChange={(e) => setFullname(e.target.value)}
                 margin="normal"
-                sx={{ width: 240, ...textFieldStyles, mt: 3, fontStyle: 'Poppins', fontWeight: '500' }}
+                sx={{ width: 240, ...textFieldStyles, mt: 3, fontFamily: 'Poppins', fontWeight: '500' }}
                 InputLabelProps={{ style: { color: 'white' } }}
                 InputProps={{ style: { color: 'white' } }}
             />
@@ -189,7 +189,7 @@ const EnquiryForm: React.FC = () => {
                 value={qualification}
                 onChange={(e) => setQualification(e.target.value)}
                 margin="normal"
-                sx={{ ml: 8.7, width: 240, ...textFieldStyles, mt: 3, fontStyle: 'Poppins', fontWeight: '500' }}
+                sx={{ ml: 8.7, width: 240, ...textFieldStyles, mt: 3, fontFamily: 'Poppins', fontWeight: '500' }}
                 InputLabelProps={{ style: { color: 'white' } }}
                 InputProps={{ style: { color: 'white' } }}
             />
@@ -200,7 +200,7 @@ const EnquiryForm: React.FC = () => {
                 value={mobileNumber}
                 onChange={(e) => setMobileNumber(e.target.value)}
                 margin="normal"
-                sx={{ width: 240, ...textFieldStyles, fontStyle: 'Poppins', fontWeight: '500' }}
+                sx={{ width: 240, ...textFieldStyles, fontFamily: 'Poppins', fontWeight: '500' }}
                 InputLabelProps={{ style: { color: 'white' } }}
                 InputProps={{ style: { color: 'white' } }}
             />
@@ -211,7 +211,7 @@ const EnquiryForm: React.FC = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 margin="normal"
-                sx={{ ml: 8.7, width: 240, ...textFieldStyles, fontStyle: 'Poppins', fontWeight: '500', fontSize: '12px', lineHeight: '18px' }}
+                sx={{ ml: 8.7, width: 240, ...textFieldStyles, fontFamily: 'Poppins', fontWeight: '500', fontSize: '12px', lineHeight: '18px' }}
                 InputLabelProps={{ style: { color: 'white' } }}
                 InputProps={{ style: { color: 'white' } }}
             />
@@ -222,7 +222,7 @@ const EnquiryForm: React.FC = () => {
                 value={city}
                 onChange={(e) => setCity(e.target.value)}
                 margin="normal"
-                sx={{ width: 240, ...textFieldStyles, fontStyle: 'Poppins', fontWeight: '500' }}
+                sx={{ width: 240, ...textFieldStyles, fontFamily: 'Poppins', fontWeight: '500' }}
                 InputLabelProps={{ style: { color: 'white' } }}
                 InputProps={{ style: { color: 'white' } }}
             />
@@ -232,7 +232,7 @@ const EnquiryForm: React.FC = () => {
                     label="Learning Program"
                     value={learningProgram}
                     onChange={(e) => setLearningProgram(e.target.value)}
-                    sx={{ ...selectStyles, ...textFieldStyles, fontStyle: 'Poppins', bgcolor: '#D81B0E', fontWeight: '500' }}
+                    sx={{ ...selectStyles, ...textFieldStyles, fontFamily: 'Poppins', bgcolor: '#D81B0E', fontWeight: '500' }}
                     inputProps={{
                         style: { color: 'white' }
                     }}
@@ -258,12 +258,12 @@ const EnquiryForm: React.FC = () => {
                 sx={{
                     height: '80px',
                     ...textFieldStyles,
-                    '& .MuiInputBase-root': { height: '91px', color: 'white', bgcolor: '#D81B0E' }, mt: 3, fontStyle: 'Poppins', fontWeight: '500'
+                    '& .MuiInputBase-root': { height: '91px', color: 'white', bgcolor: '#D81B0E' }, mt: 3, fontFamily: 'Poppins', fontWeight: '500'
                 }}
                 InputLabelProps={{ style: { color: 'white' } }}
                 InputProps={{ style: { color: 'white' } }}
             />
-            <Button type="submit" sx={{ mt: 3, color: 'red', height: '42px', bgcolor: 'white', '&:hover': { color: 'red', backgroundColor: 'white' }, fontStyle: 'Poppins', fontWeight: '500', fontSize: '12px', lineHeight: '18px', borderRadius: '0px' }} 
+            <Button type="submit" sx={{ mt: 3, color: 'red', height: '42px', bgcolor: 'white', '&:hover': { color: 'red', backgroundColor: 'white' }, fontFamily: 'Poppins', fontWeight: '500', fontSize: '12px', lineHeight: '18px', borderRadius: '0px' }} 
                 fullWidth>
                 Request Information
             </Button>
